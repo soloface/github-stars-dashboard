@@ -10,7 +10,8 @@
     "created_at": "2026-05-21T13:22:06Z",
     "pushed_at": "2026-06-08T16:56:30Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/42194301?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/42194301?v=4",
+    "description_zh": "DeepSeek 模型的 AI 智能体工作区 — 内置 Code 和 Claw 模式"
   },
   {
     "full_name": "DIYgod/RSSHub",
@@ -42,7 +43,8 @@
       "youtube",
       "zhihu"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/8266075?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/8266075?v=4",
+    "description_zh": "万物皆可 RSS"
   },
   {
     "full_name": "larksuite/cli",
@@ -55,7 +57,8 @@
     "created_at": "2026-03-25T07:13:30Z",
     "pushed_at": "2026-06-08T17:08:23Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/54944174?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/54944174?v=4",
+    "description_zh": "Lark/飞书官方 CLI — 专为人类和 AI 智能体打造"
   },
   {
     "full_name": "alchaincyf/huashu-design",
@@ -68,7 +71,8 @@
     "created_at": "2026-04-19T14:42:06Z",
     "pushed_at": "2026-06-06T14:17:04Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/127714341?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/127714341?v=4",
+    "description_zh": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
   },
   {
     "full_name": "colbymchenry/codegraph",
@@ -81,7 +85,8 @@
     "created_at": "2026-01-18T21:45:37Z",
     "pushed_at": "2026-06-08T14:25:42Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/18431132?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/18431132?v=4",
+    "description_zh": "预索引代码知识图谱 — 适用于 Claude Code、Codex、Gemini、Cursor、OpenCode 等"
   },
   {
     "full_name": "op7418/Humanizer-zh",
@@ -94,7 +99,8 @@
     "created_at": "2026-01-19T04:23:44Z",
     "pushed_at": "2026-01-19T07:46:35Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/13505770?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/13505770?v=4",
+    "description_zh": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。"
   },
   {
     "full_name": "666ghj/BettaFish",
@@ -118,7 +124,8 @@
       "python3",
       "sentiment-analysis"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/110395318?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/110395318?v=4",
+    "description_zh": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。"
   },
   {
     "full_name": "sansan0/TrendRadar",
@@ -148,7 +155,8 @@
       "wechat",
       "wework"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/77180927?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/77180927?v=4",
+    "description_zh": "AI 驱动的舆情与趋势监控 — 多平台数据聚合、话题追踪、热度预测"
   },
   {
     "full_name": "op7418/CodePilot",
@@ -170,7 +178,8 @@
       "gui",
       "nextjs"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/13505770?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/13505770?v=4",
+    "description_zh": "多模型 AI 智能体桌面客户端 — 连接任意 AI 提供商，支持 MCP 和技能扩展，手机可控制"
   },
   {
     "full_name": "nexu-io/open-design",
@@ -204,7 +213,8 @@
       "ui-generator",
       "vibe-coding"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/263625318?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/263625318?v=4",
+    "description_zh": "本地优先、开源的 Claude Design 替代 — 原生桌面应用，259+ 技能 · 142+ 设计系统"
   },
   {
     "full_name": "Yeachan-Heo/oh-my-claudecode",
@@ -228,7 +238,8 @@
       "parallel-execution",
       "vibe-coding"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/54757707?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/54757707?v=4",
+    "description_zh": "面向团队的 Claude Code 多智能体编排平台"
   },
   {
     "full_name": "freestylefly/wesight",
@@ -256,7 +267,8 @@
       "react",
       "typescript"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/43960064?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/43960064?v=4",
+    "description_zh": "开源桌面 AI 智能体工作区 — 一键配置 Claude Code、Codex、OpenClaw、Hermes Agent，支持自定义 LLM 路由"
   },
   {
     "full_name": "obra/superpowers",
@@ -269,7 +281,8 @@
     "created_at": "2025-10-09T19:45:18Z",
     "pushed_at": "2026-06-03T05:46:02Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/45416?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/45416?v=4",
+    "description_zh": "一套行之有效的 AI 智能体技能框架与软件开发方法论"
   },
   {
     "full_name": "NousResearch/hermes-agent",
@@ -299,7 +312,8 @@
       "openai",
       "openclaw"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/134168893?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
+    "description_zh": "与你共同成长的智能体"
   },
   {
     "full_name": "HKUDS/CLI-Anything",
@@ -312,7 +326,8 @@
     "created_at": "2026-03-08T13:52:57Z",
     "pushed_at": "2026-06-08T10:27:12Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/118165258?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
+    "description_zh": "让所有软件都支持智能体原生"
   },
   {
     "full_name": "BigPizzaV3/CodexPlusPlus",
@@ -325,7 +340,8 @@
     "created_at": "2026-05-06T09:32:49Z",
     "pushed_at": "2026-06-08T17:24:33Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/237402563?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/237402563?v=4",
+    "description_zh": "CodexApp 增强工具 — 让 Codex 更好用"
   },
   {
     "full_name": "multica-ai/multica",
@@ -338,7 +354,8 @@
     "created_at": "2026-01-13T17:59:46Z",
     "pushed_at": "2026-06-08T12:29:22Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4",
+    "description_zh": "开源托管智能体平台 — 将编程智能体变成真正的队友，分配任务、跟踪进度、复合技能"
   },
   {
     "full_name": "msitarzewski/agency-agents",
@@ -351,7 +368,8 @@
     "created_at": "2025-10-13T12:12:29Z",
     "pushed_at": "2026-06-07T20:42:10Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/1972242?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/1972242?v=4",
+    "description_zh": "一站式 AI Agency 智能体集合 — 从前端到社区运营，每个智能体都有独特个性和工作流"
   },
   {
     "full_name": "jnMetaCode/agency-agents-zh",
@@ -384,7 +402,8 @@
       "workbuddy",
       "workflow"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/12096460?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/12096460?v=4",
+    "description_zh": "🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）"
   },
   {
     "full_name": "borawong/AiMaMi",
@@ -397,7 +416,8 @@
     "created_at": "2026-04-04T21:49:03Z",
     "pushed_at": "2026-06-03T13:47:11Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/72101586?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/72101586?v=4",
+    "description_zh": "为OpenAI Codex打造的桌面伴侣。"
   },
   {
     "full_name": "Gan-Xing/CodexBridge",
@@ -424,7 +444,8 @@
       "wechat",
       "wechat-bot"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/41600413?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/41600413?v=4",
+    "description_zh": "微信到 Codex 的桥梁 — 聊天运行 Codex 服务器，支持线程、斜杠命令、审批和自动化"
   },
   {
     "full_name": "xyflow/xyflow",
@@ -449,7 +470,8 @@
       "typescript-library",
       "workflow"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/7106853?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/7106853?v=4",
+    "description_zh": "React Flow / Svelte Flow — 强大的开源节点型 UI 库，构建交互式图表和流程图"
   },
   {
     "full_name": "remotion-dev/remotion",
@@ -466,7 +488,8 @@
       "react",
       "video"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/85344006?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/85344006?v=4",
+    "description_zh": "用 React 编程方式制作视频"
   },
   {
     "full_name": "heygen-com/hyperframes",
@@ -491,7 +514,8 @@
       "typescript",
       "video"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/65394575?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/65394575?v=4",
+    "description_zh": "写 HTML，渲染视频 — 为 AI 智能体打造的视频生成框架"
   },
   {
     "full_name": "anomalyco/opencode",
@@ -504,7 +528,8 @@
     "created_at": "2025-04-30T20:08:00Z",
     "pushed_at": "2026-06-08T17:25:33Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/66570915?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/66570915?v=4",
+    "description_zh": "开源编程智能体（Coding Agent）"
   },
   {
     "full_name": "jarrodwatts/claude-hud",
@@ -525,7 +550,8 @@
       "statusline",
       "typescript"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/35651410?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/35651410?v=4",
+    "description_zh": "Claude Code 状态面板插件 — 实时显示上下文用量、活跃工具、运行中的智能体和待办进度"
   },
   {
     "full_name": "affaan-m/ECC",
@@ -547,7 +573,8 @@
       "mcp",
       "productivity"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/124439313?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/124439313?v=4",
+    "description_zh": "智能体性能优化系统 — 为 Claude Code、Codex、OpenCode 等提供技能、直觉、记忆和安全机制"
   },
   {
     "full_name": "multica-ai/andrej-karpathy-skills",
@@ -560,7 +587,8 @@
     "created_at": "2026-01-27T03:53:13Z",
     "pushed_at": "2026-04-20T10:05:04Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4",
+    "description_zh": "改进 Claude Code 行为的 CLAUDE.md — 源自 Andrej Karpathy 对 LLM 编程陷阱的观察"
   },
   {
     "full_name": "78/xiaozhi-esp32",
@@ -577,7 +605,8 @@
       "esp32",
       "mcp"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/4488133?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/4488133?v=4",
+    "description_zh": "An MCP-based chatbot | 一个基于MCP的聊天机器人"
   },
   {
     "full_name": "nesquena/hermes-webui",
@@ -596,7 +625,8 @@
       "hermes-agent",
       "nous-research"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/6511?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/6511?v=4",
+    "description_zh": "Hermes WebUI — 从网页或手机使用 Hermes Agent 的最佳方式"
   },
   {
     "full_name": "liandu2024/OpenClaw-Chat-Gateway",
@@ -609,7 +639,8 @@
     "created_at": "2026-03-07T21:51:55Z",
     "pushed_at": "2026-06-04T01:07:43Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/155928686?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/155928686?v=4",
+    "description_zh": "OpenClaw 的聊天网关，摆脱对各种 Channel 的依赖"
   },
   {
     "full_name": "binaricat/Netcatty",
@@ -633,7 +664,8 @@
       "terminal-emulator",
       "xterm"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/16399091?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/16399091?v=4",
+    "description_zh": "SSH 工作区 + SFTP + 终端，三合一网络工具"
   },
   {
     "full_name": "av/harbor",
@@ -666,7 +698,8 @@
       "tool",
       "tools"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/38184623?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/38184623?v=4",
+    "description_zh": "别折腾 AI 环境配置了，直接用 — 一条命令启动完整的预配置 LLM 技术栈，内置数百种服务"
   },
   {
     "full_name": "searxng/searxng",
@@ -695,7 +728,8 @@
       "startpage",
       "yahoo"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/80454229?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/80454229?v=4",
+    "description_zh": "免费互联网元搜索引擎，聚合多个搜索结果，不追踪、不分析用户"
   },
   {
     "full_name": "slopus/happy",
@@ -715,7 +749,8 @@
       "codex-cli",
       "hacktoberfest"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/221431600?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/221431600?v=4",
+    "description_zh": "Codex 和 Claude Code 的移动端和 Web 客户端，支持实时语音、加密和完整功能"
   },
   {
     "full_name": "jacob-bd/notebooklm-mcp-cli",
@@ -728,7 +763,8 @@
     "created_at": "2025-12-23T02:07:42Z",
     "pushed_at": "2026-06-08T16:51:27Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/47641890?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/47641890?v=4",
+    "description_zh": "通过 CLI、MCP 和 AI 智能体技能访问 Google NotebookLM"
   },
   {
     "full_name": "bytedance/deer-flow",
@@ -760,7 +796,8 @@
       "superagent",
       "typescript"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/4158466?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/4158466?v=4",
+    "description_zh": "开源长期 SuperAgent — 能进行研究、编码和创作，支持沙箱、记忆、工具、技能和子智能体"
   },
   {
     "full_name": "Nagi-ovo/gemini-voyager",
@@ -783,7 +820,8 @@
       "safari-extension",
       "vibe-coding"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/101612750?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/101612750?v=4",
+    "description_zh": "Google Gemini & AI Studio 一站式增强套件"
   },
   {
     "full_name": "teng-lin/notebooklm-py",
@@ -811,7 +849,8 @@
       "sdk",
       "skills"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/737447?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/737447?v=4",
+    "description_zh": "Google NotebookLM 的非官方 Python API 和智能体技能"
   },
   {
     "full_name": "win4r/ClawTeam-OpenClaw",
@@ -834,7 +873,8 @@
       "swarm-intelligence",
       "swarms"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
+    "description_zh": "ClawTeam 分叉 — 完全适配 OpenClaw 的多智能体群协调框架"
   },
   {
     "full_name": "DayuanJiang/next-ai-draw-io",
@@ -851,7 +891,8 @@
       "diagrams",
       "productivity"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/34411969?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/34411969?v=4",
+    "description_zh": "next.js Web 应用程序将 AI 功能与 draw.io 图表集成在一起。该应用程序允许您通过自然语言命令和人工智能辅助可视化来创建、修改和增强图表。"
   },
   {
     "full_name": "Panniantong/Agent-Reach",
@@ -882,7 +923,8 @@
       "xiaohongshu",
       "youtube-transcript"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/73925474?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/73925474?v=4",
+    "description_zh": "让 AI 智能体拥有看到整个互联网的眼睛 — 搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书等"
   },
   {
     "full_name": "larksuite/openclaw-lark",
@@ -895,7 +937,8 @@
     "created_at": "2026-03-09T07:41:03Z",
     "pushed_at": "2026-06-03T12:42:07Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/54944174?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/54944174?v=4",
+    "description_zh": "飞书官方出品的 OpenClaw 飞书/Lark Channel 插件"
   },
   {
     "full_name": "win4r/openclaw-workspace",
@@ -911,7 +954,8 @@
       "openclaw",
       "openclaw-skills"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
+    "description_zh": "维护和优化 OpenClaw 工作区文件的 Claude Code 技能（AGENTS.md、SOUL.md 等）"
   },
   {
     "full_name": "YanG-1989/m3u",
@@ -924,7 +968,8 @@
     "created_at": "2022-10-03T22:33:40Z",
     "pushed_at": "2026-05-10T05:37:37Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/109458285?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/109458285?v=4",
+    "description_zh": "直播源聚合与分发"
   },
   {
     "full_name": "mursor1985/LIVE",
@@ -956,7 +1001,8 @@
       "openclaw-plugin",
       "openclaw-skills"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
+    "description_zh": "OpenClaw A2A 协议插件 — 实现智能体到智能体双向通信网关"
   },
   {
     "full_name": "CortexReach/memory-lancedb-pro",
@@ -976,7 +1022,8 @@
       "openclaw-plugin",
       "rag"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/266910790?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/266910790?v=4",
+    "description_zh": "OpenClaw 增强版 LanceDB 记忆插件 — 混合检索（向量+BM25）、重排、多范围隔离"
   },
   {
     "full_name": "luolin-ai/openclawWeComzh",
@@ -989,7 +1036,8 @@
     "created_at": "2026-02-18T08:31:19Z",
     "pushed_at": "2026-03-16T21:28:00Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/135555634?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/135555634?v=4",
+    "description_zh": "AEON 协议开源实现 — 高级 AI 认知可观察性，实时辩证流跟踪、自动记忆蒸馏"
   },
   {
     "full_name": "QuantumNous/new-api",
@@ -1010,7 +1058,8 @@
       "openai",
       "rerank"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/205075698?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/205075698?v=4",
+    "description_zh": "统一 AI 模型聚合与分发中心 — 支持 LLM 交叉转换为 OpenAI/Claude/Gemini 兼容格式"
   },
   {
     "full_name": "anthropics/claude-code",
@@ -1023,7 +1072,8 @@
     "created_at": "2025-02-22T17:41:21Z",
     "pushed_at": "2026-06-06T23:41:53Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/76263028?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/76263028?v=4",
+    "description_zh": "Anthropic 官方编程智能体，运行在终端中，理解你的代码库并协助完成日常编码任务"
   },
   {
     "full_name": "axtonliu/axton-obsidian-visual-skills",
@@ -1036,7 +1086,8 @@
     "created_at": "2026-01-10T18:01:37Z",
     "pushed_at": "2026-02-12T02:49:53Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/34881731?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/34881731?v=4",
+    "description_zh": "Obsidian 视觉技能包 — 用 Claude Code 从文本生成 Canvas、Excalidraw 和 Mermaid 图"
   },
   {
     "full_name": "YishenTu/claudian",
@@ -1056,7 +1107,8 @@
       "obsidian-plugin",
       "productivity"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/134207149?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/134207149?v=4",
+    "description_zh": "Obsidian 插件 — 将 Claude Code/Codex 嵌入笔记库作为 AI 协作者"
   },
   {
     "full_name": "farion1231/cc-switch",
@@ -1090,7 +1142,8 @@
       "typescript",
       "wsl-support"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/44939412?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/44939412?v=4",
+    "description_zh": "跨平台桌面一体化助手 — 支持 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI 和 Hermes Agent"
   },
   {
     "full_name": "VoltAgent/awesome-openclaw-skills",
@@ -1116,7 +1169,8 @@
       "openclaw",
       "openclaw-skills"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/201282378?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/201282378?v=4",
+    "description_zh": "OpenClaw 技能精选集 — 5400+ 种筛选分类的技能"
   },
   {
     "full_name": "hesamsheikh/awesome-openclaw-usecases",
@@ -1138,7 +1192,8 @@
       "openclaw-skills",
       "usecase"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/41022652?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/41022652?v=4",
+    "description_zh": "OpenClaw 用例社区精选"
   },
   {
     "full_name": "appsail/Gemini-in-Chrome",
@@ -1164,7 +1219,8 @@
     "created_at": "2024-10-18T11:09:41Z",
     "pushed_at": "2025-06-13T17:20:02Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/18157810?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/18157810?v=4",
+    "description_zh": "allinone 项目的 TV 源格式转换工具 — 支持 IPTV、直播源格式化"
   },
   {
     "full_name": "google-gemini/gemini-cli",
@@ -1185,7 +1241,8 @@
       "mcp-client",
       "mcp-server"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/161781182?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
+    "description_zh": "开源 AI 智能体，将 Gemini 的强大能力直接带入你的终端"
   },
   {
     "full_name": "ZLMediaKit/ZLMediaKit",
@@ -1219,7 +1276,8 @@
       "websocket",
       "websocket-flv"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/84565724?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/84565724?v=4",
+    "description_zh": "基于C++11的WebRTC/RTSP/RTMP/HTTP/HLS/HTTP-FLV/WebSocket-FLV/HTTP-TS/HTTP-fMP4/WebSocket-TS/WebSocket-fMP4/GB28181/SRT/STUN/TURN服务器和客户端框架"
   },
   {
     "full_name": "algerkong/AlgerMusicPlayer",
@@ -1236,7 +1294,8 @@
       "music",
       "music-player"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/45055748?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/45055748?v=4",
+    "description_zh": "第三方音乐播放器 — 支持本地服务、桌面歌词、音乐下载、远程控制"
   },
   {
     "full_name": "jhj0517/Whisper-WebUI",
@@ -1257,7 +1316,8 @@
       "web-ui",
       "whisper"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/97279763?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/97279763?v=4",
+    "description_zh": "基于 Whisper 模型的简易字幕 Web UI"
   },
   {
     "full_name": "foamzou/melody",
@@ -1272,7 +1332,8 @@
     "topics": [
       "music"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/9295077?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/9295077?v=4",
+    "description_zh": "我的音乐精灵 — 音乐发现与播放工具"
   },
   {
     "full_name": "tech-shrimp/deno-api-proxy",
@@ -1285,7 +1346,8 @@
     "created_at": "2025-01-29T11:02:10Z",
     "pushed_at": "2025-01-29T11:33:48Z",
     "topics": [],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/154193368?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/154193368?v=4",
+    "description_zh": "用 Deno 将大模型 API 代理到国内 — 解决地区受限问题"
   },
   {
     "full_name": "alexta69/metube",
@@ -1303,7 +1365,8 @@
       "youtube-dl",
       "yt-dlp"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/7450369?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/7450369?v=4",
+    "description_zh": "自托管视频下载器 — 支持 YouTube 等，youtube-dl/yt-dlp 的 Web 界面"
   },
   {
     "full_name": "alibaba/butterfly",
@@ -1334,6 +1397,7 @@
       "treemap-diagram",
       "vue"
     ],
-    "owner_avatar": "https://avatars.githubusercontent.com/u/1961952?v=4"
+    "owner_avatar": "https://avatars.githubusercontent.com/u/1961952?v=4",
+    "description_zh": "Butterfly — 基于 JavaScript/React/Vue2 的图表可视化库"
   }
 ]

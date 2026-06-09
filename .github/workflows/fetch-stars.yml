@@ -77,6 +77,48 @@ jobs:
           print(f"Saved {len(output)} repos to data/stars.json")
           PYEOF
 
+      - name: Add Chinese translations
+        run: |
+          pip install deep-translator
+          python3 << 'TRANS_EOF'
+          import json, time
+          try:
+              from deep_translator import GoogleTranslator
+              translator = GoogleTranslator(source='auto', target='zh-CN')
+
+              with open("data/stars.json") as f:
+                  data = json.load(f)
+
+              for r in data:
+                  desc = r.get("description", "")
+                  if desc:
+                      has_chinese = any('\u4e00' <= c <= '\u9fff' for c in desc)
+                      if not has_chinese:
+                          try:
+                              result = translator.translate(desc)
+                              r["description_zh"] = result
+                              time.sleep(0.3)
+                          except:
+                              r["description_zh"] = desc
+                      else:
+                          r["description_zh"] = desc
+                  else:
+                      r["description_zh"] = ""
+
+              with open("data/stars.json", "w") as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
+              print("Translations added")
+          except Exception as e:
+              print(f"Translation failed: {e}, keeping original descriptions")
+              # Fallback: just add description_zh = description
+              with open("data/stars.json") as f:
+                  data = json.load(f)
+              for r in data:
+                  r["description_zh"] = r.get("description", "")
+              with open("data/stars.json", "w") as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
+          TRANS_EOF
+
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

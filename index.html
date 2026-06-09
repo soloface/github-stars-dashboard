@@ -713,9 +713,9 @@ body::before {
   <div class="topbar">
     <div class="topbar-left">
       <div class="led"></div>
-      <span class="label">SYS OPERATIONAL</span>
+      <span class="label">系统运行中</span>
     </div>
-    <span class="topbar-title">★ STARRED REPOS</span>
+    <span class="topbar-title">★ 星标项目</span>
     <a class="topbar-link" href="https://github.com/soloface?tab=stars" target="_blank" rel="noopener">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
       GitHub →
@@ -726,7 +726,7 @@ body::before {
   <div class="stats-panel" id="statsPanel">
     <div class="stat-group">
       <span class="stat-number" id="totalCount">—</span>
-      <span class="stat-label">STARRED</span>
+      <span class="stat-label">已星标</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-secondary" id="langDots"></div>
@@ -736,15 +736,15 @@ body::before {
   <!-- Controls -->
   <div class="controls">
     <div class="search-row">
-      <input class="search-input" id="searchInput" type="text" placeholder="Filter by name or description…" autocomplete="off">
+      <input class="search-input" id="searchInput" type="text" placeholder="按名称或简介搜索…" autocomplete="off">
       <div class="results-badge" id="resultsBadge">— repos</div>
     </div>
     <div class="sort-row">
-      <span class="label sort-label">SORT</span>
-      <button class="sort-btn active" data-sort="stars">★ Stars</button>
-      <button class="sort-btn" data-sort="starred_at">Date ★</button>
-      <button class="sort-btn" data-sort="created_at">Created</button>
-      <button class="sort-btn" data-sort="pushed_at">Updated</button>
+      <span class="label sort-label">排序</span>
+      <button class="sort-btn active" data-sort="stars">★ 星数</button>
+      <button class="sort-btn" data-sort="starred_at">点星时间</button>
+      <button class="sort-btn" data-sort="created_at">发布时间</button>
+      <button class="sort-btn" data-sort="pushed_at">更新时间</button>
     </div>
     <div class="filter-row" id="langFilters">
       <button class="filter-all" id="filterAll">All</button>
@@ -762,7 +762,7 @@ body::before {
   <!-- Footer -->
   <div class="footer">
     <div class="led"></div>
-    <span class="label">Auto-synced daily via GitHub Actions</span>
+    <span class="label">每日自动同步 via GitHub Actions</span>
   </div>
 </div>
 
@@ -795,7 +795,7 @@ async function loadData() {
     buildLangFilters();
     applyAll();
     document.getElementById('syncTime').textContent =
-      'SYNCED ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+      '已同步 ' + new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
   } catch (e) {
     document.getElementById('repoGrid').innerHTML =
       '<div class="state-msg"><h3>⚠ DATA LOAD FAILED</h3><p class="mono">' + e.message + '</p><p style="margin-top:12px"><button class="sort-btn" onclick="loadData()">RETRY</button></p></div>';
@@ -848,7 +848,8 @@ function applyAll() {
     if (activeLangs.size > 0 && !activeLangs.has(r.language)) return false;
     if (searchTerm) {
       const q = searchTerm.toLowerCase();
-      return r.full_name.toLowerCase().includes(q) || (r.description || '').toLowerCase().includes(q);
+      const descText = (r.description_zh || r.description || '').toLowerCase();
+      return r.full_name.toLowerCase().includes(q) || descText.includes(q);
     }
     return true;
   });
@@ -903,7 +904,7 @@ function renderCards(items) {
     const parts = name.split('/');
     const owner = parts[0];
     const repo = parts.slice(1).join('/');
-    const desc = r.description || 'No description provided.';
+    const desc = r.description_zh || r.description || '暂无简介';
     const stars = formatNum(r.stargazers_count || 0);
     const forks = formatNum(r.forks_count || 0);
     const lang = r.language;

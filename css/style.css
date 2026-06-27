@@ -694,3 +694,137 @@ body::before {
   .repo-card { padding: 16px; }
   .card-name { font-size: 0.85rem; }
 }
+
+/* ============================================================
+   Phase 3 — Dark Mode (neumorphism shadow inversion)
+   Overriding the base color tokens cascades into every composite
+   shadow (var(--shadow-card), etc.) automatically. Values per
+   spec.md §7 / Phase 3 design §4.1.
+   ============================================================ */
+[data-theme="dark"] {
+  --bg: #1a1d23;
+  --panel: #2a2d35;
+  --recessed: #14161a;
+  --text-primary: #e4e6eb;
+  --text-secondary: #a0a4ae;
+  --text-muted: #6b7080;
+  --shadow-dark: #0d0f12;
+  --shadow-light: #3a3d45;
+  --shadow-deep: #080a0d;
+  --shadow-led-green: 0 0 12px 3px rgba(34,197,94,0.7);
+  --shadow-led-accent: 0 0 12px 3px rgba(255,71,87,0.7);
+}
+
+/* OS preference drives the theme FOUC-free until JS sets data-theme;
+   :root:not([data-theme="light"]) keeps an explicit Light choice honored. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1d23;
+    --panel: #2a2d35;
+    --recessed: #14161a;
+    --text-primary: #e4e6eb;
+    --text-secondary: #a0a4ae;
+    --text-muted: #6b7080;
+    --shadow-dark: #0d0f12;
+    --shadow-light: #3a3d45;
+    --shadow-deep: #080a0d;
+    --shadow-led-green: 0 0 12px 3px rgba(34,197,94,0.7);
+    --shadow-led-accent: 0 0 12px 3px rgba(255,71,87,0.7);
+  }
+}
+
+/* Stats panel stays a dark display in either theme */
+[data-theme="dark"] .stats-panel {
+  background: linear-gradient(135deg, #1a1d23, #14161a);
+}
+
+/* --- Theme toggle button (topbar) --- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 150ms var(--mech-easing);
+}
+
+.theme-toggle:hover { color: var(--accent); }
+
+.theme-toggle:active {
+  box-shadow: var(--shadow-pressed);
+  transform: translateY(1px);
+}
+
+.theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
+
+/* ============================================================
+   Phase 3 — Owner avatar (card header)
+   ============================================================ */
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  vertical-align: middle;
+  margin-right: 4px;
+  box-shadow: 2px 2px 4px var(--shadow-dark);
+  object-fit: cover;
+}
+
+/* ============================================================
+   Phase 3 — Topic tags (top 3 + "+N" fold) and AND-filter chips
+   ============================================================ */
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.topic-tag {
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--recessed);
+  box-shadow: var(--shadow-recessed);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 150ms var(--mech-easing);
+  text-transform: lowercase;
+  user-select: none;
+}
+
+.topic-tag:hover { color: var(--accent); }
+
+.topic-tag.active {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* "+N more" indicator is non-interactive */
+.topic-tag.topic-more { cursor: default; }
+.topic-tag.topic-more:hover { color: var(--text-muted); }
+
+/* ============================================================
+   Phase 3 — Sort direction indicator (▲/▼) on active sort button
+   ============================================================ */
+.sort-btn::after {
+  content: ' \25BC';
+  font-size: 0.6rem;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.sort-btn.active::after { opacity: 0.9; }
+.sort-btn.asc::after { content: ' \25B2'; }
+

@@ -5,7 +5,9 @@ const PER_PAGE = 12;
 let repos = [];
 let filtered = [];
 let activeLangs = new Set();
+let activeTopics = new Set();
 let currentSort = 'stars';
+let sortDir = 'desc'; // 'asc' | 'desc' — default keeps prior behavior (stars desc, dates newest-first)
 let currentPage = 1;
 let searchTerm = '';
 
@@ -74,7 +76,7 @@ function toggleLang(lang, btn) {
 // Filtering, Sorting, Pagination
 // ============================================================
 function applyAll() {
-  // Filter
+  // Filter by language + search term
   filtered = repos.filter(r => {
     if (activeLangs.size > 0 && !activeLangs.has(r.language)) return false;
     if (searchTerm) {
@@ -85,16 +87,11 @@ function applyAll() {
     return true;
   });
 
-  // Sort
-  filtered.sort((a, b) => {
-    switch (currentSort) {
-      case 'stars': return (b.stargazers_count || 0) - (a.stargazers_count || 0);
-      case 'starred_at': return new Date(b.starred_at || 0) - new Date(a.starred_at || 0);
-      case 'created_at': return new Date(b.created_at || 0) - new Date(a.created_at || 0);
-      case 'pushed_at': return new Date(b.pushed_at || 0) - new Date(a.pushed_at || 0);
-      default: return 0;
-    }
-  });
+  // Filter by topics (multi-select AND) — pure logic in GSD.filterByTopics
+  filtered = GSD.filterByTopics(filtered, activeTopics);
+
+  // Sort — direction-aware (default desc). Pure logic in GSD.sortRepos.
+  filtered = GSD.sortRepos(filtered, currentSort, sortDir);
 
   // Update stats
   const totalPages = Math.ceil(filtered.length / PER_PAGE) || 1;
@@ -144,13 +141,19 @@ function renderCards(items) {
     const updatedDate = r.pushed_at ? timeAgo(r.pushed_at) : '';
     const langClassResolved = langColors[lang] ? langClass : 'other';
 
+    const topicHtml = (r.topics && r.topics.length)
+      ? GSD.renderTopicsHtml(r.topics, activeTopics)
+      : '';
+
     return '<div class="repo-card">' +
       '<div class="card-header">' +
         '<a class="card-name" href="' + escHtml(r.html_url) + '" target="_blank" rel="noopener">' +
+          GSD.renderAvatarHtml(r.owner_avatar) +
           '<span class="card-owner">' + escHtml(owner) + '</span> / ' + escHtml(repo) +
         '</a>' +
       '</div>' +
       '<p class="card-desc">' + escHtml(desc) + '</p>' +
+      topicHtml +
       '<div class="card-meta">' +
         '<span class="meta-item meta-stars">★ ' + stars + '</span>' +
         '<span class="meta-item meta-forks">⑂ ' + forks + '</span>' +
@@ -199,16 +202,66 @@ function renderPagination(totalPages) {
 }
 
 // ============================================================
+// Sort direction (▲/▼) — reflect current sort key + direction
+// ============================================================
+function updateSortButtons() {
+  document.querySelectorAll('.sort-btn').forEach(b => {
+    const isActive = b.dataset.sort === currentSort;
+    b.classList.toggle('active', isActive);
+    b.classList.toggle('asc', isActive && sortDir === 'asc');
+  });
+}
+
+// ============================================================
+// Theme (Dark mode) — init / toggle / persist / follow OS
+// ============================================================
+function initTheme() {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.setAttribute('data-theme', GSD.resolveTheme(saved, prefersDark));
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+
+// ============================================================
 // Event Listeners
 // ============================================================
 document.querySelectorAll('.sort-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    currentSort = btn.dataset.sort;
+    const clicked = btn.dataset.sort;
+    // Same key → flip direction; different key → reset to default desc.
+    sortDir = GSD.nextSortDir(currentSort, clicked, sortDir);
+    currentSort = clicked;
+    updateSortButtons();
     currentPage = 1;
     applyAll();
   });
+});
+
+document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+
+// Follow OS theme changes only while the user hasn't made an explicit choice.
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    document.documentElement.setAttribute('data-theme', GSD.resolveTheme(null, e.matches));
+  }
+});
+
+// Topic tag click — toggle membership in the activeTopics AND-filter.
+// Delegated on the stable #repoGrid so it survives re-renders.
+document.getElementById('repoGrid').addEventListener('click', (e) => {
+  const tag = e.target.closest('.topic-tag');
+  if (!tag || !tag.dataset.topic) return; // ignore the non-interactive "+N"
+  const topic = tag.dataset.topic;
+  if (activeTopics.has(topic)) activeTopics.delete(topic);
+  else activeTopics.add(topic);
+  currentPage = 1;
+  applyAll();
 });
 
 let debounceTimer;
@@ -252,4 +305,6 @@ function escHtml(s) {
 // ============================================================
 // Init
 // ============================================================
+initTheme();
+updateSortButtons();
 loadData();

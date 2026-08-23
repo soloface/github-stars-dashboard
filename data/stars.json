@@ -3,12 +3,12 @@
     "full_name": "anywhere-labs/deepseek-harness-desktop",
     "html_url": "https://github.com/anywhere-labs/deepseek-harness-desktop",
     "description": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。",
-    "stargazers_count": 17580,
-    "forks_count": 855,
+    "stargazers_count": 18325,
+    "forks_count": 896,
     "language": "TypeScript",
     "starred_at": "2026-08-14T16:17:19Z",
     "created_at": "2026-08-13T16:30:50Z",
-    "pushed_at": "2026-08-21T18:01:40Z",
+    "pushed_at": "2026-08-22T17:27:29Z",
     "topics": [
       "cordis",
       "cordis-plugin",
@@ -26,8 +26,8 @@
     "full_name": "kepano/obsidian-skills",
     "html_url": "https://github.com/kepano/obsidian-skills",
     "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
-    "stargazers_count": 46990,
-    "forks_count": 3382,
+    "stargazers_count": 47069,
+    "forks_count": 3383,
     "language": "",
     "starred_at": "2026-08-14T16:09:52Z",
     "created_at": "2026-01-02T21:45:11Z",
@@ -51,14 +51,14 @@
       "skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/10565871?v=4",
-    "description_zh": "黑曜石的代理技能。教您的代理使用 Obsidian CLI 和开放格式，包括 Markdown、Bases、JSON Canvas。"
+    "description_zh": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas."
   },
   {
     "full_name": "deepseek-ai/deepseek-harness",
     "html_url": "https://github.com/deepseek-ai/deepseek-harness",
     "description": "DeepSeek Harness: Everything is a Plugin.",
-    "stargazers_count": 181344,
-    "forks_count": 19838,
+    "stargazers_count": 185134,
+    "forks_count": 20480,
     "language": "TypeScript",
     "starred_at": "2026-08-14T10:10:37Z",
     "created_at": "2026-08-13T11:56:32Z",
@@ -70,32 +70,32 @@
       "dsh-plugin"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/148330874?v=4",
-    "description_zh": "DeepSeek Harness：一切都是插件。"
+    "description_zh": "DeepSeek Harness: Everything is a Plugin."
   },
   {
     "full_name": "milind-soni/OpenMausBot",
     "html_url": "https://github.com/milind-soni/OpenMausBot",
     "description": "Open Source Alternative to Grok Bot with a virtual machine that bots can use",
-    "stargazers_count": 1380,
-    "forks_count": 261,
+    "stargazers_count": 1427,
+    "forks_count": 277,
     "language": "TypeScript",
     "starred_at": "2026-08-13T16:24:11Z",
     "created_at": "2026-08-11T18:58:55Z",
-    "pushed_at": "2026-08-21T20:07:41Z",
+    "pushed_at": "2026-08-22T18:58:55Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/46266943?v=4",
-    "description_zh": "Grok Bot 的开源替代品，带有机器人可以使用的虚拟机"
+    "description_zh": "Open Source Alternative to Grok Bot with a virtual machine that bots can use"
   },
   {
     "full_name": "kejilion/KPanel",
     "html_url": "https://github.com/kejilion/KPanel",
     "description": "与 kejilion.sh 双向互通的现代 Linux 服务器管理面板",
-    "stargazers_count": 297,
-    "forks_count": 85,
+    "stargazers_count": 298,
+    "forks_count": 86,
     "language": "Go",
     "starred_at": "2026-08-12T13:27:53Z",
     "created_at": "2026-07-27T10:19:46Z",
-    "pushed_at": "2026-08-22T01:02:05Z",
+    "pushed_at": "2026-08-22T17:20:48Z",
     "topics": [
       "docker",
       "go",
@@ -113,7 +113,7 @@
     "full_name": "jd-opensource/JoyAI-VL-Interaction",
     "html_url": "https://github.com/jd-opensource/JoyAI-VL-Interaction",
     "description": "JoyAI-VL-Interaction: An Open Real-time Video-Language Interaction System",
-    "stargazers_count": 1783,
+    "stargazers_count": 1784,
     "forks_count": 177,
     "language": "Python",
     "starred_at": "2026-08-12T10:49:09Z",
@@ -121,18 +121,18 @@
     "pushed_at": "2026-08-15T10:02:16Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/75349771?v=4",
-    "description_zh": "JoyAI-VL-Interaction：开放的实时视频语言交互系统"
+    "description_zh": "JoyAI-VL-Interaction: An Open Real-time Video-Language Interaction System"
   },
   {
     "full_name": "duolahypercho/codex-router",
     "html_url": "https://github.com/duolahypercho/codex-router",
     "description": "External-model router for Codex with guided Kimi OAuth/API, DeepSeek, safe migration, and rollback.",
-    "stargazers_count": 2630,
-    "forks_count": 199,
+    "stargazers_count": 2768,
+    "forks_count": 206,
     "language": "JavaScript",
     "starred_at": "2026-08-12T01:49:55Z",
     "created_at": "2026-07-19T23:16:41Z",
-    "pushed_at": "2026-08-21T17:02:23Z",
+    "pushed_at": "2026-08-23T01:22:48Z",
     "topics": [
       "codex",
       "deepseek",
@@ -141,14 +141,14 @@
       "model-router"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/108492647?v=4",
-    "description_zh": "Codex 的外部模型路由器，具有引导式 Kimi OAuth/API、DeepSeek、安全迁移和回滚。"
+    "description_zh": "External-model router for Codex with guided Kimi OAuth/API, DeepSeek, safe migration, and rollback."
   },
   {
     "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
     "html_url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
     "description": "An evolving how-to guide for securing a Linux server.",
-    "stargazers_count": 30304,
-    "forks_count": 2024,
+    "stargazers_count": 30306,
+    "forks_count": 2025,
     "language": "",
     "starred_at": "2026-08-04T17:32:45Z",
     "created_at": "2019-02-09T06:44:37Z",
@@ -164,7 +164,7 @@
       "server"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/83817?v=4",
-    "description_zh": "不断发展的保护 Linux 服务器的操作指南。"
+    "description_zh": "An evolving how-to guide for securing a Linux server."
   },
   {
     "full_name": "fxyadela/write-then-publish",
@@ -193,12 +193,12 @@
     "full_name": "diegosouzapw/OmniRoute",
     "html_url": "https://github.com/diegosouzapw/OmniRoute",
     "description": "Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors",
-    "stargazers_count": 52712,
-    "forks_count": 7184,
+    "stargazers_count": 53255,
+    "forks_count": 7274,
     "language": "TypeScript",
     "starred_at": "2026-08-01T12:27:44Z",
     "created_at": "2026-02-13T12:38:31Z",
-    "pushed_at": "2026-08-22T01:16:45Z",
+    "pushed_at": "2026-08-23T01:23:17Z",
     "topics": [
       "a2a",
       "ai-agents",
@@ -222,18 +222,18 @@
       "token-saver"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/8016841?v=4",
-    "description_zh": "永远不要停止编码。免费 MIT AI 网关：一个端点、340 个提供商（90 多个免费）、1200 多个模型 — Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax。适用于 Claude Code、Codex、Cursor、OpenCode、Cline 和 Copilot。配额感知自动回退、RTK+Caveman 压缩可节省 15-95% 的令牌、MCP/A2A、桌面/PWA。由 450 多名贡献者构建"
+    "description_zh": "Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors"
   },
   {
     "full_name": "router-for-me/CLIProxyAPI",
     "html_url": "https://github.com/router-for-me/CLIProxyAPI",
     "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API",
-    "stargazers_count": 48272,
-    "forks_count": 7439,
+    "stargazers_count": 48367,
+    "forks_count": 7452,
     "language": "Go",
     "starred_at": "2026-08-01T12:21:47Z",
     "created_at": "2025-07-01T19:43:27Z",
-    "pushed_at": "2026-08-21T17:24:12Z",
+    "pushed_at": "2026-08-22T14:50:24Z",
     "topics": [
       "antigravity",
       "claude-code",
@@ -243,14 +243,14 @@
       "openai"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/233033915?v=4",
-    "description_zh": "将 Antigravity、ChatGPT Codex、Claude Code、Grok Build 为 OpenAI/Gemini/Claude/Codex 兼容的 API 服务，让您通过 API 享受免费的 Gemini 3.1 Pro、GPT 5.6 Series、Grok 4.5、Claude 模型"
+    "description_zh": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API"
   },
   {
     "full_name": "oblien/openship",
     "html_url": "https://github.com/oblien/openship",
     "description": "Self-hosted deployment platform",
-    "stargazers_count": 11166,
-    "forks_count": 951,
+    "stargazers_count": 11226,
+    "forks_count": 957,
     "language": "TypeScript",
     "starred_at": "2026-08-01T12:16:52Z",
     "created_at": "2026-03-05T20:16:56Z",
@@ -262,14 +262,14 @@
       "self-hosted"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/195301136?v=4",
-    "description_zh": "自托管部署平台"
+    "description_zh": "Self-hosted deployment platform"
   },
   {
     "full_name": "VoltAgent/awesome-design-md",
     "html_url": "https://github.com/VoltAgent/awesome-design-md",
     "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-    "stargazers_count": 109572,
-    "forks_count": 12502,
+    "stargazers_count": 109715,
+    "forks_count": 12518,
     "language": "",
     "starred_at": "2026-07-31T00:32:14Z",
     "created_at": "2026-03-31T16:37:01Z",
@@ -287,14 +287,14 @@
       "vibecoding"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/201282378?v=4",
-    "description_zh": "流行品牌设计系统的 DESIGN.md 文件分析集合。将一个项目放入您的项目中，让编码代理生成匹配的 UI。"
+    "description_zh": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI."
   },
   {
     "full_name": "OpenCut-app/OpenCut",
     "html_url": "https://github.com/OpenCut-app/OpenCut",
     "description": "The open-source CapCut alternative",
-    "stargazers_count": 85411,
-    "forks_count": 8409,
+    "stargazers_count": 85494,
+    "forks_count": 8427,
     "language": "TypeScript",
     "starred_at": "2026-07-30T16:12:30Z",
     "created_at": "2025-06-22T08:02:17Z",
@@ -305,44 +305,44 @@
       "videoeditor"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/217499887?v=4",
-    "description_zh": "开源 CapCut 替代方案"
+    "description_zh": "The open-source CapCut alternative"
   },
   {
     "full_name": "chidiwilliams/buzz",
     "html_url": "https://github.com/chidiwilliams/buzz",
     "description": "Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper.",
-    "stargazers_count": 21066,
-    "forks_count": 1547,
+    "stargazers_count": 21080,
+    "forks_count": 1549,
     "language": "Python",
     "starred_at": "2026-07-30T15:38:59Z",
     "created_at": "2022-09-24T13:43:23Z",
-    "pushed_at": "2026-08-21T19:27:20Z",
+    "pushed_at": "2026-08-22T12:14:04Z",
     "topics": [
       "whisper"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/17879672?v=4",
-    "description_zh": "Buzz 可在您的个人计算机上离线转录和翻译音频。由 OpenAI 的 Whisper 提供支持。"
+    "description_zh": "Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper."
   },
   {
     "full_name": "block/buzz",
     "html_url": "https://github.com/block/buzz",
     "description": "A hive mind communication platform",
-    "stargazers_count": 29249,
-    "forks_count": 3703,
+    "stargazers_count": 29788,
+    "forks_count": 3788,
     "language": "Rust",
     "starred_at": "2026-07-30T10:18:14Z",
     "created_at": "2026-03-06T21:00:56Z",
-    "pushed_at": "2026-08-22T01:14:53Z",
+    "pushed_at": "2026-08-23T01:14:19Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/185116535?v=4",
-    "description_zh": "蜂巢思维交流平台"
+    "description_zh": "A hive mind communication platform"
   },
   {
     "full_name": "Pluviobyte/rnskill",
     "html_url": "https://github.com/Pluviobyte/rnskill",
     "description": "雪踏乌云的 AI Agent Skills 集合",
-    "stargazers_count": 1328,
-    "forks_count": 154,
+    "stargazers_count": 1334,
+    "forks_count": 155,
     "language": "HTML",
     "starred_at": "2026-07-28T13:21:43Z",
     "created_at": "2026-07-04T18:43:42Z",
@@ -363,13 +363,13 @@
     "pushed_at": "2026-07-26T12:08:25Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/7420990?v=4",
-    "description_zh": "ChatGPT 工作和 Codex 的可重用技能。"
+    "description_zh": "Reusable skills for ChatGPT work and Codex."
   },
   {
     "full_name": "nezhahq/nezha",
     "html_url": "https://github.com/nezhahq/nezha",
     "description": ":trollface: Self-hosted, lightweight server and website monitoring and O&M tool",
-    "stargazers_count": 10271,
+    "stargazers_count": 10272,
     "forks_count": 1606,
     "language": "Go",
     "starred_at": "2026-07-27T04:36:07Z",
@@ -381,27 +381,27 @@
       "system"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/105093572?v=4",
-    "description_zh": ":trollface：自托管、轻量级服务器和网站监控运维工具"
+    "description_zh": ":trollface: Self-hosted, lightweight server and website monitoring and O&M tool"
   },
   {
     "full_name": "OpenMinis/OpenMinis",
     "html_url": "https://github.com/OpenMinis/OpenMinis",
     "description": "OpenMinis — The AI Agent app across platforms. Fully free and open source.",
-    "stargazers_count": 3889,
-    "forks_count": 453,
+    "stargazers_count": 3908,
+    "forks_count": 459,
     "language": "Swift",
     "starred_at": "2026-07-26T14:55:41Z",
     "created_at": "2026-04-25T14:35:18Z",
     "pushed_at": "2026-08-18T18:25:49Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/258441988?v=4",
-    "description_zh": "OpenMinis — 跨平台的 AI 代理应用程序。完全免费和开源。"
+    "description_zh": "OpenMinis — The AI Agent app across platforms. Fully free and open source."
   },
   {
     "full_name": "appica-dev/appica-ui",
     "html_url": "https://github.com/appica-dev/appica-ui",
     "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-    "stargazers_count": 369,
+    "stargazers_count": 377,
     "forks_count": 23,
     "language": "TypeScript",
     "starred_at": "2026-07-26T14:28:19Z",
@@ -424,32 +424,32 @@
       "wai-aria"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/280778463?v=4",
-    "description_zh": "一个样式精美的 UI 组件库，用于构建可访问的现代 Web 应用程序和可扩展的设计系统。"
+    "description_zh": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems."
   },
   {
     "full_name": "earendil-works/pi",
     "html_url": "https://github.com/earendil-works/pi",
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-    "stargazers_count": 95059,
-    "forks_count": 11766,
+    "stargazers_count": 95524,
+    "forks_count": 11810,
     "language": "TypeScript",
     "starred_at": "2026-07-26T06:29:55Z",
     "created_at": "2025-08-09T14:03:50Z",
-    "pushed_at": "2026-08-21T23:19:36Z",
+    "pushed_at": "2026-08-22T22:25:46Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/207902832?v=4",
-    "description_zh": "AI代理工具包：统一LLM API、代理循环、TUI、编码代理CLI"
+    "description_zh": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
   },
   {
     "full_name": "QwenLM/qwen-code",
     "html_url": "https://github.com/QwenLM/qwen-code",
     "description": "An open-source AI coding agent that lives in your terminal.",
-    "stargazers_count": 27276,
-    "forks_count": 2906,
+    "stargazers_count": 27293,
+    "forks_count": 2917,
     "language": "TypeScript",
     "starred_at": "2026-07-26T03:18:20Z",
     "created_at": "2025-06-26T01:37:46Z",
-    "pushed_at": "2026-08-22T01:10:46Z",
+    "pushed_at": "2026-08-23T01:20:58Z",
     "topics": [
       "agentic",
       "ai",
@@ -465,13 +465,13 @@
       "typescript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/141221163?v=4",
-    "description_zh": "位于您终端中的开源人工智能编码代理。"
+    "description_zh": "An open-source AI coding agent that lives in your terminal."
   },
   {
     "full_name": "bytedoger/awesome-OpenPrice",
     "html_url": "https://github.com/bytedoger/awesome-OpenPrice",
     "description": "开源的 AI 订阅价格聚合与比价平台，收录 ChatGPT、Claude、Gemini、Grok、Cursor 等产品的官方订阅价格和卡网渠道报价，帮助用户快速查询并比较不同购买渠道。",
-    "stargazers_count": 846,
+    "stargazers_count": 852,
     "forks_count": 45,
     "language": "TypeScript",
     "starred_at": "2026-07-25T01:32:56Z",
@@ -497,7 +497,7 @@
     "full_name": "jakubkrehel/skills",
     "html_url": "https://github.com/jakubkrehel/skills",
     "description": "A collection of agent skills that help you build a great interface.",
-    "stargazers_count": 4104,
+    "stargazers_count": 4145,
     "forks_count": 135,
     "language": "Markdown",
     "starred_at": "2026-07-25T01:25:44Z",
@@ -505,14 +505,14 @@
     "pushed_at": "2026-08-20T14:59:36Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/87530089?v=4",
-    "description_zh": "一系列代理技能可帮助您构建出色的界面。"
+    "description_zh": "A collection of agent skills that help you build a great interface."
   },
   {
     "full_name": "chenyme/grok2api",
     "html_url": "https://github.com/chenyme/grok2api",
     "description": "Multi-account API gateway for Grok Build, Grok Web, and Grok Console",
-    "stargazers_count": 7503,
-    "forks_count": 2260,
+    "stargazers_count": 7516,
+    "forks_count": 2264,
     "language": "Go",
     "starred_at": "2026-07-24T02:58:52Z",
     "created_at": "2025-10-10T09:00:02Z",
@@ -526,13 +526,13 @@
       "grok-web"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/118253778?v=4",
-    "description_zh": "适用于 Grok Build、Grok Web 和 Grok Console 的多帐户 API 网关"
+    "description_zh": "Multi-account API gateway for Grok Build, Grok Web, and Grok Console"
   },
   {
     "full_name": "nexu-io/codex-slides",
     "html_url": "https://github.com/nexu-io/codex-slides",
     "description": "🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parallel. 🔍 Watch the whole chain live: research → outline → style → render → edit → present → export PDF/PPTX. 🖥️ Browser-first · zero API keys · durable projects.",
-    "stargazers_count": 838,
+    "stargazers_count": 840,
     "forks_count": 69,
     "language": "TypeScript",
     "starred_at": "2026-07-24T00:38:25Z",
@@ -561,13 +561,13 @@
       "typescript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/263625318?v=4",
-    "description_zh": "🎨 Codex 内的开源 AI 幻灯片工作室：图像原生平台，每张幻灯片都是完整的视觉画布。 ⚡ 约 4-5 分钟内 10 多张高质量幻灯片 - 快速模式并行渲染每个页面。 🔍 现场观看整个链条：研究→大纲→样式→渲染→编辑→呈现→导出PDF/PPTX。 🖥️ 浏览器优先 · 零 API 密钥 · 持久的项目。"
+    "description_zh": "🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parallel. 🔍 Watch the whole chain live: research → outline → style → render → edit → present → export PDF/PPTX. 🖥️ Browser-first · zero API keys · durable projects."
   },
   {
     "full_name": "DavidHDev/canvas-ui",
     "html_url": "https://github.com/DavidHDev/canvas-ui",
     "description": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
-    "stargazers_count": 4191,
+    "stargazers_count": 4204,
     "forks_count": 210,
     "language": "TypeScript",
     "starred_at": "2026-07-23T15:03:14Z",
@@ -595,18 +595,18 @@
       "weggl"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/48634587?v=4",
-    "description_zh": "创意画布组件库。带有 WebGL 效果的真实 HTML。 React、Vue、Svelte、vanilla。"
+    "description_zh": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla."
   },
   {
     "full_name": "heroui-inc/heroui",
     "html_url": "https://github.com/heroui-inc/heroui",
     "description": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)",
-    "stargazers_count": 30428,
-    "forks_count": 2210,
+    "stargazers_count": 30438,
+    "forks_count": 2211,
     "language": "TypeScript",
     "starred_at": "2026-07-23T14:47:36Z",
     "created_at": "2021-04-22T13:06:23Z",
-    "pushed_at": "2026-08-21T17:30:50Z",
+    "pushed_at": "2026-08-22T11:03:56Z",
     "topics": [
       "component-library",
       "components",
@@ -614,32 +614,32 @@
       "reactjs"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/86160567?v=4",
-    "description_zh": "🚀 美丽、快速且现代的 React UI 库。 （以前的 NextUI）"
+    "description_zh": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
   },
   {
     "full_name": "mattpocock/skills",
     "html_url": "https://github.com/mattpocock/skills",
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "stargazers_count": 229524,
-    "forks_count": 19616,
+    "stargazers_count": 232085,
+    "forks_count": 19811,
     "language": "Shell",
     "starred_at": "2026-07-22T05:59:10Z",
     "created_at": "2026-02-03T11:15:53Z",
     "pushed_at": "2026-08-21T10:56:48Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/28293365?v=4",
-    "description_zh": "真正工程师的技能。直接来自我的 .agents 目录。"
+    "description_zh": "Skills for Real Engineers. Straight from my .agents directory."
   },
   {
     "full_name": "can1357/oh-my-pi",
     "html_url": "https://github.com/can1357/oh-my-pi",
     "description": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-    "stargazers_count": 26319,
-    "forks_count": 2562,
+    "stargazers_count": 26539,
+    "forks_count": 2581,
     "language": "TypeScript",
     "starred_at": "2026-07-21T06:54:13Z",
     "created_at": "2025-12-31T14:01:28Z",
-    "pushed_at": "2026-08-22T00:43:55Z",
+    "pushed_at": "2026-08-23T01:13:59Z",
     "topics": [
       "ai-agent",
       "ai-coding-agent",
@@ -658,28 +658,28 @@
       "typescript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/11807264?v=4",
-    "description_zh": "⌥ 终端的 AI 编码代理 — 哈希锚定编辑、优化工具利用、LSP、Python、浏览器、子代理等"
+    "description_zh": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more"
   },
   {
     "full_name": "AITabby/codexsplit",
     "html_url": "https://github.com/AITabby/codexsplit",
     "description": "CodexSplit - local Codex Desktop control center, provider gateway, and model routing workspace",
-    "stargazers_count": 698,
-    "forks_count": 51,
+    "stargazers_count": 701,
+    "forks_count": 53,
     "language": "TypeScript",
     "starred_at": "2026-07-21T03:20:23Z",
     "created_at": "2026-05-29T17:05:03Z",
     "pushed_at": "2026-08-11T15:39:59Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/212668294?v=4",
-    "description_zh": "CodexSplit - 本地 Codex Desktop 控制中心、提供商网关和模型路由工作区"
+    "description_zh": "CodexSplit - local Codex Desktop control center, provider gateway, and model routing workspace"
   },
   {
     "full_name": "JCodesMore/ai-website-cloner-template",
     "html_url": "https://github.com/JCodesMore/ai-website-cloner-template",
     "description": "Clone any website with one command using AI coding agents",
-    "stargazers_count": 32649,
-    "forks_count": 4756,
+    "stargazers_count": 32810,
+    "forks_count": 4782,
     "language": "JavaScript",
     "starred_at": "2026-07-20T15:45:35Z",
     "created_at": "2026-03-13T11:14:39Z",
@@ -706,18 +706,18 @@
       "website-clone"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/182581310?v=4",
-    "description_zh": "使用 AI 编码代理通过一个命令克隆任何网站"
+    "description_zh": "Clone any website with one command using AI coding agents"
   },
   {
     "full_name": "stablyai/orca",
     "html_url": "https://github.com/stablyai/orca",
     "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
-    "stargazers_count": 50725,
-    "forks_count": 3501,
+    "stargazers_count": 51283,
+    "forks_count": 3545,
     "language": "TypeScript",
     "starred_at": "2026-07-20T15:13:37Z",
     "created_at": "2026-03-17T03:28:57Z",
-    "pushed_at": "2026-08-22T01:11:15Z",
+    "pushed_at": "2026-08-23T01:21:56Z",
     "topics": [
       "ade",
       "agent-ide",
@@ -739,14 +739,14 @@
       "yc-backed"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/127256420?v=4",
-    "description_zh": "Orca 是与一组并行代理一起工作的 ADE。使用您自己的订阅运行任何编码代理。可在桌面、移动和 VPS 上使用。"
+    "description_zh": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS."
   },
   {
     "full_name": "Tencent/WeKnora",
     "html_url": "https://github.com/Tencent/WeKnora",
     "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-    "stargazers_count": 20305,
-    "forks_count": 2920,
+    "stargazers_count": 20362,
+    "forks_count": 2923,
     "language": "Go",
     "starred_at": "2026-07-19T20:25:55Z",
     "created_at": "2025-07-22T08:01:23Z",
@@ -774,13 +774,13 @@
       "wiki"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/18461506?v=4",
-    "description_zh": "开源LLM知识平台：将原始文档转化为可查询的RAG、自主推理代理和自我维护的Wiki。"
+    "description_zh": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki."
   },
   {
     "full_name": "antvis/X6",
     "html_url": "https://github.com/antvis/X6",
     "description": "🚀 JavaScript diagramming library that uses SVG and HTML for rendering.",
-    "stargazers_count": 6679,
+    "stargazers_count": 6680,
     "forks_count": 1895,
     "language": "TypeScript",
     "starred_at": "2026-07-16T04:56:51Z",
@@ -803,18 +803,18 @@
       "uml-diagram"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/19199542?v=4",
-    "description_zh": "🚀 JavaScript 图表库，使用 SVG 和 HTML 进行渲染。"
+    "description_zh": "🚀 JavaScript diagramming library that uses SVG and HTML for rendering."
   },
   {
     "full_name": "palmier-io/palmier-pro",
     "html_url": "https://github.com/palmier-io/palmier-pro",
     "description": "macOS video editor built for AI",
-    "stargazers_count": 13758,
-    "forks_count": 1032,
+    "stargazers_count": 13785,
+    "forks_count": 1033,
     "language": "Swift",
     "starred_at": "2026-07-15T08:26:08Z",
     "created_at": "2026-04-07T04:15:51Z",
-    "pushed_at": "2026-08-21T17:03:52Z",
+    "pushed_at": "2026-08-22T04:48:16Z",
     "topics": [
       "ai-video",
       "claude",
@@ -825,21 +825,21 @@
       "video-editor"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/173962009?v=4",
-    "description_zh": "专为 AI 打造的 macOS 视频编辑器"
+    "description_zh": "macOS video editor built for AI"
   },
   {
     "full_name": "Nutlope/hallmark",
     "html_url": "https://github.com/Nutlope/hallmark",
     "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "stargazers_count": 26392,
-    "forks_count": 1349,
+    "stargazers_count": 26607,
+    "forks_count": 1354,
     "language": "CSS",
     "starred_at": "2026-07-14T21:59:12Z",
     "created_at": "2026-04-27T20:47:10Z",
     "pushed_at": "2026-08-06T16:19:18Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/63742054?v=4",
-    "description_zh": "Claude Code、Cursor、Codex 的防 AI 设计技巧。"
+    "description_zh": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
   },
   {
     "full_name": "soCzech/TransNetV2",
@@ -856,18 +856,18 @@
       "shot-detection"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/7052917?v=4",
-    "description_zh": "TransNet V2：镜头边界检测神经网络"
+    "description_zh": "TransNet V2: Shot Boundary Detection Neural Network"
   },
   {
     "full_name": "james-6-23/codex2api",
     "html_url": "https://github.com/james-6-23/codex2api",
     "description": "Codex2API 是一个基于 Go + Gin + React/Vite 的 Codex 反向代理与管理后台项目",
-    "stargazers_count": 1960,
-    "forks_count": 344,
+    "stargazers_count": 1966,
+    "forks_count": 345,
     "language": "Go",
     "starred_at": "2026-07-14T02:47:06Z",
     "created_at": "2026-03-24T00:07:29Z",
-    "pushed_at": "2026-08-21T20:40:42Z",
+    "pushed_at": "2026-08-22T11:59:08Z",
     "topics": [
       "2api",
       "codex"
@@ -891,18 +891,18 @@
       "project-governance"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/62548950?v=4",
-    "description_zh": "Project Gov：一种轻量级的 Codex 技能，用于规划新项目和管理混乱的现有代码库。"
+    "description_zh": "Project Gov: a lightweight Codex skill for planning new projects and governing messy existing codebases."
   },
   {
     "full_name": "Wei-Shaw/sub2api",
     "html_url": "https://github.com/Wei-Shaw/sub2api",
     "description": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
-    "stargazers_count": 38550,
-    "forks_count": 8008,
+    "stargazers_count": 38792,
+    "forks_count": 8039,
     "language": "Go",
     "starred_at": "2026-07-13T17:08:04Z",
     "created_at": "2025-12-18T02:26:18Z",
-    "pushed_at": "2026-08-21T19:41:58Z",
+    "pushed_at": "2026-08-22T18:11:25Z",
     "topics": [
       "2api",
       "antigravity2api",
@@ -921,8 +921,8 @@
     "full_name": "chuspeeism/dashi-ppt-skill",
     "html_url": "https://github.com/chuspeeism/dashi-ppt-skill",
     "description": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
-    "stargazers_count": 5879,
-    "forks_count": 555,
+    "stargazers_count": 5992,
+    "forks_count": 566,
     "language": "JavaScript",
     "starred_at": "2026-07-11T10:41:26Z",
     "created_at": "2026-06-10T07:46:43Z",
@@ -944,14 +944,14 @@
       "slides"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/70992554?v=4",
-    "description_zh": "一种 AI 代理技能，可从多个视觉主题生成浏览器可编辑的演示文稿，并可导出为 HTML、PDF 和 PPTX。"
+    "description_zh": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX."
   },
   {
     "full_name": "usestrix/strix",
     "html_url": "https://github.com/usestrix/strix",
     "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-    "stargazers_count": 56738,
-    "forks_count": 6114,
+    "stargazers_count": 57093,
+    "forks_count": 6165,
     "language": "Python",
     "starred_at": "2026-07-11T09:57:49Z",
     "created_at": "2025-08-05T21:28:30Z",
@@ -979,14 +979,14 @@
       "security-automation"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/187630752?v=4",
-    "description_zh": "开源人工智能渗透测试工具，用于查找并修复应用程序的漏洞。"
+    "description_zh": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities."
   },
   {
     "full_name": "satnaing/shadcn-admin",
     "html_url": "https://github.com/satnaing/shadcn-admin",
     "description": "Admin Dashboard UI built with Shadcn and Vite.",
-    "stargazers_count": 13983,
-    "forks_count": 2151,
+    "stargazers_count": 13991,
+    "forks_count": 2150,
     "language": "TypeScript",
     "starred_at": "2026-07-03T07:10:31Z",
     "created_at": "2024-01-26T02:46:42Z",
@@ -999,13 +999,13 @@
       "shadcn-ui"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/53733092?v=4",
-    "description_zh": "使用 Shadcn 和 Vite 构建的管理仪表板 UI。"
+    "description_zh": "Admin Dashboard UI built with Shadcn and Vite."
   },
   {
     "full_name": "TurboVNC/turbovnc",
     "html_url": "https://github.com/TurboVNC/turbovnc",
     "description": "Main TurboVNC repository",
-    "stargazers_count": 1029,
+    "stargazers_count": 1030,
     "forks_count": 156,
     "language": "C",
     "starred_at": "2026-07-01T07:22:49Z",
@@ -1013,18 +1013,18 @@
     "pushed_at": "2026-08-20T14:01:05Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/13406553?v=4",
-    "description_zh": "TurboVNC 主存储库"
+    "description_zh": "Main TurboVNC repository"
   },
   {
     "full_name": "DeusData/codebase-memory-mcp",
     "html_url": "https://github.com/DeusData/codebase-memory-mcp",
     "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-    "stargazers_count": 39812,
-    "forks_count": 3201,
+    "stargazers_count": 39920,
+    "forks_count": 3219,
     "language": "C",
     "starred_at": "2026-06-30T15:31:13Z",
     "created_at": "2026-02-24T22:01:00Z",
-    "pushed_at": "2026-08-21T16:32:06Z",
+    "pushed_at": "2026-08-22T05:57:22Z",
     "topics": [
       "aider",
       "ast",
@@ -1048,7 +1048,7 @@
       "windsurf"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/81762164?v=4",
-    "description_zh": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。"
+    "description_zh": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies."
   },
   {
     "full_name": "redfox-data/redfox-community",
@@ -1080,12 +1080,12 @@
     "full_name": "xichan96/dinotty",
     "html_url": "https://github.com/xichan96/dinotty",
     "description": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted.",
-    "stargazers_count": 560,
+    "stargazers_count": 575,
     "forks_count": 59,
     "language": "TypeScript",
     "starred_at": "2026-06-30T02:14:28Z",
     "created_at": "2026-05-12T09:44:58Z",
-    "pushed_at": "2026-08-18T03:46:00Z",
+    "pushed_at": "2026-08-22T17:29:48Z",
     "topics": [
       "ai-coding",
       "axum",
@@ -1104,18 +1104,18 @@
       "xterm"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/199604338?v=4",
-    "description_zh": "用于AI编码代理的多设备终端服务器。服务器端VTE、会话持久、文件浏览器、网页预览、插件系统。自托管。"
+    "description_zh": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted."
   },
   {
     "full_name": "ohmyzsh/ohmyzsh",
     "html_url": "https://github.com/ohmyzsh/ohmyzsh",
     "description": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
-    "stargazers_count": 189303,
-    "forks_count": 26573,
+    "stargazers_count": 189316,
+    "forks_count": 26574,
     "language": "Shell",
     "starred_at": "2026-06-28T15:03:38Z",
     "created_at": "2009-08-28T18:15:37Z",
-    "pushed_at": "2026-08-20T08:43:08Z",
+    "pushed_at": "2026-08-22T15:24:24Z",
     "topics": [
       "cli",
       "cli-app",
@@ -1134,28 +1134,28 @@
       "zsh-configuration"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/22552083?v=4",
-    "description_zh": "🙃 一个令人愉快的社区驱动（拥有 2,500 多名贡献者）框架，用于管理您的 zsh 配置。包括 300 多个可选插件（rails、git、macOS、hub、docker、homebrew、node、php、python 等）、140 多个主题让您的早晨更加有趣，还有一个自动更新工具，可以轻松跟上社区的最新更新。"
+    "description_zh": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community."
   },
   {
     "full_name": "anomalyco/models.dev",
     "html_url": "https://github.com/anomalyco/models.dev",
     "description": "An open-source database of AI models.",
-    "stargazers_count": 6524,
-    "forks_count": 1507,
+    "stargazers_count": 6539,
+    "forks_count": 1513,
     "language": "TypeScript",
     "starred_at": "2026-06-28T14:28:41Z",
     "created_at": "2025-06-04T20:51:31Z",
-    "pushed_at": "2026-08-22T00:28:32Z",
+    "pushed_at": "2026-08-23T00:28:22Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/66570915?v=4",
-    "description_zh": "人工智能模型的开源数据库。"
+    "description_zh": "An open-source database of AI models."
   },
   {
     "full_name": "electkismet/eltdx",
     "html_url": "https://github.com/electkismet/eltdx",
     "description": "通达信A股行情协议 Python 库，MCP，支持快照、分时、逐笔、K 线、集合竞价等接口、量化数据接口，支持MCP给Agent用",
-    "stargazers_count": 373,
-    "forks_count": 123,
+    "stargazers_count": 377,
+    "forks_count": 124,
     "language": "Rust",
     "starred_at": "2026-06-28T02:03:16Z",
     "created_at": "2026-02-26T20:06:05Z",
@@ -1176,8 +1176,8 @@
     "full_name": "ahujasid/blender-mcp",
     "html_url": "https://github.com/ahujasid/blender-mcp",
     "description": "Community plugin to control Blender 3D with any LLM of your choice",
-    "stargazers_count": 26142,
-    "forks_count": 2484,
+    "stargazers_count": 26176,
+    "forks_count": 2486,
     "language": "Python",
     "starred_at": "2026-06-17T13:53:26Z",
     "created_at": "2025-03-07T09:58:58Z",
@@ -1195,28 +1195,28 @@
       "python"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/11807284?v=4",
-    "description_zh": "用于通过您选择的任何 LLM 控制 Blender 3D 的社区插件"
+    "description_zh": "Community plugin to control Blender 3D with any LLM of your choice"
   },
   {
     "full_name": "octos-org/octos",
     "html_url": "https://github.com/octos-org/octos",
     "description": "Octos - Agentic Operating Systems",
     "stargazers_count": 1031,
-    "forks_count": 76,
+    "forks_count": 77,
     "language": "Rust",
     "starred_at": "2026-06-15T16:08:22Z",
     "created_at": "2026-03-15T23:56:24Z",
-    "pushed_at": "2026-08-21T15:57:23Z",
+    "pushed_at": "2026-08-22T10:51:28Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/267165665?v=4",
-    "description_zh": "Octos - 代理操作系统"
+    "description_zh": "Octos - Agentic Operating Systems"
   },
   {
     "full_name": "Egonex-AI/Understand-Anything",
     "html_url": "https://github.com/Egonex-AI/Understand-Anything",
     "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-    "stargazers_count": 80037,
-    "forks_count": 6718,
+    "stargazers_count": 80130,
+    "forks_count": 6729,
     "language": "TypeScript",
     "starred_at": "2026-06-13T01:58:38Z",
     "created_at": "2026-03-15T02:30:51Z",
@@ -1241,14 +1241,14 @@
       "vibe-coding"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/257477979?v=4",
-    "description_zh": "具有教学意义的图表 > 令人印象深刻的图表。将任何代码变成您可以探索、搜索和提问的交互式知识图。适用于 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等。"
+    "description_zh": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more."
   },
   {
     "full_name": "jamiepine/voicebox",
     "html_url": "https://github.com/jamiepine/voicebox",
     "description": "The open-source AI voice studio. Clone, dictate, create.",
-    "stargazers_count": 51073,
-    "forks_count": 6367,
+    "stargazers_count": 51141,
+    "forks_count": 6378,
     "language": "TypeScript",
     "starred_at": "2026-06-11T15:06:55Z",
     "created_at": "2026-01-25T12:27:03Z",
@@ -1264,18 +1264,18 @@
       "whisper"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/32987599?v=4",
-    "description_zh": "开源人工智能语音工作室。克隆、指令、创造。"
+    "description_zh": "The open-source AI voice studio. Clone, dictate, create."
   },
   {
     "full_name": "opensquilla/opensquilla",
     "html_url": "https://github.com/opensquilla/opensquilla",
     "description": "OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density",
-    "stargazers_count": 6631,
-    "forks_count": 518,
+    "stargazers_count": 6642,
+    "forks_count": 517,
     "language": "Python",
     "starred_at": "2026-06-11T11:35:54Z",
     "created_at": "2026-05-06T17:43:05Z",
-    "pushed_at": "2026-08-21T18:01:56Z",
+    "pushed_at": "2026-08-23T01:19:13Z",
     "topics": [
       "agent",
       "ai",
@@ -1290,18 +1290,18 @@
       "skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/275098769?v=4",
-    "description_zh": "OpenSquilla — 具有相同预算、更高智能密度的代币高效 AI 代理"
+    "description_zh": "OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density"
   },
   {
     "full_name": "KunAgent/Kun",
     "html_url": "https://github.com/KunAgent/Kun",
     "description": "Local-first AI agent workspace for coding, writing, design, research, and automation — one runtime for desktop GUI and TUI.",
-    "stargazers_count": 6151,
-    "forks_count": 587,
+    "stargazers_count": 6149,
+    "forks_count": 588,
     "language": "TypeScript",
     "starred_at": "2026-06-08T14:54:54Z",
     "created_at": "2026-05-21T13:22:06Z",
-    "pushed_at": "2026-08-21T01:16:44Z",
+    "pushed_at": "2026-08-22T14:18:56Z",
     "topics": [
       "agentic-workflow",
       "ai-agent",
@@ -1324,18 +1324,18 @@
       "writing-assistant"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/292492812?v=4",
-    "description_zh": "用于编码、写作、设计、研究和自动化的本地优先 AI 代理工作区——桌面 GUI 和 TUI 的一个运行时。"
+    "description_zh": "Local-first AI agent workspace for coding, writing, design, research, and automation — one runtime for desktop GUI and TUI."
   },
   {
     "full_name": "DIYgod/RSSHub",
     "html_url": "https://github.com/DIYgod/RSSHub",
     "description": "🧡 Everything is RSSible",
-    "stargazers_count": 45835,
-    "forks_count": 10130,
+    "stargazers_count": 45845,
+    "forks_count": 10135,
     "language": "TypeScript",
     "starred_at": "2026-06-08T14:14:22Z",
     "created_at": "2018-04-02T14:43:21Z",
-    "pushed_at": "2026-08-21T15:40:45Z",
+    "pushed_at": "2026-08-22T21:02:44Z",
     "topics": [
       "bilibili",
       "douban",
@@ -1357,18 +1357,18 @@
       "zhihu"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/8266075?v=4",
-    "description_zh": "🧡 一切都是RSSible"
+    "description_zh": "🧡 Everything is RSSible"
   },
   {
     "full_name": "larksuite/cli",
     "html_url": "https://github.com/larksuite/cli",
     "description": "The official Lark/飞书 CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
-    "stargazers_count": 16642,
-    "forks_count": 1331,
+    "stargazers_count": 16657,
+    "forks_count": 1334,
     "language": "Go",
     "starred_at": "2026-06-08T04:18:00Z",
     "created_at": "2026-03-25T07:13:30Z",
-    "pushed_at": "2026-08-21T13:17:17Z",
+    "pushed_at": "2026-08-22T11:48:17Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/54944174?v=4",
     "description_zh": "The official Lark/飞书 CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills."
@@ -1377,8 +1377,8 @@
     "full_name": "alchaincyf/huashu-design",
     "html_url": "https://github.com/alchaincyf/huashu-design",
     "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
-    "stargazers_count": 23382,
-    "forks_count": 2731,
+    "stargazers_count": 23409,
+    "forks_count": 2733,
     "language": "HTML",
     "starred_at": "2026-06-07T03:56:17Z",
     "created_at": "2026-04-19T14:42:06Z",
@@ -1391,22 +1391,22 @@
     "full_name": "colbymchenry/codegraph",
     "html_url": "https://github.com/colbymchenry/codegraph",
     "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
-    "stargazers_count": 67600,
-    "forks_count": 4288,
+    "stargazers_count": 67698,
+    "forks_count": 4303,
     "language": "C",
     "starred_at": "2026-06-07T03:35:37Z",
     "created_at": "2026-01-18T21:45:37Z",
-    "pushed_at": "2026-08-20T17:53:49Z",
+    "pushed_at": "2026-08-22T18:02:38Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/18431132?v=4",
-    "description_zh": "预索引代码知识图，代码更改自动同步，适用于 Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro 和 Hermes Agent — 更少的令牌、更少的工具调用、100% 本地"
+    "description_zh": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local"
   },
   {
     "full_name": "op7418/Humanizer-zh",
     "html_url": "https://github.com/op7418/Humanizer-zh",
     "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
-    "stargazers_count": 15824,
-    "forks_count": 1054,
+    "stargazers_count": 15867,
+    "forks_count": 1059,
     "language": "",
     "starred_at": "2026-06-07T03:15:36Z",
     "created_at": "2026-01-19T04:23:44Z",
@@ -1419,8 +1419,8 @@
     "full_name": "666ghj/BettaFish",
     "html_url": "https://github.com/666ghj/BettaFish",
     "description": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
-    "stargazers_count": 42056,
-    "forks_count": 7618,
+    "stargazers_count": 42065,
+    "forks_count": 7619,
     "language": "Python",
     "starred_at": "2026-06-06T11:34:10Z",
     "created_at": "2024-07-01T13:11:38Z",
@@ -1444,8 +1444,8 @@
     "full_name": "sansan0/TrendRadar",
     "html_url": "https://github.com/sansan0/TrendRadar",
     "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
-    "stargazers_count": 61649,
-    "forks_count": 24884,
+    "stargazers_count": 61671,
+    "forks_count": 24875,
     "language": "Python",
     "starred_at": "2026-06-06T07:10:57Z",
     "created_at": "2025-04-28T11:42:16Z",
@@ -1475,7 +1475,7 @@
     "full_name": "op7418/CodePilot",
     "html_url": "https://github.com/op7418/CodePilot",
     "description": "A multi-model AI agent desktop client — connect any AI provider, extend with MCP & skills, control from your phone. Built with Electron + Next.js.",
-    "stargazers_count": 6415,
+    "stargazers_count": 6419,
     "forks_count": 687,
     "language": "TypeScript",
     "starred_at": "2026-06-05T06:23:53Z",
@@ -1492,18 +1492,18 @@
       "nextjs"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/13505770?v=4",
-    "description_zh": "多模型 AI 代理桌面客户端 — 连接任何 AI 提供商，通过 MCP 和技能进行扩展，通过手机进行控制。使用 Electron + Next.js 构建。"
+    "description_zh": "A multi-model AI agent desktop client — connect any AI provider, extend with MCP & skills, control from your phone. Built with Electron + Next.js."
   },
   {
     "full_name": "nexu-io/open-design",
     "html_url": "https://github.com/nexu-io/open-design",
     "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.",
-    "stargazers_count": 90174,
-    "forks_count": 10395,
+    "stargazers_count": 90447,
+    "forks_count": 10433,
     "language": "TypeScript",
     "starred_at": "2026-06-05T05:21:42Z",
     "created_at": "2026-04-28T04:25:20Z",
-    "pushed_at": "2026-08-21T21:05:05Z",
+    "pushed_at": "2026-08-23T01:12:07Z",
     "topics": [
       "agent-skills",
       "ai-design",
@@ -1527,18 +1527,18 @@
       "vibe-coding"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/263625318?v=4",
-    "description_zh": "🎨 最佳 DeepSeek 线束设计插件。开源 Claude Design 替代方案。 🖥️ 本地优先的桌面应用程序。 🖼️ 您的编码代理成为设计引擎：原型、登陆页面、仪表板、幻灯片、图像和视频 - 真实文件、HTML/PDF/PPTX/MP4 导出。 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode 和 20 多个 CLI（通过 BYOK）。"
+    "description_zh": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK."
   },
   {
     "full_name": "Yeachan-Heo/oh-my-claudecode",
     "html_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
     "description": "Teams-first Multi-agent orchestration for Claude Code",
-    "stargazers_count": 38709,
+    "stargazers_count": 38738,
     "forks_count": 3476,
     "language": "TypeScript",
     "starred_at": "2026-06-05T00:52:35Z",
     "created_at": "2026-01-09T03:36:29Z",
-    "pushed_at": "2026-08-21T12:56:40Z",
+    "pushed_at": "2026-08-23T00:50:55Z",
     "topics": [
       "agentic-coding",
       "ai-agents",
@@ -1552,13 +1552,13 @@
       "vibe-coding"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/54757707?v=4",
-    "description_zh": "Claude Code 的团队优先多代理编排"
+    "description_zh": "Teams-first Multi-agent orchestration for Claude Code"
   },
   {
     "full_name": "freestylefly/wesight",
     "html_url": "https://github.com/freestylefly/wesight",
     "description": "Open-source desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent setup and custom LLM model routing.",
-    "stargazers_count": 889,
+    "stargazers_count": 890,
     "forks_count": 206,
     "language": "TypeScript",
     "starred_at": "2026-06-04T14:29:26Z",
@@ -1587,14 +1587,14 @@
       "vibe-coding"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/43960064?v=4",
-    "description_zh": "开源桌面 AI 代理工作区，具有一键式 Claude Code、Codex、OpenClaw、Hermes Agent 设置和自定义 LLM 模型路由。"
+    "description_zh": "Open-source desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent setup and custom LLM model routing."
   },
   {
     "full_name": "obra/superpowers",
     "html_url": "https://github.com/obra/superpowers",
     "description": "An agentic skills framework & software development methodology that works.",
-    "stargazers_count": 275665,
-    "forks_count": 24644,
+    "stargazers_count": 276196,
+    "forks_count": 24701,
     "language": "Shell",
     "starred_at": "2026-06-04T02:47:45Z",
     "created_at": "2025-10-09T19:45:18Z",
@@ -1610,18 +1610,18 @@
       "superpowers"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/45416?v=4",
-    "description_zh": "有效的代理技能框架和软件开发方法。"
+    "description_zh": "An agentic skills framework & software development methodology that works."
   },
   {
     "full_name": "NousResearch/hermes-agent",
     "html_url": "https://github.com/NousResearch/hermes-agent",
     "description": "The agent that grows with you",
-    "stargazers_count": 234000,
-    "forks_count": 46989,
+    "stargazers_count": 234402,
+    "forks_count": 47167,
     "language": "Python",
     "starred_at": "2026-06-04T01:06:22Z",
     "created_at": "2025-07-22T22:22:28Z",
-    "pushed_at": "2026-08-22T01:04:45Z",
+    "pushed_at": "2026-08-23T01:20:35Z",
     "topics": [
       "ai",
       "ai-agent",
@@ -1638,32 +1638,32 @@
       "openai"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
-    "description_zh": "与您共同成长的代理商"
+    "description_zh": "The agent that grows with you"
   },
   {
     "full_name": "HKUDS/CLI-Anything",
     "html_url": "https://github.com/HKUDS/CLI-Anything",
     "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "stargazers_count": 47933,
-    "forks_count": 4440,
+    "stargazers_count": 47967,
+    "forks_count": 4444,
     "language": "Python",
     "starred_at": "2026-06-03T13:17:50Z",
     "created_at": "2026-03-08T13:52:57Z",
     "pushed_at": "2026-08-21T07:26:58Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
-    "description_zh": "“CLI-Anything：使所有软件代理原生”--CLI-Hub：https://clianything.cc/"
+    "description_zh": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
   },
   {
     "full_name": "BigPizzaV3/CodexPlusPlus",
     "html_url": "https://github.com/BigPizzaV3/CodexPlusPlus",
     "description": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服",
-    "stargazers_count": 29391,
-    "forks_count": 1866,
+    "stargazers_count": 29444,
+    "forks_count": 1871,
     "language": "Rust",
     "starred_at": "2026-06-03T01:01:55Z",
     "created_at": "2026-05-06T09:32:49Z",
-    "pushed_at": "2026-08-20T13:20:54Z",
+    "pushed_at": "2026-08-22T20:23:23Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/237402563?v=4",
     "description_zh": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
@@ -1672,40 +1672,40 @@
     "full_name": "multica-ai/multica",
     "html_url": "https://github.com/multica-ai/multica",
     "description": "Assign issues to Claude Code, Codex, Cursor, and 17 more coding agents like teammates — open-source and self-hostable.",
-    "stargazers_count": 47226,
-    "forks_count": 6044,
+    "stargazers_count": 47301,
+    "forks_count": 6055,
     "language": "Go",
     "starred_at": "2026-05-23T03:26:31Z",
     "created_at": "2026-01-13T17:59:46Z",
-    "pushed_at": "2026-08-21T10:50:42Z",
+    "pushed_at": "2026-08-22T03:27:39Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4",
-    "description_zh": "将问题分配给 Claude Code、Codex、Cursor 以及其他 17 个编码代理（如队友）——开源且可自托管。"
+    "description_zh": "Assign issues to Claude Code, Codex, Cursor, and 17 more coding agents like teammates — open-source and self-hostable."
   },
   {
     "full_name": "msitarzewski/agency-agents",
     "html_url": "https://github.com/msitarzewski/agency-agents",
     "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-    "stargazers_count": 147191,
-    "forks_count": 23763,
+    "stargazers_count": 147371,
+    "forks_count": 23799,
     "language": "Shell",
     "starred_at": "2026-05-23T03:16:03Z",
     "created_at": "2025-10-13T12:12:29Z",
     "pushed_at": "2026-08-06T13:29:47Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/1972242?v=4",
-    "description_zh": "触手可及的完整人工智能机构 - 从前端向导到 Reddit 社区忍者，从奇思妙想的注入者到现实检查者。每个代理都是一位具有个性、流程和经过验证的可交付成果的专业专家。"
+    "description_zh": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
   },
   {
     "full_name": "jnMetaCode/agency-agents-zh",
     "html_url": "https://github.com/jnMetaCode/agency-agents-zh",
     "description": "🎭 267 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 18 种工具，覆盖工程/设计/营销/金融等 20 个部门。含 52 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）。搭配编排器 agency-orchestrator，一句话即可让多位专家按 DAG 自动协作。",
-    "stargazers_count": 19695,
-    "forks_count": 3208,
+    "stargazers_count": 19769,
+    "forks_count": 3214,
     "language": "Shell",
     "starred_at": "2026-05-23T03:15:44Z",
     "created_at": "2026-03-06T11:11:51Z",
-    "pushed_at": "2026-08-21T11:25:59Z",
+    "pushed_at": "2026-08-22T07:11:18Z",
     "topics": [
       "agency-orchestrator",
       "agent-definitions",
@@ -1734,8 +1734,8 @@
     "full_name": "borawong/AiMaMi",
     "html_url": "https://github.com/borawong/AiMaMi",
     "description": "为OpenAI Codex打造的桌面伴侣。",
-    "stargazers_count": 1468,
-    "forks_count": 112,
+    "stargazers_count": 1471,
+    "forks_count": 113,
     "language": "TypeScript",
     "starred_at": "2026-05-18T09:30:34Z",
     "created_at": "2026-04-04T21:49:03Z",
@@ -1748,7 +1748,7 @@
     "full_name": "Gan-Xing/CodexBridge",
     "html_url": "https://github.com/Gan-Xing/CodexBridge",
     "description": "WeChat-to-Codex bridge for running Codex app-server from chat, with threads, slash commands, approvals, agents, automation, uploads, and assistant records.",
-    "stargazers_count": 423,
+    "stargazers_count": 425,
     "forks_count": 60,
     "language": "TypeScript",
     "starred_at": "2026-05-18T01:28:02Z",
@@ -1770,14 +1770,14 @@
       "wechat-bot"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/41600413?v=4",
-    "description_zh": "微信到 Codex 的桥梁，用于通过聊天运行 Codex 应用程序服务器，具有线程、斜杠命令、批准、代理、自动化、上传和辅助记录。"
+    "description_zh": "WeChat-to-Codex bridge for running Codex app-server from chat, with threads, slash commands, approvals, agents, automation, uploads, and assistant records."
   },
   {
     "full_name": "xyflow/xyflow",
     "html_url": "https://github.com/xyflow/xyflow",
     "description": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https://svelteflow.dev). Ready out-of-the-box and infinitely customizable.",
-    "stargazers_count": 38088,
-    "forks_count": 2512,
+    "stargazers_count": 38094,
+    "forks_count": 2513,
     "language": "TypeScript",
     "starred_at": "2026-04-22T18:03:08Z",
     "created_at": "2019-07-15T14:47:30Z",
@@ -1796,36 +1796,36 @@
       "workflow"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/7106853?v=4",
-    "description_zh": "反应流程| Svelte Flow - 强大的开源库，用于使用 React (https://reactflow.dev) 或 Svelte (https://svelteflow.dev) 构建基于节点的 UI。开箱即用，可无限定制。"
+    "description_zh": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https://svelteflow.dev). Ready out-of-the-box and infinitely customizable."
   },
   {
     "full_name": "remotion-dev/remotion",
     "html_url": "https://github.com/remotion-dev/remotion",
     "description": "🎥      Make videos programmatically with React",
-    "stargazers_count": 57008,
-    "forks_count": 4301,
+    "stargazers_count": 57096,
+    "forks_count": 4310,
     "language": "TypeScript",
     "starred_at": "2026-04-22T17:42:29Z",
     "created_at": "2020-06-23T19:49:10Z",
-    "pushed_at": "2026-08-21T20:22:52Z",
+    "pushed_at": "2026-08-22T14:58:45Z",
     "topics": [
       "javascript",
       "react",
       "video"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/85344006?v=4",
-    "description_zh": "🎥 使用 React 以编程方式制作视频"
+    "description_zh": "🎥      Make videos programmatically with React"
   },
   {
     "full_name": "heygen-com/hyperframes",
     "html_url": "https://github.com/heygen-com/hyperframes",
     "description": "Write HTML. Render video. Built for agents.",
-    "stargazers_count": 41974,
-    "forks_count": 4024,
+    "stargazers_count": 42117,
+    "forks_count": 4035,
     "language": "TypeScript",
     "starred_at": "2026-04-22T17:28:59Z",
     "created_at": "2026-03-10T01:51:06Z",
-    "pushed_at": "2026-08-22T01:14:56Z",
+    "pushed_at": "2026-08-23T01:15:51Z",
     "topics": [
       "ai",
       "animation",
@@ -1840,28 +1840,28 @@
       "video"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/65394575?v=4",
-    "description_zh": "编写 HTML。渲染视频。专为代理商打造。"
+    "description_zh": "Write HTML. Render video. Built for agents."
   },
   {
     "full_name": "anomalyco/opencode",
     "html_url": "https://github.com/anomalyco/opencode",
     "description": "The open source coding agent.",
-    "stargazers_count": 199990,
-    "forks_count": 25824,
+    "stargazers_count": 200360,
+    "forks_count": 25890,
     "language": "TypeScript",
     "starred_at": "2026-04-22T11:04:51Z",
     "created_at": "2025-04-30T20:08:00Z",
-    "pushed_at": "2026-08-22T00:25:57Z",
+    "pushed_at": "2026-08-23T01:16:00Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/66570915?v=4",
-    "description_zh": "开源编码代理。"
+    "description_zh": "The open source coding agent."
   },
   {
     "full_name": "jarrodwatts/claude-hud",
     "html_url": "https://github.com/jarrodwatts/claude-hud",
     "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
-    "stargazers_count": 27549,
-    "forks_count": 1276,
+    "stargazers_count": 27562,
+    "forks_count": 1275,
     "language": "JavaScript",
     "starred_at": "2026-04-18T18:11:37Z",
     "created_at": "2026-01-02T01:35:07Z",
@@ -1876,14 +1876,14 @@
       "typescript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/35651410?v=4",
-    "description_zh": "一个 Claude Code 插件，显示正在发生的事情 - 上下文使用、活动工具、正在运行的代理和待办事项进度"
+    "description_zh": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress"
   },
   {
     "full_name": "affaan-m/ECC",
     "html_url": "https://github.com/affaan-m/ECC",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "stargazers_count": 241799,
-    "forks_count": 36655,
+    "stargazers_count": 242174,
+    "forks_count": 36701,
     "language": "JavaScript",
     "starred_at": "2026-04-18T02:45:57Z",
     "created_at": "2026-01-18T00:51:51Z",
@@ -1899,28 +1899,28 @@
       "productivity"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/124439313?v=4",
-    "description_zh": "代理利用性能优化系统。 Claude Code、Codex、Opencode、Cursor 等的技能、直觉、记忆、安全性和研究优先的开发。"
+    "description_zh": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
   },
   {
     "full_name": "multica-ai/andrej-karpathy-skills",
     "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
     "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-    "stargazers_count": 204889,
-    "forks_count": 20988,
+    "stargazers_count": 205314,
+    "forks_count": 21007,
     "language": "",
     "starred_at": "2026-04-17T19:45:44Z",
     "created_at": "2026-01-27T03:53:13Z",
     "pushed_at": "2026-04-20T10:05:04Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/254743058?v=4",
-    "description_zh": "用于改进 Claude 代码行为的单个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码陷阱的观察。"
+    "description_zh": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
   },
   {
     "full_name": "78/xiaozhi-esp32",
     "html_url": "https://github.com/78/xiaozhi-esp32",
     "description": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
-    "stargazers_count": 29068,
-    "forks_count": 6706,
+    "stargazers_count": 29094,
+    "forks_count": 6717,
     "language": "C++",
     "starred_at": "2026-04-15T17:25:29Z",
     "created_at": "2024-08-31T10:08:16Z",
@@ -1937,12 +1937,12 @@
     "full_name": "nesquena/hermes-webui",
     "html_url": "https://github.com/nesquena/hermes-webui",
     "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
-    "stargazers_count": 17594,
-    "forks_count": 2438,
+    "stargazers_count": 17637,
+    "forks_count": 2441,
     "language": "Python",
     "starred_at": "2026-04-15T16:49:33Z",
     "created_at": "2026-03-30T21:50:12Z",
-    "pushed_at": "2026-08-21T14:11:43Z",
+    "pushed_at": "2026-08-22T15:49:10Z",
     "topics": [
       "agent",
       "ai-agents",
@@ -1951,7 +1951,7 @@
       "nous-research"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/6511?v=4",
-    "description_zh": "Hermes WebUI：从网络或手机使用 Hermes Agent 的最佳方式！"
+    "description_zh": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!"
   },
   {
     "full_name": "liandu2024/OpenClaw-Chat-Gateway",
@@ -1971,12 +1971,12 @@
     "full_name": "binaricat/Netcatty",
     "html_url": "https://github.com/binaricat/Netcatty",
     "description": "SSH workspace, SFTP, and terminals in one",
-    "stargazers_count": 5324,
-    "forks_count": 467,
+    "stargazers_count": 5335,
+    "forks_count": 470,
     "language": "TypeScript",
     "starred_at": "2026-04-09T16:38:16Z",
     "created_at": "2025-12-06T19:22:10Z",
-    "pushed_at": "2026-08-21T09:39:12Z",
+    "pushed_at": "2026-08-22T17:18:28Z",
     "topics": [
       "electron",
       "electron-app",
@@ -1990,14 +1990,14 @@
       "xterm"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/16399091?v=4",
-    "description_zh": "SSH 工作区、SFTP 和终端合二为一"
+    "description_zh": "SSH workspace, SFTP, and terminals in one"
   },
   {
     "full_name": "av/harbor",
     "html_url": "https://github.com/av/harbor",
     "description": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack with hundreds of services to explore.",
-    "stargazers_count": 3184,
-    "forks_count": 221,
+    "stargazers_count": 3187,
+    "forks_count": 222,
     "language": "Python",
     "starred_at": "2026-04-07T14:39:26Z",
     "created_at": "2024-07-27T18:46:59Z",
@@ -2024,18 +2024,18 @@
       "tools"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/38184623?v=4",
-    "description_zh": "停止配置您的 AI 堆栈。开始使用它。一个命令带来了完整的预连线 LLM 堆栈，其中包含数百种服务可供探索。"
+    "description_zh": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack with hundreds of services to explore."
   },
   {
     "full_name": "searxng/searxng",
     "html_url": "https://github.com/searxng/searxng",
     "description": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled.",
-    "stargazers_count": 35891,
-    "forks_count": 3269,
+    "stargazers_count": 35943,
+    "forks_count": 3270,
     "language": "Python",
     "starred_at": "2026-04-07T14:39:11Z",
     "created_at": "2021-04-12T15:18:15Z",
-    "pushed_at": "2026-08-21T21:43:57Z",
+    "pushed_at": "2026-08-22T05:35:24Z",
     "topics": [
       "bing",
       "brave",
@@ -2054,18 +2054,18 @@
       "yahoo"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/80454229?v=4",
-    "description_zh": "SearXNG 是一个免费的互联网元搜索引擎，它聚合来自各种搜索服务和数据库的结果。用户既不会被跟踪，也不会被分析。"
+    "description_zh": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled."
   },
   {
     "full_name": "slopus/happy",
     "html_url": "https://github.com/slopus/happy",
     "description": "Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured",
-    "stargazers_count": 23449,
-    "forks_count": 1980,
+    "stargazers_count": 23465,
+    "forks_count": 1981,
     "language": "TypeScript",
     "starred_at": "2026-03-25T17:34:35Z",
     "created_at": "2025-07-18T05:53:18Z",
-    "pushed_at": "2026-08-10T22:17:09Z",
+    "pushed_at": "2026-08-22T23:55:39Z",
     "topics": [
       "claude-code",
       "claude-desktop",
@@ -2075,32 +2075,32 @@
       "hacktoberfest"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/221431600?v=4",
-    "description_zh": "Codex 和 Claude Code 的移动和 Web 客户端，具有实时语音、加密和功能齐全的功能"
+    "description_zh": "Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured"
   },
   {
     "full_name": "jacob-bd/gemini-notebook-mcp-cli",
     "html_url": "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
     "description": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills.",
-    "stargazers_count": 5907,
-    "forks_count": 900,
+    "stargazers_count": 5913,
+    "forks_count": 903,
     "language": "Python",
     "starred_at": "2026-03-24T15:43:14Z",
     "created_at": "2025-12-23T02:07:42Z",
     "pushed_at": "2026-08-20T23:42:14Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/47641890?v=4",
-    "description_zh": "以编程方式访问 Gemini Notebook - 通过命令行界面 (CLI)、模型上下文协议 (MCP) 服务器和 AI 代理技能。"
+    "description_zh": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills."
   },
   {
     "full_name": "bytedance/deer-flow",
     "html_url": "https://github.com/bytedance/deer-flow",
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-    "stargazers_count": 80501,
-    "forks_count": 11045,
+    "stargazers_count": 80579,
+    "forks_count": 11067,
     "language": "Python",
     "starred_at": "2026-03-23T15:43:16Z",
     "created_at": "2025-05-07T02:50:19Z",
-    "pushed_at": "2026-08-20T00:57:10Z",
+    "pushed_at": "2026-08-22T09:24:20Z",
     "topics": [
       "agent",
       "agentic",
@@ -2122,18 +2122,18 @@
       "typescript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/4158466?v=4",
-    "description_zh": "一个开源的长期 SuperAgent 工具，用于研究、编码和创建。借助沙箱、内存、工具、技能、子代理和消息网关，它可以处理可能需要几分钟到几小时的不同级别的任务。"
+    "description_zh": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
   },
   {
     "full_name": "Nagi-ovo/voyager",
     "html_url": "https://github.com/Nagi-ovo/voyager",
     "description": "Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。",
-    "stargazers_count": 19765,
-    "forks_count": 651,
+    "stargazers_count": 19790,
+    "forks_count": 652,
     "language": "TypeScript",
     "starred_at": "2026-03-23T14:04:56Z",
     "created_at": "2025-10-04T23:42:35Z",
-    "pushed_at": "2026-08-22T00:09:53Z",
+    "pushed_at": "2026-08-23T00:47:33Z",
     "topics": [
       "ai-studio",
       "browser-extension",
@@ -2156,8 +2156,8 @@
     "full_name": "teng-lin/notebooklm-py",
     "html_url": "https://github.com/teng-lin/notebooklm-py",
     "description": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
-    "stargazers_count": 18849,
-    "forks_count": 2540,
+    "stargazers_count": 18869,
+    "forks_count": 2542,
     "language": "Python",
     "starred_at": "2026-03-22T16:19:20Z",
     "created_at": "2026-01-07T15:27:19Z",
@@ -2179,7 +2179,7 @@
       "skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/737447?v=4",
-    "description_zh": "Google Gemini Notebook 的非官方 Python API 和代理技能。通过 Python、CLI 和 AI 代理（例如 Claude Code、Codex 和 OpenClaw）以完全编程方式访问 NotebookLM 的功能（包括 Web UI 未公开的功能）。"
+    "description_zh": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw."
   },
   {
     "full_name": "win4r/ClawTeam-OpenClaw",
@@ -2203,32 +2203,32 @@
       "swarms"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
-    "description_zh": "ClawTeam fork 完全适应 OpenClaw — 以 OpenClaw 作为默认代理的多代理群协调"
+    "description_zh": "ClawTeam fork fully adapted for OpenClaw — multi-agent swarm coordination with OpenClaw as the default agent"
   },
   {
     "full_name": "DayuanJiang/next-ai-draw-io",
     "html_url": "https://github.com/DayuanJiang/next-ai-draw-io",
     "description": "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization.",
-    "stargazers_count": 35140,
-    "forks_count": 3773,
+    "stargazers_count": 35173,
+    "forks_count": 3776,
     "language": "TypeScript",
     "starred_at": "2026-03-19T02:33:06Z",
     "created_at": "2025-03-23T15:03:48Z",
-    "pushed_at": "2026-08-21T23:43:46Z",
+    "pushed_at": "2026-08-22T11:47:10Z",
     "topics": [
       "ai",
       "diagrams",
       "productivity"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/34411969?v=4",
-    "description_zh": "next.js Web 应用程序将 AI 功能与 draw.io 图表集成在一起。该应用程序允许您通过自然语言命令和人工智能辅助可视化来创建、修改和增强图表。"
+    "description_zh": "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization."
   },
   {
     "full_name": "Panniantong/Agent-Reach",
     "html_url": "https://github.com/Panniantong/Agent-Reach",
     "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-    "stargazers_count": 73878,
-    "forks_count": 6297,
+    "stargazers_count": 74177,
+    "forks_count": 6322,
     "language": "Python",
     "starred_at": "2026-03-14T13:32:33Z",
     "created_at": "2026-02-24T02:10:24Z",
@@ -2253,7 +2253,7 @@
       "youtube-transcript"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/73925474?v=4",
-    "description_zh": "让您的人工智能代理有一双能够看到整个互联网的眼睛。阅读和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书 — 一个 CLI，零 API 费用。"
+    "description_zh": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
   },
   {
     "full_name": "larksuite/openclaw-lark",
@@ -2284,13 +2284,13 @@
       "openclaw-skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
-    "description_zh": "用于维护和优化 OpenClaw 工作区文件的 Claude 代码技能（AGENTS.md、SOUL.md、TOOLS.md、MEMORY.md、清单）"
+    "description_zh": "Claude Code skill for maintaining and optimizing OpenClaw workspace files (AGENTS.md, SOUL.md, TOOLS.md, MEMORY.md, checklists)"
   },
   {
     "full_name": "YanG-1989/m3u",
     "html_url": "https://github.com/YanG-1989/m3u",
     "description": "直播源",
-    "stargazers_count": 11369,
+    "stargazers_count": 11370,
     "forks_count": 1602,
     "language": "Shell",
     "starred_at": "2026-03-09T14:03:39Z",
@@ -2304,12 +2304,12 @@
     "full_name": "mursor1985/LIVE",
     "html_url": "https://github.com/mursor1985/LIVE",
     "description": "",
-    "stargazers_count": 1955,
+    "stargazers_count": 1956,
     "forks_count": 269,
     "language": "",
     "starred_at": "2026-03-09T04:00:05Z",
     "created_at": "2025-08-29T17:13:10Z",
-    "pushed_at": "2026-08-22T00:44:29Z",
+    "pushed_at": "2026-08-23T00:49:52Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/225794811?v=4",
     "description_zh": ""
@@ -2318,7 +2318,7 @@
     "full_name": "win4r/openclaw-a2a-gateway",
     "html_url": "https://github.com/win4r/openclaw-a2a-gateway",
     "description": "OpenClaw plugin implementing the A2A (Agent-to-Agent) protocol v0.3.0 — bidirectional agent communication gateway",
-    "stargazers_count": 553,
+    "stargazers_count": 554,
     "forks_count": 117,
     "language": "TypeScript",
     "starred_at": "2026-03-08T14:10:47Z",
@@ -2332,14 +2332,14 @@
       "openclaw-skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/42172631?v=4",
-    "description_zh": "OpenClaw 插件实现 A2A（代理到代理）协议 v0.3.0 — 双向代理通信网关"
+    "description_zh": "OpenClaw plugin implementing the A2A (Agent-to-Agent) protocol v0.3.0 — bidirectional agent communication gateway"
   },
   {
     "full_name": "CortexReach/memory-lancedb-pro",
     "html_url": "https://github.com/CortexReach/memory-lancedb-pro",
     "description": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI",
-    "stargazers_count": 4464,
-    "forks_count": 730,
+    "stargazers_count": 4465,
+    "forks_count": 729,
     "language": "JavaScript",
     "starred_at": "2026-03-07T03:53:58Z",
     "created_at": "2026-02-24T08:38:15Z",
@@ -2353,7 +2353,7 @@
       "rag"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/266910790?v=4",
-    "description_zh": "适用于 OpenClaw 的增强型 LanceDB 内存插件 — 混合检索（矢量 + BM25）、跨编码器重新排序、多范围隔离、管理 CLI"
+    "description_zh": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI"
   },
   {
     "full_name": "luolin-ai/openclawWeComzh",
@@ -2367,14 +2367,14 @@
     "pushed_at": "2026-03-16T21:28:00Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/135555634?v=4",
-    "description_zh": "AEON 协议的开源实现，用于高级人工智能认知可观察性，具有实时辩证流跟踪、自动内存蒸馏（自动密封）和知识老化可视化。"
+    "description_zh": "Open-source implementation of the AEON Protocol for advanced AI cognitive observability, featuring real-time dialectic flow tracking, automated memory distillation (Auto-Seal), and knowledge aging visualization."
   },
   {
     "full_name": "QuantumNous/new-api",
     "html_url": "https://github.com/QuantumNous/new-api",
     "description": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management. 🍥",
-    "stargazers_count": 45869,
-    "forks_count": 10885,
+    "stargazers_count": 45940,
+    "forks_count": 10904,
     "language": "Go",
     "starred_at": "2026-02-28T13:17:53Z",
     "created_at": "2023-11-10T19:33:36Z",
@@ -2389,46 +2389,46 @@
       "rerank"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/205075698?v=4",
-    "description_zh": "用于聚合和分发的统一人工智能模型中心。它支持将各种 LLM 交叉转换为 OpenAI 兼容、Claude 兼容或 Gemini 兼容格式。用于个人和企业模型管理的集中式网关。 🍥"
+    "description_zh": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management. 🍥"
   },
   {
     "full_name": "anthropics/claude-code",
     "html_url": "https://github.com/anthropics/claude-code",
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-    "stargazers_count": 142298,
-    "forks_count": 22817,
+    "stargazers_count": 142545,
+    "forks_count": 22840,
     "language": "Python",
     "starred_at": "2026-02-28T10:28:05Z",
     "created_at": "2025-02-22T17:41:21Z",
-    "pushed_at": "2026-08-21T19:54:23Z",
+    "pushed_at": "2026-08-23T00:52:16Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/76263028?v=4",
-    "description_zh": "Claude Code 是一种代理编码工具，位于您的终端中，了解您的代码库，并通过执行例行任务、解释复杂代码和处理 git 工作流程来帮助您更快地编码 - 所有这些都通过自然语言命令进行。"
+    "description_zh": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands."
   },
   {
     "full_name": "axtonliu/axton-obsidian-visual-skills",
     "html_url": "https://github.com/axtonliu/axton-obsidian-visual-skills",
     "description": "Visual Skills Pack for Obsidian: generate Canvas, Excalidraw, and Mermaid diagrams from text with Claude Code",
-    "stargazers_count": 3352,
-    "forks_count": 308,
+    "stargazers_count": 3374,
+    "forks_count": 309,
     "language": "",
     "starred_at": "2026-02-28T05:21:54Z",
     "created_at": "2026-01-10T18:01:37Z",
     "pushed_at": "2026-06-26T15:32:40Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/34881731?v=4",
-    "description_zh": "Obsidian 视觉技能包：使用 Claude Code 从文本生成 Canvas、Excalidraw 和 Mermaid 图"
+    "description_zh": "Visual Skills Pack for Obsidian: generate Canvas, Excalidraw, and Mermaid diagrams from text with Claude Code"
   },
   {
     "full_name": "YishenTu/claudian",
     "html_url": "https://github.com/YishenTu/claudian",
     "description": "An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault",
-    "stargazers_count": 14905,
-    "forks_count": 973,
+    "stargazers_count": 14921,
+    "forks_count": 972,
     "language": "TypeScript",
     "starred_at": "2026-02-28T04:32:04Z",
     "created_at": "2025-12-05T17:58:26Z",
-    "pushed_at": "2026-08-21T21:54:00Z",
+    "pushed_at": "2026-08-22T22:34:50Z",
     "topics": [
       "claude-code",
       "codex",
@@ -2438,14 +2438,14 @@
       "productivity"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/134207149?v=4",
-    "description_zh": "一个 Obsidian 插件，可将 Claude Code/Codex 作为 AI 协作者嵌入到您的保管库中"
+    "description_zh": "An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault"
   },
   {
     "full_name": "farion1231/cc-switch",
     "html_url": "https://github.com/farion1231/cc-switch",
     "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
-    "stargazers_count": 128721,
-    "forks_count": 8803,
+    "stargazers_count": 128859,
+    "forks_count": 8824,
     "language": "Rust",
     "starred_at": "2026-02-28T04:31:54Z",
     "created_at": "2025-08-04T14:16:16Z",
@@ -2473,14 +2473,14 @@
       "wsl-support"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/44939412?v=4",
-    "description_zh": "一款跨平台桌面一体化助手，适用于 Claude Code、Codex、OpenCode、OpenClaw、Grok Build 和 Hermes Agent。唯一官方网站：ccswitch.io"
+    "description_zh": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io"
   },
   {
     "full_name": "VoltAgent/awesome-openclaw-skills",
     "html_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
     "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
-    "stargazers_count": 52106,
-    "forks_count": 5003,
+    "stargazers_count": 52121,
+    "forks_count": 5006,
     "language": "",
     "starred_at": "2026-02-27T15:32:30Z",
     "created_at": "2026-01-25T09:22:32Z",
@@ -2500,13 +2500,13 @@
       "openclaw-skills"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/201282378?v=4",
-    "description_zh": "OpenClaw 技能的精彩集合。从官方 OpenClaw 技能注册表中筛选和分类的 5,400 多种技能。🦞"
+    "description_zh": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞"
   },
   {
     "full_name": "hesamsheikh/awesome-openclaw-usecases",
     "html_url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
     "description": "A community collection of OpenClaw use cases for making life easier.",
-    "stargazers_count": 31669,
+    "stargazers_count": 31673,
     "forks_count": 2723,
     "language": "",
     "starred_at": "2026-02-27T15:31:52Z",
@@ -2523,7 +2523,7 @@
       "usecase"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/41022652?v=4",
-    "description_zh": "OpenClaw 用例的社区集合，让生活变得更轻松。"
+    "description_zh": "A community collection of OpenClaw use cases for making life easier."
   },
   {
     "full_name": "appsail/Gemini-in-Chrome",
@@ -2544,7 +2544,7 @@
     "html_url": "https://github.com/FanchangWang/allinone_format",
     "description": "本项目是对 https://hub.docker.com/r/youshandefeiyang/allinone /tv.m3u、/tptv.m3u、/migu.m3u 进行聚合 & 重新分组。",
     "stargazers_count": 907,
-    "forks_count": 139,
+    "forks_count": 140,
     "language": "PHP",
     "starred_at": "2025-08-14T10:23:48Z",
     "created_at": "2024-10-18T11:09:41Z",
@@ -2557,12 +2557,12 @@
     "full_name": "google-gemini/gemini-cli",
     "html_url": "https://github.com/google-gemini/gemini-cli",
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-    "stargazers_count": 106607,
-    "forks_count": 14458,
+    "stargazers_count": 106620,
+    "forks_count": 14467,
     "language": "TypeScript",
     "starred_at": "2025-08-05T07:13:12Z",
     "created_at": "2025-04-17T17:04:31Z",
-    "pushed_at": "2026-08-22T01:10:05Z",
+    "pushed_at": "2026-08-23T01:15:05Z",
     "topics": [
       "ai",
       "ai-agents",
@@ -2573,13 +2573,13 @@
       "mcp-server"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/161781182?v=4",
-    "description_zh": "一款开源 AI 代理，可将 Gemini 的强大功能直接带入您的终端。"
+    "description_zh": "An open-source AI agent that brings the power of Gemini directly into your terminal."
   },
   {
     "full_name": "ZLMediaKit/ZLMediaKit",
     "html_url": "https://github.com/ZLMediaKit/ZLMediaKit",
     "description": "WebRTC/RTSP/RTMP/HTTP/HLS/HTTP-FLV/WebSocket-FLV/HTTP-TS/HTTP-fMP4/WebSocket-TS/WebSocket-fMP4/GB28181/SRT/STUN/TURN server and client framework based on C++11",
-    "stargazers_count": 17444,
+    "stargazers_count": 17445,
     "forks_count": 4108,
     "language": "C++",
     "starred_at": "2025-07-30T15:52:33Z",
@@ -2608,14 +2608,14 @@
       "websocket-flv"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/84565724?v=4",
-    "description_zh": "基于C++11的WebRTC/RTSP/RTMP/HTTP/HLS/HTTP-FLV/WebSocket-FLV/HTTP-TS/HTTP-fMP4/WebSocket-TS/WebSocket-fMP4/GB28181/SRT/STUN/TURN服务器和客户端框架"
+    "description_zh": "WebRTC/RTSP/RTMP/HTTP/HLS/HTTP-FLV/WebSocket-FLV/HTTP-TS/HTTP-fMP4/WebSocket-TS/WebSocket-fMP4/GB28181/SRT/STUN/TURN server and client framework based on C++11"
   },
   {
     "full_name": "algerkong/AlgerMusicPlayer",
     "html_url": "https://github.com/algerkong/AlgerMusicPlayer",
     "description": "一个第三方音乐播放器、本地服务、桌面歌词、音乐下载、远程控制",
-    "stargazers_count": 16477,
-    "forks_count": 1334,
+    "stargazers_count": 16487,
+    "forks_count": 1335,
     "language": "Vue",
     "starred_at": "2025-07-01T16:35:12Z",
     "created_at": "2023-10-27T15:52:55Z",
@@ -2633,7 +2633,7 @@
     "html_url": "https://github.com/jhj0517/Whisper-WebUI",
     "description": "A Web UI for easy subtitle using whisper model.",
     "stargazers_count": 2857,
-    "forks_count": 431,
+    "forks_count": 432,
     "language": "Python",
     "starred_at": "2025-07-01T16:20:40Z",
     "created_at": "2023-03-02T13:42:01Z",
@@ -2648,7 +2648,7 @@
       "whisper"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/97279763?v=4",
-    "description_zh": "使用耳语模型轻松实现字幕的 Web UI。"
+    "description_zh": "A Web UI for easy subtitle using whisper model."
   },
   {
     "full_name": "foamzou/melody",
@@ -2684,8 +2684,8 @@
     "full_name": "alexta69/metube",
     "html_url": "https://github.com/alexta69/metube",
     "description": "Self-hosted video downloader for YouTube and other sites (web UI for yt-dlp)",
-    "stargazers_count": 14479,
-    "forks_count": 1064,
+    "stargazers_count": 14493,
+    "forks_count": 1065,
     "language": "Python",
     "starred_at": "2025-02-02T18:21:42Z",
     "created_at": "2019-11-29T17:24:51Z",
@@ -2697,7 +2697,7 @@
       "yt-dlp"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/7450369?v=4",
-    "description_zh": "适用于 YouTube 和其他网站的自托管视频下载器（yt-dlp 的 Web UI）"
+    "description_zh": "Self-hosted video downloader for YouTube and other sites (web UI for yt-dlp)"
   },
   {
     "full_name": "alibaba/butterfly",

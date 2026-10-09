@@ -453,34 +453,65 @@ test('groupByPrimary: a top-level primary section precedes its children', () => 
 // parseHashState / buildHashState
 // ---------------------------------------------------------------------------
 test('buildHashState: omits defaults and keeps ids readable', () => {
-  assert.equal(GSD.buildHashState({ cat: [], topic: [], q: '', sort: 'stars', dir: 'desc', group: false }), '');
+  assert.equal(GSD.buildHashState({ cat: [], topic: [], q: '', sort: 'stars', dir: 'desc', group: false, view: 'list' }), '');
   assert.equal(
     GSD.buildHashState({ cat: new Set(['ai-coding/clients', 'mcp']), lang: 'Go', topic: ['mcp'], q: 'agent',
-      sort: 'starred_at', dir: 'asc', group: true }),
-    'cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=starred_at&dir=asc&group=1');
+      sort: 'starred_at', dir: 'asc', group: true, view: 'card' }),
+    'cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=starred_at&dir=asc&group=1&view=card');
 });
 
 test('parseHashState: reads every field', () => {
-  const s = GSD.parseHashState('#cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=stars&dir=desc&group=1');
+  const s = GSD.parseHashState('#cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=stars&dir=desc&group=1&view=card');
   assert.deepEqual(s, {
     cat: ['ai-coding/clients', 'mcp'], lang: 'Go', topic: ['mcp'], q: 'agent', sort: 'stars', dir: 'desc', group: true,
+    view: 'card',
   });
 });
 
 test('parseHashState: unspecified fields are null/empty so callers apply defaults', () => {
-  assert.deepEqual(GSD.parseHashState(''), { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null });
+  assert.deepEqual(GSD.parseHashState(''), { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null, view: null });
   assert.equal(GSD.parseHashState('#group=0').group, false);
 });
 
 test('hash state round-trips through build -> parse, including awkward characters', () => {
-  const state = { cat: ['mcp'], lang: 'C++', topic: ['a,b', 'c'], q: '中文 & x=1', sort: 'pushed_at', dir: 'asc', group: true };
+  const state = { cat: ['mcp'], lang: 'C++', topic: ['a,b', 'c'], q: '中文 & x=1', sort: 'pushed_at', dir: 'asc', group: true, view: 'card' };
   const back = GSD.parseHashState('#' + GSD.buildHashState(state));
   assert.deepEqual(back, state);
 });
 
 test('parseHashState: ignores junk keys, invalid values and malformed encoding', () => {
-  const s = GSD.parseHashState('#foo=bar&sort=hacker&dir=sideways&group=maybe&q=%E0%A4&=x&cat=&topic=,,');
-  assert.deepEqual(s, { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null });
+  const s = GSD.parseHashState('#foo=bar&sort=hacker&dir=sideways&group=maybe&view=grid&q=%E0%A4&=x&cat=&topic=,,');
+  assert.deepEqual(s, { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null, view: null });
+});
+
+test('view mode: card is written as view=card, list (the default) is omitted', () => {
+  assert.equal(GSD.buildHashState({ view: 'card' }), 'view=card');
+  assert.equal(GSD.buildHashState({ view: 'list' }), '');
+  assert.equal(GSD.buildHashState({ view: 'grid' }), '');
+  assert.equal(GSD.buildHashState({ cat: ['mcp'], group: true, view: 'card' }), 'cat=mcp&group=1&view=card');
+});
+
+test('view mode: parse accepts list/card only and round-trips', () => {
+  assert.equal(GSD.parseHashState('#view=card').view, 'card');
+  assert.equal(GSD.parseHashState('#view=list').view, 'list');
+  assert.equal(GSD.parseHashState('#view=CARD').view, null);
+  assert.equal(GSD.parseHashState('#view=').view, null);
+  assert.equal(GSD.parseHashState('#view=card&cat=mcp', { cat: ['mcp'] }).view, 'card');
+  assert.deepEqual(GSD.parseHashState('#view=card&cat=mcp', { cat: ['mcp'] }).cat, ['mcp']);
+  for (const view of ['list', 'card']) {
+    const back = GSD.parseHashState('#' + GSD.buildHashState({ view }));
+    assert.equal(back.view, view === 'list' ? null : view);
+  }
+});
+
+test('resolveViewMode: valid hash value wins, then saved preference, else list', () => {
+  assert.equal(GSD.resolveViewMode(null, null), 'list');
+  assert.equal(GSD.resolveViewMode(null, 'card'), 'card');
+  assert.equal(GSD.resolveViewMode(null, 'grid'), 'list');
+  assert.equal(GSD.resolveViewMode('list', 'card'), 'list');
+  assert.equal(GSD.resolveViewMode('card', 'list'), 'card');
+  assert.equal(GSD.resolveViewMode('bogus', 'card'), 'card');
+  assert.deepEqual(GSD.VIEW_MODES, ['list', 'card']);
 });
 
 test('hash state carries the review pseudo-category like any other category', () => {

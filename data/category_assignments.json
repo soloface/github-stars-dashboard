@@ -191,6 +191,14 @@
     "source": "seed",
     "desc_hash": "9ead4f454742"
   },
+  "cathrynlavery/diagram-design": {
+    "primary": "skills/design",
+    "secondary": [
+      "creative/design"
+    ],
+    "source": "manual",
+    "desc_hash": "b5ff5373149d"
+  },
   "chenyme/grok2api": {
     "primary": "gateway/relay",
     "secondary": [],
@@ -544,6 +552,14 @@
     "source": "seed",
     "desc_hash": "f880a5cf6e5c"
   },
+  "morluto/rea": {
+    "primary": "ops/netsec",
+    "secondary": [
+      "skills/engineering"
+    ],
+    "source": "manual",
+    "desc_hash": "9c4976a8aa66"
+  },
   "msitarzewski/agency-agents": {
     "primary": "skills/roles",
     "secondary": [],
@@ -580,6 +596,12 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "1776cf26a8f6"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "primary": "skills/design",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "cbf1ccdfb3bc"
   },
   "nexu-io/codex-slides": {
     "primary": "skills/content",
@@ -673,6 +695,12 @@
     "source": "seed",
     "desc_hash": "1de27dd25baf"
   },
+  "otxkq9/foreign-account-purchasing": {
+    "primary": "resources",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "657ac2618af3"
+  },
   "palmier-io/palmier-pro": {
     "primary": "creative/video",
     "secondary": [],
@@ -707,6 +735,12 @@
     ],
     "source": "seed",
     "desc_hash": "d8afe2183f71"
+  },
+  "QingYunA/answer-me-with-html": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "ea444b0a0553"
   },
   "QuantumNous/new-api": {
     "primary": "gateway/relay",

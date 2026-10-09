@@ -1,0 +1,1007 @@
+{
+  "0xsline/OpenChatCut": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b5ffe63f0687"
+  },
+  "666ghj/BettaFish": {
+    "primary": "knowledge/analysis",
+    "secondary": [
+      "agents/frameworks"
+    ],
+    "source": "seed",
+    "desc_hash": "8d4e0d2c9300"
+  },
+  "78/xiaozhi-esp32": {
+    "primary": "agents/apps",
+    "secondary": [
+      "mcp/servers"
+    ],
+    "source": "seed",
+    "desc_hash": "e7ee66e6ed0a"
+  },
+  "affaan-m/ECC": {
+    "primary": "skills/engineering",
+    "secondary": [
+      "ai-coding/addons"
+    ],
+    "source": "seed",
+    "desc_hash": "e4eb8aaa1f37"
+  },
+  "ahujasid/mcp-for-blender": {
+    "primary": "mcp/servers",
+    "secondary": [
+      "creative/design"
+    ],
+    "source": "seed",
+    "desc_hash": "8f2037b92818"
+  },
+  "AITabby/codexsplit": {
+    "primary": "ai-coding/clients",
+    "secondary": [
+      "gateway/routing"
+    ],
+    "source": "seed",
+    "desc_hash": "ab92515ed158"
+  },
+  "alchaincyf/huashu-art-motion": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "3c55887e08ae"
+  },
+  "alchaincyf/huashu-design": {
+    "primary": "skills/design",
+    "secondary": [
+      "creative/design"
+    ],
+    "source": "seed",
+    "desc_hash": "25378e674071"
+  },
+  "alexta69/metube": {
+    "primary": "media/music",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "9c1de9d71d50"
+  },
+  "algerkong/AlgerMusicPlayer": {
+    "primary": "media/music",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "5f0c4e289602"
+  },
+  "alibaba/butterfly": {
+    "primary": "frontend/diagram",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e5a40c312b65"
+  },
+  "anomalyco/models.dev": {
+    "primary": "gateway/catalog",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e0b4463cdd2c"
+  },
+  "anomalyco/opencode": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "99ed60689127"
+  },
+  "anthropics/claude-code": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "244bd7689602"
+  },
+  "antvis/X6": {
+    "primary": "frontend/diagram",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "d1d0f2580b03"
+  },
+  "anywhere-labs/dsh-desktop": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "ad7977d23094"
+  },
+  "appica-dev/appica-ui": {
+    "primary": "frontend/components",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "6e0f0a59359e"
+  },
+  "appsail/Gemini-in-Chrome": {
+    "primary": "other",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e3b0c44298fc",
+    "needs_review": true
+  },
+  "av/harbor": {
+    "primary": "ops/servers",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "942a0f218dae"
+  },
+  "axtonliu/axton-obsidian-visual-skills": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e020150aeb1d"
+  },
+  "BigPizzaV3/CodexPlusPlus": {
+    "primary": "ai-coding/addons",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f898a795b4ae"
+  },
+  "binaricat/Netcatty": {
+    "primary": "ops/terminal",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f0b9c96e6836"
+  },
+  "block/buzz": {
+    "primary": "other",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1b0c650f887d",
+    "needs_review": true
+  },
+  "borawong/AiMaMi": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "86b1cd7ef371"
+  },
+  "browser-use/jev-ultrafast": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "098261d40fdc"
+  },
+  "bytedance/deer-flow": {
+    "primary": "agents/frameworks",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "d1a2e4755493"
+  },
+  "bytedoger/awesome-OpenPrice": {
+    "primary": "gateway/catalog",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "48c8bef8e01c"
+  },
+  "calesthio/OpenMontage": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "a81d076f7f17"
+  },
+  "can1357/oh-my-pi": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "9ead4f454742"
+  },
+  "cathrynlavery/diagram-design": {
+    "primary": "skills/design",
+    "secondary": [
+      "creative/design"
+    ],
+    "source": "manual",
+    "desc_hash": "b5ff5373149d"
+  },
+  "chenyme/grok2api": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b0a74aa0f8ae"
+  },
+  "chidiwilliams/buzz": {
+    "primary": "creative/audio",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a7db84408a37"
+  },
+  "chuspeeism/dashi-ppt-skill": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "0be80af89af9"
+  },
+  "colbymchenry/codegraph": {
+    "primary": "mcp/code-intel",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "95d723d2c141"
+  },
+  "CopilotKit/OpenBot": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "2b24ce450d5f"
+  },
+  "CortexReach/memory-lancedb-pro": {
+    "primary": "agents/ecosystem",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "22fe6b4783d6"
+  },
+  "DavidHDev/canvas-ui": {
+    "primary": "frontend/components",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f7cf961f955d"
+  },
+  "DayuanJiang/next-ai-draw-io": {
+    "primary": "creative/design",
+    "secondary": [
+      "frontend/diagram"
+    ],
+    "source": "seed",
+    "desc_hash": "5b53bba40987"
+  },
+  "deepseek-ai/deepseek-harness": {
+    "primary": "ai-coding/agents",
+    "secondary": [
+      "agents/frameworks"
+    ],
+    "source": "seed",
+    "desc_hash": "d3da329e8751"
+  },
+  "DeusData/codebase-memory-mcp": {
+    "primary": "mcp/code-intel",
+    "secondary": [
+      "mcp/servers"
+    ],
+    "source": "seed",
+    "desc_hash": "4113c872d178"
+  },
+  "diegosouzapw/OmniRoute": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "46eb6b113b4e"
+  },
+  "DietrichGebert/ponytail": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b4c66a09f2c1"
+  },
+  "DIYgod/RSSHub": {
+    "primary": "knowledge/search",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "8ad46336ba35"
+  },
+  "duolahypercho/codex-router": {
+    "primary": "gateway/routing",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "da51cb3a7ad8"
+  },
+  "earendil-works/pi": {
+    "primary": "ai-coding/agents",
+    "secondary": [
+      "agents/frameworks"
+    ],
+    "source": "seed",
+    "desc_hash": "26afd3ad0de6"
+  },
+  "Egonex-AI/Understand-Anything": {
+    "primary": "mcp/code-intel",
+    "secondary": [
+      "skills/engineering"
+    ],
+    "source": "seed",
+    "desc_hash": "0c708b483397"
+  },
+  "EKKOLearnAI/ekko-studio": {
+    "primary": "ai-coding/clients",
+    "secondary": [
+      "agents/apps"
+    ],
+    "source": "seed",
+    "desc_hash": "f714171b356a"
+  },
+  "electkismet/eltdx": {
+    "primary": "knowledge/search",
+    "secondary": [
+      "mcp/servers"
+    ],
+    "source": "seed",
+    "desc_hash": "a43b6cb5580c"
+  },
+  "FanchangWang/allinone_format": {
+    "primary": "media/live",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "4f77952ae56d"
+  },
+  "farion1231/cc-switch": {
+    "primary": "gateway/routing",
+    "secondary": [
+      "ai-coding/clients"
+    ],
+    "source": "seed",
+    "desc_hash": "e7f8ee970446"
+  },
+  "feitangyuan/onetake": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "71e75a4a4a0b"
+  },
+  "foamzou/melody": {
+    "primary": "media/music",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "2f1e0b1da3b9"
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "primary": "creative/design",
+    "secondary": [
+      "resources"
+    ],
+    "source": "seed",
+    "desc_hash": "f6ac83fa0848"
+  },
+  "freestylefly/wesight": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "cf0844783362"
+  },
+  "fxyadela/write-then-publish": {
+    "primary": "creative/publishing",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "ba5611416c8c"
+  },
+  "Gan-Xing/CodexBridge": {
+    "primary": "ai-coding/addons",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "ab5df1339d47"
+  },
+  "google-gemini/gemini-cli": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a681f77dd39e"
+  },
+  "heroui-inc/heroui": {
+    "primary": "frontend/components",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "eb7a032703ad"
+  },
+  "hesamsheikh/awesome-openclaw-usecases": {
+    "primary": "resources",
+    "secondary": [
+      "agents/ecosystem"
+    ],
+    "source": "seed",
+    "desc_hash": "9cb553a64df2"
+  },
+  "heygen-com/hyperframes": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "c2acab8414e0"
+  },
+  "HKUDS/CLI-Anything": {
+    "primary": "mcp/agent-cli",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "16bea497cd1c"
+  },
+  "imthenachoman/How-To-Secure-A-Linux-Server": {
+    "primary": "resources",
+    "secondary": [
+      "ops/netsec"
+    ],
+    "source": "seed",
+    "desc_hash": "85daa102f929"
+  },
+  "jacob-bd/gemini-notebook-mcp-cli": {
+    "primary": "mcp/servers",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "e9aa2c4ad84b"
+  },
+  "jakubkrehel/skills": {
+    "primary": "skills/design",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b3243f507542"
+  },
+  "james-6-23/codex2api": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "865bc6ded2b0"
+  },
+  "jamiepine/voicebox": {
+    "primary": "creative/audio",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "7a2992ffec1e"
+  },
+  "jarrodwatts/claude-hud": {
+    "primary": "ai-coding/addons",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "8b6c9c2ebd30"
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "primary": "creative/design",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e7fc391a0393"
+  },
+  "jd-opensource/JoyAI-VL-Interaction": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "23a2577efda1",
+    "needs_review": true
+  },
+  "jhj0517/Whisper-WebUI": {
+    "primary": "creative/audio",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b8c23615721e"
+  },
+  "jnMetaCode/agency-agents-zh": {
+    "primary": "skills/roles",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "eb9f948619bd"
+  },
+  "kejilion/KPanel": {
+    "primary": "ops/servers",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "7e3ec48af657"
+  },
+  "kepano/obsidian-skills": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "0e1fbd750a85"
+  },
+  "KunAgent/Kun": {
+    "primary": "ai-coding/clients",
+    "secondary": [
+      "agents/apps"
+    ],
+    "source": "seed",
+    "desc_hash": "a02f3bacb736"
+  },
+  "larksuite/cli": {
+    "primary": "mcp/agent-cli",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "4157fbad9a37"
+  },
+  "larksuite/openclaw-lark": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "9c8d42898150"
+  },
+  "lemomo-ai/lemo-opuscar": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "ed147d00dada"
+  },
+  "liandu2024/Open-Box": {
+    "primary": "ops/netsec",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1d0f839ec775"
+  },
+  "liandu2024/OpenClaw-Chat-Gateway": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "edc52f0b0786"
+  },
+  "luolin-ai/openclawWeComzh": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "51deee7044b3",
+    "needs_review": true
+  },
+  "mattpocock/skills": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a69c085fab3e"
+  },
+  "mcncarl/yichen-skills": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e3b0c44298fc",
+    "needs_review": true
+  },
+  "milind-soni/OpenMausBot": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f880a5cf6e5c"
+  },
+  "morluto/rea": {
+    "primary": "ops/netsec",
+    "secondary": [
+      "skills/engineering"
+    ],
+    "source": "manual",
+    "desc_hash": "9c4976a8aa66"
+  },
+  "msitarzewski/agency-agents": {
+    "primary": "skills/roles",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "34e33545ee6c"
+  },
+  "mujingquan835/dashiai-ppt-skill": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "cde2353f8ab8"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a9de5c444909"
+  },
+  "multica-ai/multica": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "72bc2d616d5b"
+  },
+  "mursor1985/LIVE": {
+    "primary": "media/live",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e3b0c44298fc",
+    "needs_review": true
+  },
+  "nesquena/hermes-webui": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1776cf26a8f6"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "primary": "skills/design",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "cbf1ccdfb3bc"
+  },
+  "nexu-io/codex-slides": {
+    "primary": "skills/content",
+    "secondary": [
+      "ai-coding/addons"
+    ],
+    "source": "seed",
+    "desc_hash": "771120980047"
+  },
+  "nexu-io/open-design": {
+    "primary": "creative/design",
+    "secondary": [
+      "skills/design"
+    ],
+    "source": "seed",
+    "desc_hash": "1adda5a9d94c"
+  },
+  "nezhahq/nezha": {
+    "primary": "ops/servers",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a067a343d634"
+  },
+  "NousResearch/hermes-agent": {
+    "primary": "agents/frameworks",
+    "secondary": [
+      "agents/ecosystem"
+    ],
+    "source": "seed",
+    "desc_hash": "ad2e9ffbd873"
+  },
+  "nutllwhy/seedance-tvc-director": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "359ebff9a098"
+  },
+  "Nutlope/hallmark": {
+    "primary": "skills/design",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "356dfb29b89c"
+  },
+  "oblien/openship": {
+    "primary": "ops/servers",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "c5f828526048"
+  },
+  "obra/superpowers": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "92f209e73441"
+  },
+  "octos-org/octos": {
+    "primary": "agents/frameworks",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "746db1fdbece"
+  },
+  "ohmyzsh/ohmyzsh": {
+    "primary": "ops/terminal",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b80905c20847"
+  },
+  "op7418/CodePilot": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "2563b66e7b86"
+  },
+  "op7418/Humanizer-zh": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "65f2d5aa3e67"
+  },
+  "OpenCut-app/OpenCut": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "b4f7c63a7f6f"
+  },
+  "OpenMinis/OpenMinis": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1de27dd25baf"
+  },
+  "otxkq9/foreign-account-purchasing": {
+    "primary": "resources",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "657ac2618af3"
+  },
+  "palmier-io/palmier-pro": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "9e2c63ed24ae"
+  },
+  "Panniantong/Agent-Reach": {
+    "primary": "mcp/agent-cli",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "4ab8da157b2c"
+  },
+  "Pluviobyte/rnskill": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1ee440ecabe4",
+    "needs_review": true
+  },
+  "provencher/codex-skills": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1edde118a2e7"
+  },
+  "public-apis/public-apis": {
+    "primary": "resources",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "d8afe2183f71"
+  },
+  "QingYunA/answer-me-with-html": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "manual",
+    "desc_hash": "ea444b0a0553"
+  },
+  "QuantumNous/new-api": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "798a605fde3b"
+  },
+  "QwenLM/qwen-code": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "3848750a3e9b"
+  },
+  "redfox-data/redfox-community": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "cb46b1542362"
+  },
+  "remotion-dev/remotion": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "5f9e85caf217"
+  },
+  "router-for-me/CLIProxyAPI": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "70d13e9e272b"
+  },
+  "sansan0/TrendRadar": {
+    "primary": "knowledge/analysis",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "399e5ecca386"
+  },
+  "satnaing/shadcn-admin": {
+    "primary": "frontend/components",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "6d7acaa186be"
+  },
+  "searxng/searxng": {
+    "primary": "knowledge/search",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "895f6a68e953"
+  },
+  "simplifaisoul/osiris": {
+    "primary": "knowledge/analysis",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "18eb3ecd7831"
+  },
+  "sindresorhus/awesome": {
+    "primary": "resources",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "320ee1c45614"
+  },
+  "slopus/happy": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "2293340942ac"
+  },
+  "soCzech/TransNetV2": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "26c3cd62ad47"
+  },
+  "soloface/project-gov-skill": {
+    "primary": "skills/engineering",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e4c7a2f6cd16"
+  },
+  "stablyai/orca": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "1e671bd961a8"
+  },
+  "tech-shrimp/deno-api-proxy": {
+    "primary": "gateway/relay",
+    "secondary": [
+      "ops/netsec"
+    ],
+    "source": "seed",
+    "desc_hash": "bbed80f164af"
+  },
+  "Tencent/WeKnora": {
+    "primary": "knowledge/search",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "ee4bd46d19e1"
+  },
+  "teng-lin/notebooklm-py": {
+    "primary": "mcp/agent-cli",
+    "secondary": [
+      "knowledge/search"
+    ],
+    "source": "seed",
+    "desc_hash": "792bc3842d0e"
+  },
+  "tinyhumansai/openhuman": {
+    "primary": "agents/frameworks",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "87adb1db41d1"
+  },
+  "TokenRhythm/opensquilla": {
+    "primary": "agents/frameworks",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "73519173837d"
+  },
+  "TurboVNC/turbovnc": {
+    "primary": "ops/terminal",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e6516d60cdb0"
+  },
+  "usestrix/strix": {
+    "primary": "ops/netsec",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "abe96f237bf4"
+  },
+  "uzairansaruzi/hermex": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "428fe8ec8c41"
+  },
+  "Vincentwei1021/anything2explainer": {
+    "primary": "creative/video",
+    "secondary": [
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "6ed36c9b0154"
+  },
+  "VoltAgent/awesome-design-md": {
+    "primary": "skills/design",
+    "secondary": [
+      "resources"
+    ],
+    "source": "seed",
+    "desc_hash": "2ffa43fb16d2"
+  },
+  "VoltAgent/awesome-openclaw-skills": {
+    "primary": "resources",
+    "secondary": [
+      "agents/ecosystem"
+    ],
+    "source": "seed",
+    "desc_hash": "275970af81f7"
+  },
+  "voyager-crew/voyager": {
+    "primary": "agents/apps",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f9847dbfcc8d",
+    "needs_review": true
+  },
+  "Wei-Shaw/sub2api": {
+    "primary": "gateway/relay",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "fe83c70d81e3"
+  },
+  "win4r/ClawTeam-OpenClaw": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "523eea17a8f6"
+  },
+  "win4r/openclaw-a2a-gateway": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e6a2c5a6753a"
+  },
+  "win4r/openclaw-workspace": {
+    "primary": "agents/ecosystem",
+    "secondary": [
+      "skills/engineering"
+    ],
+    "source": "seed",
+    "desc_hash": "448e1d61c545"
+  },
+  "xai-org/grok-build": {
+    "primary": "ai-coding/agents",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "88fc43c155ac"
+  },
+  "xichan96/dinotty": {
+    "primary": "ai-coding/clients",
+    "secondary": [
+      "ops/terminal"
+    ],
+    "source": "seed",
+    "desc_hash": "98e369ee9e19"
+  },
+  "xyflow/xyflow": {
+    "primary": "frontend/diagram",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "5c9404e28a8d"
+  },
+  "YanG-1989/m3u": {
+    "primary": "media/live",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "f40d38638a60"
+  },
+  "Yeachan-Heo/oh-my-claudecode": {
+    "primary": "ai-coding/addons",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "c3c824db1df5"
+  },
+  "yetone/magpie": {
+    "primary": "gateway/routing",
+    "secondary": [
+      "ai-coding/clients"
+    ],
+    "source": "seed",
+    "desc_hash": "dfa4450df641"
+  },
+  "yikart/AiToEarn": {
+    "primary": "creative/publishing",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "e4848dcdda78"
+  },
+  "YishenTu/claudian": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "a32f8d921f56"
+  },
+  "zhuyansen/awesome-claude-video-skills": {
+    "primary": "resources",
+    "secondary": [
+      "creative/video",
+      "skills/content"
+    ],
+    "source": "seed",
+    "desc_hash": "18b8f4e78f20"
+  },
+  "ZLMediaKit/ZLMediaKit": {
+    "primary": "media/live",
+    "secondary": [],
+    "source": "seed",
+    "desc_hash": "4e3cadc874f5"
+  }
+}

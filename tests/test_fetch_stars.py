@@ -147,6 +147,121 @@ class FetchAllStarredTest(unittest.TestCase):
         self.assertEqual(len(result), 1)
 
 
+class FetchFailureTest(unittest.TestCase):
+    def test_network_error_raises_instead_of_returning_partial_list(self):
+        link1 = '<https://api.github.com/users/soloface/starred?page=2>; rel="next"'
+
+        def fake_urlopen(req):
+            if "page=2" in req.full_url:
+                raise OSError("boom")
+            return FakeResponse(json.dumps([{"repo": {"full_name": "a/a"}}]).encode(), link1)
+
+        with self.assertRaises(fetch_stars.FetchError):
+            fetch_stars.fetch_all_starred("tok", urlopen=fake_urlopen, _sleep=lambda _: None)
+
+
+class CarryOverTranslationsTest(unittest.TestCase):
+    def test_keeps_translation_when_description_unchanged(self):
+        old = [{"full_name": "a/a", "description": "Hello", "description_zh": "你好"}]
+        new = [{"full_name": "a/a", "description": "Hello"}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertEqual(new[0]["description_zh"], "你好")
+
+    def test_drops_translation_when_description_changed(self):
+        old = [{"full_name": "a/a", "description": "Hello", "description_zh": "你好"}]
+        new = [{"full_name": "a/a", "description": "Hello world"}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertNotIn("description_zh", new[0])
+
+    def test_does_not_carry_failed_translation_fallback(self):
+        # translate() falls back to the English text on error; retry next run.
+        old = [{"full_name": "a/a", "description": "Hello", "description_zh": "Hello"}]
+        new = [{"full_name": "a/a", "description": "Hello"}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertNotIn("description_zh", new[0])
+
+    def test_keeps_already_chinese_description(self):
+        old = [{"full_name": "a/a", "description": "中文简介", "description_zh": "中文简介"}]
+        new = [{"full_name": "a/a", "description": "中文简介"}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertEqual(new[0]["description_zh"], "中文简介")
+
+    def test_new_repo_left_untranslated(self):
+        new = [{"full_name": "b/b", "description": "Hi"}]
+        fetch_stars.carry_over_translations(new, [])
+        self.assertNotIn("description_zh", new[0])
+
+
+class MainSafetyTest(unittest.TestCase):
+    def _run(self, fetched, existing=None):
+        import tempfile
+        d = tempfile.mkdtemp()
+        path = os.path.join(d, "stars.json")
+        if existing is not None:
+            with open(path, "w") as f:
+                json.dump(existing, f)
+
+        def fake_fetch(token):
+            if isinstance(fetched, Exception):
+                raise fetched
+            return fetched
+
+        code = fetch_stars.main(data_file=path, fetch=fake_fetch)
+        with open(path) as f:
+            return code, json.load(f)
+
+    def test_fetch_error_keeps_existing_file_and_fails(self):
+        existing = [{"full_name": "a/a", "description_zh": "你好"}]
+        code, data = self._run(fetch_stars.FetchError("boom"), existing)
+        self.assertEqual(code, 1)
+        self.assertEqual(data, existing)
+
+    def test_empty_result_keeps_existing_file_and_fails(self):
+        existing = [{"full_name": "a/a"}]
+        code, data = self._run([], existing)
+        self.assertEqual(code, 1)
+        self.assertEqual(data, existing)
+
+    def test_shrunk_result_keeps_existing_file_and_fails(self):
+        # Fewer than half of the repos on file looks like a broken fetch.
+        existing = [{"full_name": "a/%d" % i} for i in range(5)]
+        code, data = self._run([{"repo": {"full_name": "a/0"}}, {"repo": {"full_name": "a/1"}}], existing)
+        self.assertEqual(code, 1)
+        self.assertEqual(data, existing)
+
+    def test_result_of_at_least_half_is_written(self):
+        existing = [{"full_name": "a/%d" % i} for i in range(4)]
+        code, data = self._run([{"repo": {"full_name": "a/0"}}, {"repo": {"full_name": "a/1"}}], existing)
+        self.assertEqual(code, 0)
+        self.assertEqual([r["full_name"] for r in data], ["a/0", "a/1"])
+
+    def test_failed_write_keeps_existing_file_and_leaves_no_temp_file(self):
+        import tempfile
+        from unittest import mock
+        d = tempfile.mkdtemp()
+        path = os.path.join(d, "stars.json")
+        existing = [{"full_name": "a/a"}]
+        with open(path, "w") as f:
+            json.dump(existing, f)
+
+        def partial_dump(obj, f, **kwargs):
+            f.write("[{")
+            raise OSError("disk full")
+
+        with mock.patch.object(fetch_stars.json, "dump", side_effect=partial_dump):
+            with self.assertRaises(OSError):
+                fetch_stars.main(data_file=path, fetch=lambda token: [{"repo": {"full_name": "b/b"}}])
+        with open(path) as f:
+            self.assertEqual(json.load(f), existing)
+        self.assertEqual(os.listdir(d), ["stars.json"])
+
+    def test_success_writes_and_carries_translations(self):
+        existing = [{"full_name": "a/a", "description": "Hi", "description_zh": "嗨"}]
+        code, data = self._run([{"repo": {"full_name": "a/a", "description": "Hi"}}], existing)
+        self.assertEqual(code, 0)
+        self.assertEqual(data[0]["description_zh"], "嗨")
+
+
 class DataPathTest(unittest.TestCase):
     def test_data_file_resolves_under_repo_root_regardless_of_cwd(self):
         # Script lives in scripts/ but output must always land at <repo>/data/stars.json

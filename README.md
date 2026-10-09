@@ -14,10 +14,10 @@
 
 - **功能分类索引**：两级分类（如「AI 编码代理 › 客户端与工作台」），侧栏分类树带数量；可「按分类分组」浏览，每个仓库显示主分类标签
 - **待确认**：规则自动归类或信息不足的仓库带「待确认」标记，侧栏可一键筛出
-- **紧凑列表**：仓库名、中文简介、主题、语言、星数、Fork 数一行看全；点表头排序
+- **列表 / 卡片两种视图**：右上角切换。列表视图一行看全仓库名、中文简介、主题、语言、星数、Fork 数，点表头排序；卡片视图以网格展示，适合浏览。选择会被记住
 - **排序与筛选**：按星数 / 收藏时间 / 创建时间 / 最近推送排序，可切换升降序；按分类、语言、主题筛选，条件可单独移除或一键清除
 - **搜索**：匹配名称、中英文简介、主题和分类名；按 `/` 聚焦，`Esc` 清空
-- **可分享链接**：筛选状态写在 URL 里（如 `#cat=mcp&group=1`）
+- **可分享链接**：筛选与视图状态写在 URL 里（如 `#cat=mcp&group=1&view=card`）
 - **中文 / 英文原文**：简介默认显示中文翻译，可切换原文
 - **Dark mode**：跟随系统，也可手动切换并记住选择
 - **响应式**：桌面侧栏 + 列表；手机端顶部搜索 + 底部筛选面板
@@ -113,10 +113,10 @@ A purely static dashboard that indexes your GitHub starred repositories by funct
 
 - **Category index**: two-level functional categories in a sidebar tree with counts, an optional "group by category" view, and a primary-category chip on every row
 - **Needs review**: rule-classified or unclear repos are flagged and can be filtered in one click
-- **Dense list** with stars, forks, language, topics and a date column that follows the sort key
+- **List and card views**, switchable top-right: a dense sortable list with a date column that follows the sort key, or a card grid for browsing; the choice is remembered
 - **Sort & filter**: by stars / starred / created / pushed (asc or desc); filter by category, language and topic; removable filter chips
 - **Search** across name, Chinese and English descriptions, topics and category names (`/` to focus, `Esc` to clear)
-- **Shareable URLs**: filter state lives in the hash, e.g. `#cat=mcp&group=1`
+- **Shareable URLs**: filter and view state live in the hash, e.g. `#cat=mcp&group=1&view=card`
 - **Dark mode** following the OS, with a persisted manual toggle
 - **Responsive**: sidebar on desktop, bottom filter sheet on mobile
 - **Auto sync** every 4 hours, plus manual runs

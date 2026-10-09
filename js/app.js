@@ -38,7 +38,7 @@
 
   var S = {
     q: '', sort: 'stars', dir: 'desc', lang: null, topics: new Set(), cats: new Set(),
-    group: false, en: false, moreLang: false, expanded: new Set(),
+    group: false, view: 'list', en: false, moreLang: false, expanded: new Set(),
   };
   var ALL = [];    // repos, each with a precomputed search haystack `_hay`
   var TAX = null;  // taxonomy array; null when category data is unavailable
@@ -55,6 +55,7 @@
 
   root.dataset.theme = GSD.resolveTheme(storageGet('theme'), DARK.matches);
   S.group = storageGet('groupByCategory') === '1';
+  S.view = GSD.resolveViewMode(null, storageGet('viewMode'));
 
   // ---------- formatting helpers ----------
   function icon(id, size) {
@@ -285,6 +286,9 @@
     var toggle = $('#groupToggle');
     toggle.hidden = !TAX;
     toggle.setAttribute('aria-pressed', String(S.group && !!TAX));
+    document.querySelectorAll('#viewToggle button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.v === S.view));
+    });
   }
 
   // ---------- list ----------
@@ -297,6 +301,8 @@
   }
 
   function renderCols() {
+    // Card view has no columns; sorting stays available in the sidebar.
+    $('#cols').hidden = S.view === 'card';
     $('#cols').innerHTML = '<div class="cols-row">' +
       '<span class="hc">仓库</span>' +
       '<span class="hc c-lang">语言</span>' +
@@ -321,7 +327,9 @@
     return h;
   }
 
-  function rowHtml(r) {
+  // HTML fragments shared by list rows and cards. `cls` maps each stat to the
+  // class names of the current layout (list columns vs. card footer).
+  function repoParts(r, cls) {
     var parts = r.full_name.split('/');
     var dk = dateKey();
     var zh = r.description_zh || r.description || '';
@@ -332,21 +340,42 @@
     var topics = (r.topics || []).slice().sort(function (a, b) { return S.topics.has(b) - S.topics.has(a); });
     var lk = langKey(r);
     var avatar = safeUrl(r.owner_avatar);
-    return '<li class="row">' +
-      (avatar ? '<img class="av" src="' + esc(avatar) + '" alt="" width="32" height="32" loading="lazy" onerror="this.style.visibility=\'hidden\'">' : '<span class="av" aria-hidden="true"></span>') +
-      '<div class="cell-main"><div class="l1">' +
-        '<a class="name" href="' + esc(safeUrl(r.html_url) || '#') + '" target="_blank" rel="noopener">' + hl(parts[0]) + ' / <b>' + hl(parts.slice(1).join('/')) + '</b></a>' +
-        categoryChip(r) +
-        (topics.length ? '<span class="topics">' + topics.slice(0, 3).map(function (t) {
-          return '<button class="topic" type="button" data-act="topic" data-topic="' + esc(t) + '" data-fkey="rtopic-' + esc(r.full_name + ':' + t) + '" aria-pressed="' + S.topics.has(t) + '" aria-label="按主题 ' + esc(t) + ' 筛选">' + hl(t) + '</button>';
-        }).join('') + (topics.length > 3 ? '<span class="topic-more num">+' + (topics.length - 3) + '</span>' : '') + '</span>' : '') +
-      '</div>' + (desc ? '<p class="desc"' + tip + '>' + hl(desc) + '</p>' : '<p class="desc empty">暂无描述</p>') + '</div>' +
-      '<span class="c-lang">' + langDot(lk) + '<span' + (lk === NONE ? ' class="muted"' : '') + '>' + esc(langName(lk)) + '</span></span>' +
-      '<span class="c-num c-star num" title="' + (Number(r.stargazers_count) || 0).toLocaleString('en-US') + ' 星标">' +
-        '<svg class="star" width="13" height="13" aria-hidden="true"><use href="#i-star"/></svg>' + fmtNum(r.stargazers_count) + '</span>' +
-      '<span class="c-num c-fork fork num" title="' + (Number(r.forks_count) || 0).toLocaleString('en-US') + ' 分叉">' +
-        '<svg class="ic" width="13" height="13" aria-hidden="true"><use href="#i-fork"/></svg>' + fmtNum(r.forks_count) + '</span>' +
-      '<time class="c-date num" datetime="' + esc(r[dk]) + '" title="' + sortMeta(dk)[2] + ' ' + absDate(r[dk]) + '">' + relTime(r[dk]) + '</time>' +
+    return {
+      avatar: avatar ? '<img class="av" src="' + esc(avatar) + '" alt="" width="40" height="40" loading="lazy" onerror="this.style.visibility=\'hidden\'">' : '<span class="av" aria-hidden="true"></span>',
+      name: '<a class="name" href="' + esc(safeUrl(r.html_url) || '#') + '" target="_blank" rel="noopener">' + hl(parts[0]) + ' / <b>' + hl(parts.slice(1).join('/')) + '</b></a>',
+      cat: categoryChip(r),
+      topics: topics.length ? '<span class="topics">' + topics.slice(0, 3).map(function (t) {
+        return '<button class="topic" type="button" data-act="topic" data-topic="' + esc(t) + '" data-fkey="rtopic-' + esc(r.full_name + ':' + t) + '" aria-pressed="' + S.topics.has(t) + '" aria-label="按主题 ' + esc(t) + ' 筛选">' + hl(t) + '</button>';
+      }).join('') + (topics.length > 3 ? '<span class="topic-more num">+' + (topics.length - 3) + '</span>' : '') + '</span>' : '',
+      desc: desc ? '<p class="desc"' + tip + '>' + hl(desc) + '</p>' : '<p class="desc empty">暂无描述</p>',
+      lang: '<span class="' + cls.lang + '">' + langDot(lk) + '<span' + (lk === NONE ? ' class="muted"' : '') + '>' + esc(langName(lk)) + '</span></span>',
+      star: '<span class="c-num' + (cls.star ? ' ' + cls.star : '') + ' num" title="' + (Number(r.stargazers_count) || 0).toLocaleString('en-US') + ' 星标">' +
+        '<svg class="star" width="13" height="13" aria-hidden="true"><use href="#i-star"/></svg>' + fmtNum(r.stargazers_count) + '</span>',
+      fork: '<span class="c-num' + (cls.fork ? ' ' + cls.fork : '') + ' fork num" title="' + (Number(r.forks_count) || 0).toLocaleString('en-US') + ' 分叉">' +
+        '<svg class="ic" width="13" height="13" aria-hidden="true"><use href="#i-fork"/></svg>' + fmtNum(r.forks_count) + '</span>',
+      // Cards have no column header, so they carry the date label inline.
+      date: '<time class="' + cls.date + ' num" datetime="' + esc(r[dk]) + '" title="' + sortMeta(dk)[2] + ' ' + absDate(r[dk]) + '">' +
+        (cls.dateLabel ? sortMeta(dk)[2] + ' ' : '') + relTime(r[dk]) + '</time>',
+    };
+  }
+
+  var ROW_CLS = { lang: 'c-lang', star: 'c-star', fork: 'c-fork', date: 'c-date', dateLabel: false };
+  var CARD_CLS = { lang: 'card-lang', date: 'card-date', dateLabel: true };
+
+  function rowHtml(r) {
+    var p = repoParts(r, ROW_CLS);
+    return '<li class="row">' + p.avatar +
+      '<div class="cell-main"><div class="l1">' + p.name + p.cat + p.topics + '</div>' + p.desc + '</div>' +
+      p.lang + p.star + p.fork + p.date +
+    '</li>';
+  }
+
+  function cardHtml(r) {
+    var p = repoParts(r, CARD_CLS);
+    return '<li class="card">' +
+      '<div class="card-h">' + p.avatar + '<div class="card-id">' + p.name + (p.cat ? '<div class="card-cat">' + p.cat + '</div>' : '') + '</div></div>' +
+      p.desc + p.topics +
+      '<div class="card-f">' + p.lang + p.star + p.fork + p.date + '</div>' +
     '</li>';
   }
 
@@ -357,6 +386,9 @@
         '<button class="btn" type="button" data-act="clear">清除全部筛选</button></div>';
       return;
     }
+    var card = S.view === 'card';
+    var item = card ? cardHtml : rowHtml;
+    var listOpen = card ? '<ul class="cards"' : '<ul class="list"';
     if (S.group && TAX) {
       box.innerHTML = GSD.groupByPrimary(results, CATS, TAX).map(function (sec) {
         var crumbs = sec.path.map(function (name, i) {
@@ -364,10 +396,10 @@
         }).join('');
         return '<section class="sec" data-sec="' + esc(sec.id) + '" aria-label="' + esc(sec.path.join(' › ')) + '">' +
           '<h2 class="sec-h">' + crumbs + '<span class="n num">· ' + sec.items.length + '</span></h2>' +
-          '<ul class="list">' + sec.items.map(rowHtml).join('') + '</ul></section>';
+          listOpen + '>' + sec.items.map(item).join('') + '</ul></section>';
       }).join('');
     } else {
-      box.innerHTML = '<ul class="list" aria-label="仓库列表">' + results.map(rowHtml).join('') + '</ul>';
+      box.innerHTML = listOpen + ' aria-label="仓库列表">' + results.map(item).join('') + '</ul>';
     }
     box.classList.toggle('rows-in', firstPaint);
     firstPaint = false;
@@ -377,6 +409,7 @@
   function hashFromState() {
     return GSD.buildHashState({
       cat: S.cats, lang: S.lang, topic: S.topics, q: S.q.trim(), sort: S.sort, dir: S.dir, group: S.group && !!TAX,
+      view: S.view,
     });
   }
   function syncHash() {
@@ -400,6 +433,7 @@
     S.sort = h.sort || 'stars';
     S.dir = h.dir || 'desc';
     if (h.group !== null) S.group = h.group;
+    S.view = GSD.resolveViewMode(h.view, S.view);
   }
 
   // ---------- render ----------
@@ -407,6 +441,7 @@
     var active = document.activeElement;
     var fkey = active && active.dataset && active.dataset.fkey;
     var c = compute();
+    $('#main').dataset.view = S.view;
     renderFacets(c);
     renderFilterbar(c);
     renderCols();
@@ -529,6 +564,10 @@
     } else if (act === 'group') {
       S.group = !S.group;
       storageSet('groupByCategory', S.group ? '1' : '0');
+    } else if (act === 'view') {
+      if (S.view === el.dataset.v) return;
+      S.view = GSD.resolveViewMode(el.dataset.v, S.view);
+      storageSet('viewMode', S.view);
     } else if (act === 'rm-q') {
       S.q = '';
       $('#q').value = '';
@@ -593,7 +632,9 @@
   }
 
   function load() {
-    $('#results').innerHTML = '<ul class="list" aria-hidden="true">' + Array(9).join('<li class="skel"></li>') + '</ul>';
+    $('#results').innerHTML = S.view === 'card'
+      ? '<ul class="cards" aria-hidden="true">' + Array(7).join('<li class="skel-card"></li>') + '</ul>'
+      : '<ul class="list" aria-hidden="true">' + Array(9).join('<li class="skel"></li>') + '</ul>';
     // All four files load in parallel. The page works without category data;
     // overrides alone are optional (missing/broken -> no overrides).
     var stars = getJSON('data/stars.json');

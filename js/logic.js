@@ -273,8 +273,17 @@
   }
 
   // --- Shareable URL hash state ----------------------------------------
-  // e.g. "cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=stars&dir=desc&group=1"
+  // e.g. "cat=ai-coding/clients,mcp&lang=Go&topic=mcp&q=agent&sort=stars&dir=desc&group=1&view=card"
   var SORT_KEYS = ['stars', 'starred_at', 'created_at', 'pushed_at'];
+  var VIEW_MODES = ['list', 'card'];  // first entry is the default
+
+  // Result layout: a valid value from the URL hash wins, then the saved
+  // preference (localStorage), otherwise the default list view.
+  function resolveViewMode(hashView, saved) {
+    if (VIEW_MODES.indexOf(hashView) !== -1) return hashView;
+    if (VIEW_MODES.indexOf(saved) !== -1) return saved;
+    return VIEW_MODES[0];
+  }
 
   function encodeHashValue(v) {
     return encodeURIComponent(v).replace(/%2F/gi, '/');
@@ -288,7 +297,7 @@
   // null / '' / [] so the caller can apply its own defaults. When `known`
   // ({cat, lang, topic}: arrays or Sets) is given, values outside it are dropped.
   function parseHashState(hash, known) {
-    var state = { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null };
+    var state = { cat: [], lang: null, topic: [], q: '', sort: null, dir: null, group: null, view: null };
     var allowed = {};
     ['cat', 'lang', 'topic'].forEach(function (k) {
       allowed[k] = known && known[k] ? toSet(known[k]) : null;
@@ -315,12 +324,13 @@
       else if (key === 'sort' && SORT_KEYS.indexOf(value) !== -1) state.sort = value;
       else if (key === 'dir' && (value === 'asc' || value === 'desc')) state.dir = value;
       else if (key === 'group' && (value === '1' || value === '0')) state.group = value === '1';
+      else if (key === 'view' && VIEW_MODES.indexOf(value) !== -1) state.view = value;
     });
     return state;
   }
 
   // Inverse of parseHashState (without the leading '#'). Defaults are omitted
-  // (sort=stars, dir=desc, group off, empty filters) so the plain view has no hash.
+  // (sort=stars, dir=desc, group off, list view, empty filters) so the plain view has no hash.
   function buildHashState(state) {
     var s = state || {};
     var parts = [];
@@ -332,6 +342,7 @@
     if (s.sort && s.sort !== 'stars') parts.push('sort=' + encodeHashValue(s.sort));
     if (s.dir === 'asc') parts.push('dir=asc');
     if (s.group) parts.push('group=1');
+    if (s.view === 'card') parts.push('view=card');
     return parts.join('&');
   }
 
@@ -370,6 +381,8 @@
     OTHER_CATEGORY: OTHER,
     REVIEW_CATEGORY: REVIEW,
     SORT_KEYS: SORT_KEYS,
+    VIEW_MODES: VIEW_MODES,
+    resolveViewMode: resolveViewMode,
     indexTaxonomy: indexTaxonomy,
     categoryAncestors: categoryAncestors,
     categoryPath: categoryPath,

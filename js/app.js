@@ -453,6 +453,13 @@
     }
   }
 
+  // Group / view toggles only: animate the results swap with a View Transition.
+  // Falls back to a plain render when unsupported or when the user prefers reduced motion.
+  function switchWithTransition() {
+    if (!document.startViewTransition || REDUCED_MOTION.matches) { render(); return; }
+    document.startViewTransition(render);
+  }
+
   // In grouped mode, jump to the first section under the chosen category.
   function scrollToSection(id) {
     var secs = document.querySelectorAll('.sec');
@@ -564,10 +571,12 @@
     } else if (act === 'group') {
       S.group = !S.group;
       storageSet('groupByCategory', S.group ? '1' : '0');
+      switchWithTransition(); return;
     } else if (act === 'view') {
       if (S.view === el.dataset.v) return;
       S.view = GSD.resolveViewMode(el.dataset.v, S.view);
       storageSet('viewMode', S.view);
+      switchWithTransition(); return;
     } else if (act === 'rm-q') {
       S.q = '';
       $('#q').value = '';

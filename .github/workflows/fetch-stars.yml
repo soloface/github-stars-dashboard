@@ -2,14 +2,21 @@ name: Fetch GitHub Starred Repos
 
 on:
   schedule:
-    # Run once per day at midnight UTC
-    - cron: '0 0 * * *'
+    # Every 4 hours (GitHub may delay schedules). Star/fork counts change
+    # almost every run, so most runs commit; runs where nothing changed
+    # commit nothing.
+    - cron: '0 */4 * * *'
   workflow_dispatch:  # Manual trigger
 
-# The data step commits data/stars.json, so the default read-only token must be
-# upgraded to allow pushes.
+# The data step commits data/stars.json and data/category_assignments.json, so
+# the default read-only token must be upgraded to allow pushes.
 permissions:
   contents: write
+
+# Never run two syncs at once (both would push); queue instead of cancelling.
+concurrency:
+  group: fetch-stars
+  cancel-in-progress: false
 
 jobs:
   fetch-stars:
@@ -33,10 +40,15 @@ jobs:
       - name: Translate descriptions
         run: python3 scripts/translate_descriptions.py
 
+      - name: Categorize repos
+        # Rule-based, offline; warns and exits 0 on bad input.
+        run: python3 scripts/categorize_repos.py
+
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/stars.json
+          git add data/stars.json data/category_assignments.json
           git diff --staged --quiet || git commit -m "chore: update starred repos data [skip ci]"
+          git pull --rebase
           git push

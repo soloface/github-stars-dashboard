@@ -1,7 +1,7 @@
 # ★ GitHub Stars Dashboard
 
-> 用 Neumorphism（工业拟物）风格展示 GitHub 星标仓库的纯静态看板。
-> A purely static dashboard that showcases your GitHub starred repos in a Neumorphism (industrial skeuomorphism) style.
+> 按功能分类索引 GitHub 星标仓库的纯静态看板。
+> A purely static dashboard that indexes your GitHub starred repos by functional category.
 
 **中文** · [English](#english)
 
@@ -12,65 +12,94 @@
 
 ## ✨ 功能特性
 
-- **星标项目卡片**：以拟物风格卡片展示你的 GitHub 星标仓库，含星数、Fork 数、语言、更新时间
-- **排序与筛选**：按星数 / 点星时间 / 发布时间 / 更新时间排序；按编程语言筛选；关键词搜索
-- **Topics 标签**：每张卡片展示仓库主题标签，点击即可筛选（AND 多选）
-- **Owner 头像**：卡片头部展示仓库拥有者头像
-- **升降序切换**：再次点击同一排序按钮可在升序 / 降序间切换
-- **Dark mode**：跟随系统 `prefers-color-scheme`，支持手动切换并 `localStorage` 持久化
-- **响应式布局**：适配 1440px 桌面到 375px 移动端
-- **每日自动更新**：GitHub Actions 每日拉取最新星标数据
+- **功能分类索引**：两级分类（如「AI 编码代理 › 客户端与工作台」），侧栏分类树带数量；可「按分类分组」浏览，每个仓库显示主分类标签
+- **待确认**：规则自动归类或信息不足的仓库带「待确认」标记，侧栏可一键筛出
+- **紧凑列表**：仓库名、中文简介、主题、语言、星数、Fork 数一行看全；点表头排序
+- **排序与筛选**：按星数 / 收藏时间 / 创建时间 / 最近推送排序，可切换升降序；按分类、语言、主题筛选，条件可单独移除或一键清除
+- **搜索**：匹配名称、中英文简介、主题和分类名；按 `/` 聚焦，`Esc` 清空
+- **可分享链接**：筛选状态写在 URL 里（如 `#cat=mcp&group=1`）
+- **中文 / 英文原文**：简介默认显示中文翻译，可切换原文
+- **Dark mode**：跟随系统，也可手动切换并记住选择
+- **响应式**：桌面侧栏 + 列表；手机端顶部搜索 + 底部筛选面板
+- **自动同步**：GitHub Actions 每 4 小时同步一次星标，也可手动触发
 
 ## 🛠 技术栈
 
-- **前端**：原生 HTML / CSS / JavaScript，零框架、零构建步骤
-- **数据采集**：Python 脚本调用 GitHub API（Bearer 鉴权）
-- **自动化**：GitHub Actions（每日定时 + 手动触发）
-- **部署**：GitHub Pages
+- **前端**：原生 HTML / CSS / JavaScript，零框架、零构建步骤，不依赖外部字体或 CDN
+- **数据采集**：Python 标准库脚本调用 GitHub API
+- **自动化**：GitHub Actions（定时 + 手动触发）
+- **部署**：GitHub Pages（`main` 分支根目录）
 
 ## 🚀 本地运行
 
 ```bash
 git clone https://github.com/soloface/github-stars-dashboard.git
 cd github-stars-dashboard
+python3 -m http.server 8000   # 然后访问 http://localhost:8000
 ```
 
-任选其一 / choose one：
+> 页面通过 `fetch` 读取 `data/*.json`，需要用本地服务器打开，直接双击 `index.html` 会读不到数据。
+
+运行测试：
 
 ```bash
-# 方式一：启动本地静态服务器（推荐，避免 file:// 下 fetch 受限）
-python3 -m http.server 8000
-# 然后浏览器访问 http://localhost:8000
-
-# 方式二：直接打开
-open index.html        # macOS
-xdg-open index.html    # Linux
+python3 -m unittest discover -s tests   # 数据脚本与工作流
+node --test tests/test_logic.mjs         # 前端纯逻辑
 ```
 
-## 🔄 数据更新机制
+## 🔄 数据同步
 
-数据由 GitHub Actions 自动维护，流程如下：
+`.github/workflows/fetch-stars.yml` 每 4 小时运行一次（GitHub 的定时任务可能会延迟）：
 
-1. **每日 UTC 00:00**（cron `0 0 * * *`）定时触发，亦支持手动 `workflow_dispatch`
-2. `scripts/fetch_stars.py` 调用 GitHub API 拉取星标仓库，生成 `data/stars.json`
-3. `scripts/translate_descriptions.py` 将英文简介翻译为中文（写入 `description_zh`）
-4. GitHub Actions bot 提交并推送 `data/stars.json`
-5. 推送触发 **GitHub Pages** 自动重新部署
+1. `scripts/fetch_stars.py` 拉取星标仓库，生成 `data/stars.json`；简介没变的仓库沿用上次的中文翻译。拉取失败、结果为空或数量不到上次一半时不覆盖现有数据，本次运行标记为失败
+2. `scripts/translate_descriptions.py` 只翻译新增或改动过的英文简介（写入 `description_zh`）
+3. `scripts/categorize_repos.py` 用关键词规则给新仓库归类，并标记「待确认」；已归类的仓库保持不变；取消星标后，规则归类的记录被移除，人工归类（seed / manual）保留
+4. GitHub Actions bot 提交 `data/stars.json` 和 `data/category_assignments.json` 并触发 GitHub Pages 重新部署。星数、Fork 数几乎每次都会变，所以大多数运行都会提交；完全没有变化时不提交
 
-> 配置说明：工作流使用内置 `GITHUB_TOKEN`（已声明 `permissions: contents: write` 以允许推送），无需额外密钥。
+**手动同步**：页面侧栏底部（手机端在「筛选」面板底部）的「手动同步」会打开 [Actions 页面](https://github.com/soloface/github-stars-dashboard/actions/workflows/fetch-stars.yml)，点 **Run workflow** 即可（仅仓库所有者可用）。也可以用命令行：
+
+```bash
+gh workflow run fetch-stars.yml -R soloface/github-stars-dashboard
+```
+
+> 如果一次取消了超过一半的星标，保护机制会让同步失败。这时先提交删除 `data/stars.json`，再手动触发一次同步即可。
+
+工作流只使用内置 `GITHUB_TOKEN`（`permissions: contents: write`），无需额外密钥。
+
+## 🗂 分类维护
+
+| 文件 | 作用 |
+|---|---|
+| `data/categories.json` | 两级分类表：id、中文名、说明、规则关键词 `keywords` |
+| `data/category_assignments.json` | 每个仓库的主分类 + 最多 2 个次分类；`source` 为 `seed`（初稿）、`manual`（人工复核）或 `rule`（规则自动） |
+| `data/category_overrides.json` | 手工修正，优先级最高，页面直接叠加，流水线不会改动 |
+
+- **复核待确认**：在页面上筛「待确认」，把结论写回 `category_assignments.json`，`source` 改为 `manual` 并删除 `needs_review`
+- **永久锁定某个仓库的分类**：写进 `category_overrides.json`，例如 `{"owner/repo": {"primary": "mcp/servers", "secondary": []}}`
+- **增删分类**：编辑 `categories.json`。被删除的 id：规则归类的仓库会重新按规则归类；人工归类的仓库会去掉失效的次分类，主分类失效时标记「待确认」等你处理，不会被覆盖
+
+设计说明见 `docs/superpowers/specs/2026-10-09-category-index-design.md`。
 
 ## 📁 项目结构
 
 ```
 github-stars-dashboard/
 ├── index.html                         # 页面骨架（lang="zh-CN"）
-├── css/style.css                      # 拟物风格样式 + Dark mode 变量
-├── js/app.js                          # 加载 / 筛选 / 排序 / 分页 / 渲染
-├── data/stars.json                    # 星标数据（由 Actions 生成）
+├── css/style.css                      # 样式（含 Dark mode）
+├── js/
+│   ├── logic.js                       # 纯逻辑：排序 / 筛选 / 分类 / URL 状态（可在 Node 中测试）
+│   └── app.js                         # 加载数据、渲染与交互
+├── data/
+│   ├── stars.json                     # 星标数据（Actions 生成）
+│   ├── categories.json                # 分类表
+│   ├── category_assignments.json      # 归类结果（Actions 更新）
+│   └── category_overrides.json        # 手工修正
 ├── scripts/
 │   ├── fetch_stars.py                 # GitHub API 数据拉取
-│   └── translate_descriptions.py      # 简介中文翻译
-└── .github/workflows/fetch-stars.yml  # 每日自动化编排
+│   ├── translate_descriptions.py      # 简介中文翻译
+│   └── categorize_repos.py            # 关键词规则归类
+├── tests/                             # unittest + node:test
+└── .github/workflows/fetch-stars.yml  # 定时同步
 ```
 
 ---
@@ -78,18 +107,19 @@ github-stars-dashboard/
 <a name="english"></a>
 ## English
 
-A purely static dashboard that showcases your GitHub starred repositories in a **Neumorphism** (industrial skeuomorphism) style. No frameworks, no build step — just HTML, CSS and JavaScript, kept fresh by GitHub Actions and served by GitHub Pages.
+A purely static dashboard that indexes your GitHub starred repositories by functional category. No frameworks, no build step, no external fonts or CDNs — just HTML, CSS and JavaScript, kept fresh by GitHub Actions and served by GitHub Pages.
 
 ### Features
 
-- **Starred-repo cards** with stars, forks, language and last-updated time
-- **Sort & filter**: by stars / starred time / created time / pushed time; filter by language; keyword search
-- **Topics tags**: each card shows topic tags; click to filter (AND logic)
-- **Owner avatar** in the card header
-- **Sort direction toggle**: click the same sort button again to flip asc/desc
-- **Dark mode**: follows `prefers-color-scheme`, with a manual toggle persisted in `localStorage`
-- **Responsive**: from 1440px desktop down to 375px mobile
-- **Daily auto-update** via GitHub Actions
+- **Category index**: two-level functional categories in a sidebar tree with counts, an optional "group by category" view, and a primary-category chip on every row
+- **Needs review**: rule-classified or unclear repos are flagged and can be filtered in one click
+- **Dense list** with stars, forks, language, topics and a date column that follows the sort key
+- **Sort & filter**: by stars / starred / created / pushed (asc or desc); filter by category, language and topic; removable filter chips
+- **Search** across name, Chinese and English descriptions, topics and category names (`/` to focus, `Esc` to clear)
+- **Shareable URLs**: filter state lives in the hash, e.g. `#cat=mcp&group=1`
+- **Dark mode** following the OS, with a persisted manual toggle
+- **Responsive**: sidebar on desktop, bottom filter sheet on mobile
+- **Auto sync** every 4 hours, plus manual runs
 
 ### Run locally
 
@@ -97,12 +127,17 @@ A purely static dashboard that showcases your GitHub starred repositories in a *
 git clone https://github.com/soloface/github-stars-dashboard.git
 cd github-stars-dashboard
 python3 -m http.server 8000   # then open http://localhost:8000
-# or simply: open index.html
 ```
+
+Tests: `python3 -m unittest discover -s tests` and `node --test tests/test_logic.mjs`.
 
 ### Data pipeline
 
-Every day at UTC 00:00 (cron `0 0 * * *`, also manually triggerable via `workflow_dispatch`), GitHub Actions runs `scripts/fetch_stars.py` to pull starred repos from the GitHub API into `data/stars.json`, then `scripts/translate_descriptions.py` to add Chinese descriptions (`description_zh`). The bot commits and pushes the JSON, and the push triggers an automatic **GitHub Pages** deployment. The workflow uses the built-in `GITHUB_TOKEN` (`permissions: contents: write`) — no extra secrets required.
+Every 4 hours (schedules may be delayed by GitHub) the workflow fetches starred repos into `data/stars.json` (reusing previous translations for unchanged descriptions; a failed, empty or less-than-half-size fetch never overwrites existing data), translates new English descriptions, classifies new repos with keyword rules (flagged for review), and commits `data/stars.json` plus `data/category_assignments.json`, which triggers a GitHub Pages deployment. Star and fork counts change almost every run, so most runs commit; runs with no change commit nothing. Trigger it manually from the [Actions page](https://github.com/soloface/github-stars-dashboard/actions/workflows/fetch-stars.yml) or with `gh workflow run fetch-stars.yml`. Only the built-in `GITHUB_TOKEN` is used.
+
+### Categories
+
+`data/categories.json` defines the taxonomy and rule keywords, `data/category_assignments.json` stores each repo's primary + up to two secondary categories (`seed`, `manual` or `rule`), and `data/category_overrides.json` holds manual corrections that always win.
 
 ## License
 

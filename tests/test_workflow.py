@@ -54,6 +54,16 @@ class WorkflowStructureTest(unittest.TestCase):
         runs = [s.get("run", "") for s in steps if "run" in s]
         self.assertTrue(any("scripts/translate_descriptions.py" in r for r in runs), runs)
 
+    def test_delegates_to_categorize_script_and_stages_assignments(self):
+        _, steps = _steps()
+        runs = [s.get("run", "") for s in steps if "run" in s]
+        idx = [i for i, r in enumerate(runs) if "scripts/categorize_repos.py" in r]
+        self.assertTrue(idx, runs)
+        translate = next(i for i, r in enumerate(runs) if "scripts/translate_descriptions.py" in r)
+        self.assertGreater(idx[0], translate, "categorize must run after translation")
+        add_lines = [ln for r in runs for ln in r.splitlines() if "git add" in ln]
+        self.assertTrue(any("data/category_assignments.json" in ln for ln in add_lines), add_lines)
+
     def test_no_deep_translator_dependency(self):
         text = _raw()
         for banned in ("deep-translator", "pip install", "deep_translator"):
@@ -64,6 +74,17 @@ class WorkflowStructureTest(unittest.TestCase):
         self.assertIn("actions/checkout", text)
         self.assertIn("actions/setup-python", text)
         self.assertIn("git push", text)
+
+    def test_runs_are_serialized_without_cancelling(self):
+        doc, _ = _steps()
+        self.assertEqual(doc.get("concurrency"), {"group": "fetch-stars", "cancel-in-progress": False})
+
+    def test_rebases_onto_remote_before_push(self):
+        _, steps = _steps()
+        run = next(s["run"] for s in steps if "git push" in s.get("run", ""))
+        lines = [ln.strip() for ln in run.splitlines()]
+        self.assertIn("git pull --rebase", lines)
+        self.assertLess(lines.index("git pull --rebase"), lines.index("git push"))
 
     def test_passes_gh_token_to_fetch_step(self):
         # GH_TOKEN must be forwarded to the fetch step env (Bearer used inside the script)

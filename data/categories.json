@@ -1,0 +1,650 @@
+{
+  "version": 1,
+  "taxonomy": [
+    {
+      "id": "ai-coding",
+      "name": "AI 编码代理",
+      "description": "在终端/IDE/桌面里写代码的 AI 编码代理本体及其外围",
+      "children": [
+        {
+          "id": "ai-coding/agents",
+          "name": "编码代理 CLI",
+          "description": "编码代理本体，CLI/TUI 形态（如 claude-code、opencode、gemini-cli）",
+          "keywords": [
+            "coding agent",
+            "ai coding agent",
+            "coding assistant",
+            "agentic coding",
+            "coding agent cli",
+            "tui",
+            "编码代理",
+            "in your terminal",
+            "终端中",
+            "代理编码",
+            "编码助手",
+            "ai coding"
+          ]
+        },
+        {
+          "id": "ai-coding/clients",
+          "name": "客户端与工作台",
+          "description": "给编码代理用的桌面/移动/Web 客户端、工作台与控制中心",
+          "keywords": [
+            "desktop",
+            "desktop app",
+            "desktop client",
+            "workspace",
+            "mobile",
+            "ios",
+            "android",
+            "gui",
+            "web ui",
+            "control center",
+            "ide",
+            "ade",
+            "companion",
+            "桌面",
+            "客户端",
+            "工作区",
+            "工作台",
+            "控制中心",
+            "伴侣"
+          ]
+        },
+        {
+          "id": "ai-coding/addons",
+          "name": "插件与增强",
+          "description": "编码代理的插件、状态栏、编排增强、聊天桥接",
+          "keywords": [
+            "claude code plugin",
+            "codex plugin",
+            "statusline",
+            "status line",
+            "hud",
+            "enhanced tool",
+            "bridge",
+            "slash commands",
+            "增强工具",
+            "桥梁",
+            "orchestration",
+            "增强"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "name": "Agent Skills 与提示词",
+      "description": "给代理用的技能包、规则文件、提示词与角色定义",
+      "children": [
+        {
+          "id": "skills/engineering",
+          "name": "工程方法与通用",
+          "description": "工程方法、开发流程、通用编码规则与技能合集",
+          "keywords": [
+            "skill",
+            "claude md",
+            "agents md",
+            "cursor rules",
+            "sdlc",
+            "software development",
+            "engineering",
+            "engineers",
+            "methodology",
+            "developer tools",
+            "技能",
+            "工程"
+          ]
+        },
+        {
+          "id": "skills/design",
+          "name": "设计与前端",
+          "description": "界面设计、前端审美、设计系统类技能与规则",
+          "keywords": [
+            "design skill",
+            "design system",
+            "design md",
+            "interfaces",
+            "anti ai slop",
+            "vibe design",
+            "frontend design",
+            "设计技能",
+            "设计 skill",
+            "界面",
+            "design",
+            "设计"
+          ]
+        },
+        {
+          "id": "skills/content",
+          "name": "内容创作与办公",
+          "description": "写作、PPT、视频、笔记、运营等内容创作与办公技能",
+          "keywords": [
+            "obsidian",
+            "ppt",
+            "pptx",
+            "presentation",
+            "slides",
+            "powerpoint",
+            "writing",
+            "content creation",
+            "copywriting",
+            "markdown",
+            "excalidraw",
+            "mermaid",
+            "notes",
+            "幻灯片",
+            "文案",
+            "演示文稿",
+            "写作",
+            "选题",
+            "笔记",
+            "humanizer",
+            "文本"
+          ]
+        },
+        {
+          "id": "skills/roles",
+          "name": "角色与智能体定义",
+          "description": "成套的 AI 专家角色/智能体定义",
+          "keywords": [
+            "agency",
+            "ai roles",
+            "agent definitions",
+            "system prompt",
+            "persona",
+            "personality",
+            "specialist",
+            "specialized expert",
+            "角色",
+            "专家角色",
+            "智能体"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP 与工具接入",
+      "description": "让代理接入外部工具与数据的 MCP 服务器和代理友好接口",
+      "children": [
+        {
+          "id": "mcp/servers",
+          "name": "MCP 服务器",
+          "description": "MCP 服务器（把某个软件/服务暴露给代理）",
+          "keywords": [
+            "mcp server",
+            "model context protocol",
+            "mcp based",
+            "mcp 服务器",
+            "模型上下文协议"
+          ]
+        },
+        {
+          "id": "mcp/agent-cli",
+          "name": "面向代理的 CLI 与接口",
+          "description": "为代理设计的 CLI、API 封装与互联网访问工具",
+          "keywords": [
+            "cli",
+            "agent native",
+            "python api",
+            "sdk",
+            "web scraper",
+            "scraper",
+            "free api",
+            "llm tools",
+            "agent infrastructure",
+            "命令行",
+            "internet"
+          ]
+        },
+        {
+          "id": "mcp/code-intel",
+          "name": "代码理解与知识图谱",
+          "description": "代码库索引、知识图谱、代码理解工具",
+          "keywords": [
+            "knowledge graph",
+            "code intelligence",
+            "code analysis",
+            "codebase analysis",
+            "tree sitter",
+            "知识图",
+            "代码智能",
+            "代码库",
+            "index",
+            "indexed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "name": "Agent 平台与应用",
+      "description": "通用（非编码专用）Agent 框架、运行时与应用",
+      "children": [
+        {
+          "id": "agents/frameworks",
+          "name": "框架与运行时",
+          "description": "Agent 框架、运行时、多代理编排",
+          "keywords": [
+            "agent framework",
+            "agentic framework",
+            "harness",
+            "agent harness",
+            "runtime",
+            "multi agent",
+            "agent orchestration",
+            "langchain",
+            "langgraph",
+            "operating system",
+            "sandboxes",
+            "subagents",
+            "框架",
+            "运行时",
+            "操作系统"
+          ]
+        },
+        {
+          "id": "agents/apps",
+          "name": "自主代理应用",
+          "description": "面向终端用户的自主代理应用、电脑操控代理、代理硬件",
+          "keywords": [
+            "computer use",
+            "browser automation",
+            "web agent",
+            "chatbot",
+            "virtual machine",
+            "coworkers",
+            "esp32",
+            "self hostable",
+            "agent app",
+            "personal ai",
+            "bot",
+            "代理应用",
+            "机器人",
+            "聊天机器人"
+          ]
+        },
+        {
+          "id": "agents/ecosystem",
+          "name": "OpenClaw / Hermes 生态",
+          "description": "OpenClaw、Hermes 等特定代理的插件、网关、客户端与周边",
+          "keywords": [
+            "openclaw",
+            "hermes",
+            "clawdbot",
+            "a2a",
+            "agent to agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gateway",
+      "name": "模型接入与网关",
+      "description": "大模型 API 的接入、中转、路由与选型",
+      "children": [
+        {
+          "id": "gateway/relay",
+          "name": "API 中转与聚合",
+          "description": "API 中转、反向代理、多账号/多供应商聚合网关",
+          "keywords": [
+            "api gateway",
+            "ai gateway",
+            "llm gateway",
+            "reverse proxy",
+            "2api",
+            "openai compatible",
+            "compatible api",
+            "relay",
+            "multi account",
+            "proxy",
+            "api service",
+            "model hub",
+            "中转",
+            "反向代理",
+            "网关",
+            "拼车"
+          ]
+        },
+        {
+          "id": "gateway/routing",
+          "name": "模型路由与切换",
+          "description": "在多个模型/供应商之间切换与路由的工具",
+          "keywords": [
+            "model router",
+            "model routing",
+            "router",
+            "provider management",
+            "providers",
+            "switch",
+            "litellm",
+            "切换",
+            "路由"
+          ]
+        },
+        {
+          "id": "gateway/catalog",
+          "name": "模型目录与价格",
+          "description": "模型目录、价格比较等选型信息",
+          "keywords": [
+            "ai models",
+            "price comparison",
+            "subscription",
+            "pricing",
+            "price",
+            "价格",
+            "比价",
+            "模型目录"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "设计与多媒体创作",
+      "description": "用 AI 或代码做视频、设计、图像、音频与内容发布",
+      "children": [
+        {
+          "id": "creative/video",
+          "name": "视频生成与剪辑",
+          "description": "视频生成、剪辑、动画与镜头处理",
+          "keywords": [
+            "video",
+            "video editor",
+            "video editing",
+            "video generation",
+            "text to video",
+            "video production",
+            "remotion",
+            "ffmpeg",
+            "animation",
+            "motion",
+            "motion graphics",
+            "film",
+            "storyboard",
+            "shot detection",
+            "capcut",
+            "视频",
+            "剪辑",
+            "动画",
+            "镜头"
+          ]
+        },
+        {
+          "id": "creative/design",
+          "name": "设计与图像生成",
+          "description": "设计稿、原型、图表、图像生成",
+          "keywords": [
+            "image generation",
+            "draw io",
+            "prototype",
+            "prototyping",
+            "figma",
+            "website clone",
+            "gpt image",
+            "ai design",
+            "claude design",
+            "design engine",
+            "3d",
+            "图像",
+            "原型",
+            "图像生成"
+          ]
+        },
+        {
+          "id": "creative/audio",
+          "name": "语音与音频",
+          "description": "语音合成、语音识别与音频工具",
+          "keywords": [
+            "whisper",
+            "tts",
+            "text to speech",
+            "voice",
+            "speech",
+            "audio",
+            "transcribes",
+            "subtitle",
+            "voice clone",
+            "语音",
+            "音频",
+            "转录",
+            "字幕"
+          ]
+        },
+        {
+          "id": "creative/publishing",
+          "name": "内容发布",
+          "description": "内容排版、多平台发布与运营",
+          "keywords": [
+            "publishing",
+            "publish",
+            "auto publish",
+            "xiaohongshu",
+            "douyin",
+            "content creator",
+            "social media",
+            "排版",
+            "发布",
+            "公众号",
+            "小红书",
+            "运营"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "前端与 UI 组件",
+      "description": "前端 UI 组件库、模板与可视化编辑库",
+      "children": [
+        {
+          "id": "frontend/components",
+          "name": "组件库与模板",
+          "description": "UI 组件库、后台模板、视觉组件",
+          "keywords": [
+            "component library",
+            "ui components",
+            "ui library",
+            "components",
+            "tailwindcss",
+            "shadcn",
+            "admin dashboard",
+            "react components",
+            "组件库",
+            "组件"
+          ]
+        },
+        {
+          "id": "frontend/diagram",
+          "name": "图表与流程编辑",
+          "description": "流程图、关系图、节点编辑器类前端库",
+          "keywords": [
+            "diagram",
+            "diagramming",
+            "flowchart",
+            "node based ui",
+            "graph editor",
+            "dag",
+            "uml",
+            "流程图",
+            "图表"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "name": "知识、搜索与数据",
+      "description": "知识库、搜索、资讯聚合、舆情与数据接口",
+      "children": [
+        {
+          "id": "knowledge/search",
+          "name": "知识库与搜索",
+          "description": "知识库/RAG、搜索引擎、RSS 与数据源接口",
+          "keywords": [
+            "rss",
+            "search engine",
+            "metasearch",
+            "search",
+            "knowledge base",
+            "rag",
+            "vector search",
+            "semantic search",
+            "wiki",
+            "market data",
+            "data source",
+            "知识库",
+            "搜索",
+            "检索",
+            "数据源"
+          ]
+        },
+        {
+          "id": "knowledge/analysis",
+          "name": "舆情与情报分析",
+          "description": "舆情监测、趋势分析、情报（OSINT）平台",
+          "keywords": [
+            "public opinion",
+            "sentiment analysis",
+            "trend",
+            "trending topics",
+            "osint",
+            "intelligence platform",
+            "data analysis",
+            "hot news",
+            "舆情",
+            "情报",
+            "热点"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ops",
+      "name": "运维、网络与安全",
+      "description": "服务器运维、部署、终端、网络与安全",
+      "children": [
+        {
+          "id": "ops/servers",
+          "name": "服务器运维与部署",
+          "description": "服务器面板、监控、自托管部署与 LLM 栈部署",
+          "keywords": [
+            "self hosted",
+            "deployment",
+            "docker",
+            "panel",
+            "server monitoring",
+            "monitoring",
+            "homelab",
+            "o&m",
+            "运维",
+            "面板",
+            "部署"
+          ]
+        },
+        {
+          "id": "ops/terminal",
+          "name": "终端与远程连接",
+          "description": "终端、SSH、远程桌面与 shell 配置",
+          "keywords": [
+            "terminal",
+            "ssh",
+            "sftp",
+            "vnc",
+            "remote desktop",
+            "zsh",
+            "shell",
+            "terminal emulator",
+            "remote terminal",
+            "终端",
+            "远程桌面"
+          ]
+        },
+        {
+          "id": "ops/netsec",
+          "name": "网络与安全",
+          "description": "网络代理、科学上网、安全加固与渗透测试",
+          "keywords": [
+            "security",
+            "penetration testing",
+            "pentesting",
+            "hacking",
+            "openwrt",
+            "sing box",
+            "transparent proxy",
+            "vpn",
+            "firewall",
+            "hardening",
+            "透明代理",
+            "安全",
+            "渗透",
+            "科学上网"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "影音娱乐",
+      "description": "影音娱乐：直播源、流媒体、音乐与下载",
+      "children": [
+        {
+          "id": "media/live",
+          "name": "直播与流媒体",
+          "description": "直播源、IPTV 与流媒体服务器",
+          "keywords": [
+            "iptv",
+            "m3u",
+            "live streaming",
+            "streaming",
+            "rtmp",
+            "rtsp",
+            "webrtc",
+            "media server",
+            "直播",
+            "直播源",
+            "流媒体"
+          ]
+        },
+        {
+          "id": "media/music",
+          "name": "音乐与下载",
+          "description": "音乐播放器与音视频下载",
+          "keywords": [
+            "music",
+            "music player",
+            "downloader",
+            "yt dlp",
+            "youtube dl",
+            "音乐",
+            "歌词"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "name": "资源合集",
+      "description": "Awesome 列表、API 合集、指南等资源汇总",
+      "children": [],
+      "keywords": [
+        "awesome",
+        "awesome list",
+        "lists",
+        "use cases",
+        "how to guide",
+        "public apis",
+        "curated",
+        "合集",
+        "指南"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "其他 / 待确认",
+      "description": "暂时无法判断用途，等待人工确认",
+      "children": []
+    }
+  ]
+}

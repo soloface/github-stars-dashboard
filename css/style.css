@@ -149,15 +149,16 @@ button.twisty:hover { background: var(--hover); color: var(--text); }
 .hint { font-size: 12px; color: var(--text-3); }
 .hint kbd { font: 12px/1 var(--mono); border: 1px solid var(--line-2); border-radius: 4px; padding: 2px 5px; margin: 0 2px; color: var(--text-2); }
 
-.switch { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 8px; margin-right: -8px; border-radius: 6px; font-size: 13px; color: var(--text-2); white-space: nowrap; }
+.switch { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 8px; margin-right: -8px; border-radius: 6px; font-size: 13px; color: var(--text-2); white-space: nowrap; transition: background-color .2s ease, color .2s ease; }
 @media (hover: hover) { .switch:hover { background: var(--hover); color: var(--text); } }
-.switch .track { position: relative; width: 28px; height: 16px; border-radius: 8px; background: var(--text-3); transition: background .15s; }
-.switch .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); transition: transform .15s; }
+.switch .track { position: relative; width: 28px; height: 16px; border-radius: 8px; background: var(--text-3); transition: background-color .2s ease; }
+.switch .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); transition: transform .2s ease; }
 .switch[aria-pressed="true"] { color: var(--text); }
 .switch[aria-pressed="true"] .track { background: var(--accent); }
 .switch[aria-pressed="true"] .track::after { transform: translateX(12px); }
 .view-seg { flex: none; }
 .view-seg button { flex: none; padding: 0 12px; }
+.view-seg button { transition: background-color .2s ease, color .2s ease, box-shadow .2s ease; }
 
 .cols, .row { display: grid; grid-template-columns: 40px minmax(0, 1fr) 118px 74px 60px 92px; column-gap: 16px; align-items: center; padding: 0 24px; }
 .cols { position: sticky; top: 0; z-index: 4; height: var(--cols-h); background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); font-size: 12px; color: var(--text-3); }
@@ -320,6 +321,15 @@ button.twisty:hover { background: var(--hover); color: var(--text); }
   .skel-card { height: 176px; }
 }
 
+/* results area cross-fade when switching group / view (see switchWithTransition in app.js) */
+#results { view-transition-name: results; }
+::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+::view-transition-old(results) { animation: 180ms ease both vt-out; }
+::view-transition-new(results) { animation: 260ms ease both vt-in; }
+@keyframes vt-out { to { opacity: 0; transform: translateY(-6px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(8px); } }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }

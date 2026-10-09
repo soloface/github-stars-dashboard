@@ -118,9 +118,8 @@
   "appsail/Gemini-in-Chrome": {
     "primary": "other",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "e3b0c44298fc",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "e3b0c44298fc"
   },
   "av/harbor": {
     "primary": "ops/servers",
@@ -147,11 +146,10 @@
     "desc_hash": "f0b9c96e6836"
   },
   "block/buzz": {
-    "primary": "other",
+    "primary": "agents/apps",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "1b0c650f887d",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "1b0c650f887d"
   },
   "borawong/AiMaMi": {
     "primary": "ai-coding/clients",
@@ -456,11 +454,10 @@
     "desc_hash": "e7fc391a0393"
   },
   "jd-opensource/JoyAI-VL-Interaction": {
-    "primary": "creative/video",
+    "primary": "other",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "23a2577efda1",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "23a2577efda1"
   },
   "jhj0517/Whisper-WebUI": {
     "primary": "creative/audio",
@@ -529,9 +526,8 @@
   "luolin-ai/openclawWeComzh": {
     "primary": "agents/ecosystem",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "51deee7044b3",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "51deee7044b3"
   },
   "mattpocock/skills": {
     "primary": "skills/engineering",
@@ -540,11 +536,10 @@
     "desc_hash": "a69c085fab3e"
   },
   "mcncarl/yichen-skills": {
-    "primary": "skills/engineering",
+    "primary": "skills/content",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "e3b0c44298fc",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "e3b0c44298fc"
   },
   "milind-soni/OpenMausBot": {
     "primary": "agents/apps",
@@ -587,9 +582,8 @@
   "mursor1985/LIVE": {
     "primary": "media/live",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "e3b0c44298fc",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "e3b0c44298fc"
   },
   "nesquena/hermes-webui": {
     "primary": "agents/ecosystem",
@@ -716,11 +710,10 @@
     "desc_hash": "4ab8da157b2c"
   },
   "Pluviobyte/rnskill": {
-    "primary": "skills/engineering",
+    "primary": "skills/content",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "1ee440ecabe4",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "1ee440ecabe4"
   },
   "provencher/codex-skills": {
     "primary": "skills/engineering",
@@ -905,11 +898,10 @@
     "desc_hash": "275970af81f7"
   },
   "voyager-crew/voyager": {
-    "primary": "agents/apps",
+    "primary": "other",
     "secondary": [],
-    "source": "seed",
-    "desc_hash": "f9847dbfcc8d",
-    "needs_review": true
+    "source": "manual",
+    "desc_hash": "f9847dbfcc8d"
   },
   "Wei-Shaw/sub2api": {
     "primary": "gateway/relay",

@@ -195,7 +195,7 @@
       "creative/design"
     ],
     "source": "manual",
-    "desc_hash": "b5ff5373149d"
+    "desc_hash": "38cfa074cd73"
   },
   "chenyme/grok2api": {
     "primary": "gateway/relay",
@@ -341,7 +341,7 @@
       "skills/content"
     ],
     "source": "seed",
-    "desc_hash": "71e75a4a4a0b"
+    "desc_hash": "1fd91cf1e1c0"
   },
   "foamzou/melody": {
     "primary": "media/music",

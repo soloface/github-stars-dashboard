@@ -990,6 +990,13 @@
     "source": "seed",
     "desc_hash": "18b8f4e78f20"
   },
+  "ZJU-REAL/Easel": {
+    "primary": "creative/publishing",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "81992771f9b7",
+    "needs_review": true
+  },
   "ZLMediaKit/ZLMediaKit": {
     "primary": "media/live",
     "secondary": [],

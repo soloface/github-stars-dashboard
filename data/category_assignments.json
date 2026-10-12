@@ -523,6 +523,13 @@
     "source": "seed",
     "desc_hash": "edc52f0b0786"
   },
+  "Liu-zhongxian/wechat-bridge": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "a3113522d8de",
+    "needs_review": true
+  },
   "luolin-ai/openclawWeComzh": {
     "primary": "agents/ecosystem",
     "secondary": [],
@@ -867,6 +874,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "e6516d60cdb0"
+  },
+  "unclecode/crawl4ai": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "aa54a7f27a9f",
+    "needs_review": true
   },
   "usestrix/strix": {
     "primary": "ops/netsec",

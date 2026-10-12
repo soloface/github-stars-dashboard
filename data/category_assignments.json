@@ -541,6 +541,13 @@
     "source": "manual",
     "desc_hash": "e3b0c44298fc"
   },
+  "michaelpersonal/foresight-zh": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "482e9d602ba2",
+    "needs_review": true
+  },
   "milind-soni/OpenMausBot": {
     "primary": "agents/apps",
     "secondary": [],

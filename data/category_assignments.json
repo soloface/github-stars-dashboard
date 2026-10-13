@@ -249,6 +249,13 @@
     "source": "seed",
     "desc_hash": "5b53bba40987"
   },
+  "debpalash/VoiceStudio": {
+    "primary": "creative/audio",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "f5cb1ec90245",
+    "needs_review": true
+  },
   "deepseek-ai/deepseek-harness": {
     "primary": "ai-coding/agents",
     "secondary": [
@@ -510,6 +517,13 @@
     ],
     "source": "seed",
     "desc_hash": "6d9f1acc722d"
+  },
+  "lexmount/moli": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "eae9b17c18e9",
+    "needs_review": true
   },
   "liandu2024/Open-Box": {
     "primary": "ops/netsec",

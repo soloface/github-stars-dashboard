@@ -4,6 +4,14 @@
 A description is handled in this order:
 
 * Empty -> ``description_zh`` is ``""``.
+* Leading English segment: ``leading_english_prefix`` is the text before
+  the first ideograph. When that prefix is one English segment (starts
+  with an ASCII letter, no ideograph, at least 20 characters, no label
+  separator such as `` · `` / `` | `` / `` / `` / `` - ``; emoji and
+  punctuation may appear inside it) and ``extract_chinese_segment``
+  returns a Chinese run, that run is kept with no network call, even if
+  the full text is mostly Chinese. A Chinese opening, a short label, an
+  emoji banner, or a title list stays on the path below.
 * Mostly Chinese (``chinese_ratio`` >= ``ZH_RATIO``, which is 0.5) -> copied
   as-is, with no network call. Each Han ideograph (U+4E00–U+9FFF and
   U+3400–U+4DBF) is one unit, and each ASCII letter/digit word
@@ -64,6 +72,9 @@ ZH_RATIO = 0.5
 # the boundary as a real language switch (and before a segment is "too English"
 # to use the relaxed Chinese test).
 _ASCII_SIDE_MIN = 20
+# Separators that join short titles. A span that contains one is not a
+# single leading English segment. An em dash inside a sentence is not listed.
+_LEADING_LABEL_SEPS = (" · ", " | ", " / ", " - ", "·")
 # After ASCII words are removed, this fraction of the remainder must be
 # ideographs or Chinese punctuation.
 _RELAXED_RATIO = 0.8
@@ -491,14 +502,64 @@ def translate(text, opener=urllib.request.urlopen):
     return translated or None
 
 
+def leading_english_prefix(desc):
+    """Return the leading English segment, or None.
+
+    The candidate is the text before the first Han ideograph (U+4E00–U+9FFF
+    or U+3400–U+4DBF). Surrounding whitespace is stripped; emoji and
+    punctuation may remain. The candidate is one English segment when all
+    of the following hold:
+
+    * It starts with an ASCII letter. An opening emoji is not an English
+      lead-in. An emoji later in the span, including right before the
+      Chinese, does not disqualify it.
+    * It contains no Han ideograph.
+    * Its length is at least ``_ASCII_SIDE_MIN`` (20).
+    * It contains no label separator (`` · ``, `` | ``, `` / ``, `` - ``,
+      or a bare middle dot). Those join short titles. An em dash inside
+      one English sentence does not.
+
+    Chinese openings, short labels, and anything else return None so the
+    caller keeps the mostly-Chinese check and the extract-or-translate path.
+    """
+    if not desc:
+        return None
+    idx = next((i for i, ch in enumerate(desc) if _is_hanzi(ch)), None)
+    raw = desc if idx is None else desc[:idx]
+    # Check separators before strip: a trailing " | " loses its last space.
+    if any(sep in raw for sep in _LEADING_LABEL_SEPS):
+        return None
+    prefix = raw.strip()
+    if len(prefix) < _ASCII_SIDE_MIN:
+        return None
+    if not (prefix[0].isascii() and prefix[0].isalpha()):
+        return None
+    if any(_is_hanzi(ch) for ch in prefix):
+        return None
+    return prefix
+
+
 def resolve_zh(desc, translate_fn):
     """Return ``(zh, ok)`` for one description.
+
+    Before the mostly-Chinese check, a leading English segment
+    (``leading_english_prefix``) is peeled off when
+    ``extract_chinese_segment`` finds one continuous Chinese run. That run
+    is returned and ``translate_fn`` is not called, whatever the Chinese
+    ratio of the full text is. If the opening is not such a segment, or no
+    Chinese run can be cut, the original order applies: mostly-Chinese text
+    is kept as-is; otherwise a Chinese segment is extracted or
+    ``translate_fn`` runs.
 
     ``ok`` is False when a translation was required and failed. ``zh`` is then
     None and the caller must not write ``description_zh``.
     """
     if not desc:
         return ("", True)
+    if leading_english_prefix(desc):
+        segment = extract_chinese_segment(desc)
+        if segment:
+            return (segment, True)
     if is_mostly_chinese(desc):
         return (desc, True)
     segment = extract_chinese_segment(desc)
@@ -603,6 +664,10 @@ def _plan(desc):
     """
     if not desc:
         return "", "as-is"
+    if leading_english_prefix(desc):
+        segment = extract_chinese_segment(desc)
+        if segment:
+            return segment, "extracted"
     if is_mostly_chinese(desc):
         return desc, "as-is"
     segment = extract_chinese_segment(desc)

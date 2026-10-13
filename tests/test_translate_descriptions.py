@@ -433,9 +433,84 @@ class ResolveZhTest(unittest.TestCase):
             raise AssertionError("translate must not be called")
         self.assertEqual(td.resolve_zh(DESC_HTML, explode), (ZH_HTML, True))
         # 18 hanzi and 17 ASCII words: the whole description is mostly Chinese,
-        # so the unit rule keeps it instead of extracting the Chinese tail.
+        # but the English lead-in is long enough to keep only the Chinese tail.
         self.assertTrue(td.is_mostly_chinese(DESC_CODEX))
-        self.assertEqual(td.resolve_zh(DESC_CODEX, explode), (DESC_CODEX, True))
+        self.assertEqual(td.resolve_zh(DESC_CODEX, explode), (ZH_CODEX, True))
+
+    def test_leading_english_keeps_chinese_segment_without_translate(self):
+        def explode(text):
+            raise AssertionError("translate must not be called")
+
+        easel_prefix = td.leading_english_prefix(DESC_EASEL)
+        codex_prefix = td.leading_english_prefix(DESC_CODEX)
+        self.assertIsNotNone(easel_prefix)
+        self.assertIsNotNone(codex_prefix)
+        self.assertGreaterEqual(len(easel_prefix), 20)
+        self.assertGreaterEqual(len(codex_prefix), 20)
+        self.assertIn("🎨", easel_prefix)
+        self.assertFalse(any(td._is_hanzi(ch) for ch in easel_prefix))
+        self.assertTrue(td.is_mostly_chinese(DESC_EASEL))
+        self.assertEqual(
+            td.resolve_zh(DESC_EASEL, explode),
+            (
+                "一个开源的 AI 社交媒体智能体——发现热点趋势、创作内容、"
+                "一键发布至各大平台，并学习分析哪些内容真正有效，覆盖小红书、"
+                "抖音、知乎、哔哩哔哩等平台。",
+                True,
+            ),
+        )
+        self.assertEqual(td.resolve_zh(DESC_EASEL, explode), (ZH_EASEL, True))
+        self.assertEqual(
+            td.resolve_zh(DESC_CODEX, explode),
+            ("一个CodexApp的增强工具，努力让Codex变得更好用更舒服", True),
+        )
+        self.assertEqual(td.resolve_zh(DESC_CODEX, explode), (ZH_CODEX, True))
+
+    def test_mostly_chinese_fixtures_resolve_to_original(self):
+        def explode(text):
+            raise AssertionError("translate must not be called")
+
+        self.assertEqual(len(MOSTLY_CHINESE_FIXTURES), 12)
+        for name, desc in MOSTLY_CHINESE_FIXTURES:
+            self.assertEqual(td.resolve_zh(desc, explode), (desc, True), name)
+
+    def test_english_lead_without_chinese_segment_translates(self):
+        samples = (
+            ("larksuite/cli", DESC_LARK),
+            ("zhuyansen/awesome-claude-video-skills", DESC_SKILLS),
+        )
+        for name, desc in samples:
+            calls = []
+
+            def fn(text, _calls=calls):
+                _calls.append(text)
+                return "需要翻译的中文结果"
+
+            self.assertIsNone(td.extract_chinese_segment(desc), name)
+            self.assertEqual(
+                td.resolve_zh(desc, fn), ("需要翻译的中文结果", True), name
+            )
+            self.assertEqual(calls, [desc], name)
+
+    def test_short_english_prefix_does_not_trigger(self):
+        def explode(text):
+            raise AssertionError("translate must not be called")
+
+        # "Huashu Design · " is 16 characters, under the 20-character opening.
+        lead = "Huashu Design · "
+        self.assertLess(len(lead.strip()), 20)
+        desc = lead + "这是一段完整的中文设计说明，包含足够多的汉字。"
+        self.assertTrue(td.is_mostly_chinese(desc))
+        self.assertIsNone(td.leading_english_prefix(desc))
+        self.assertIsNotNone(td.extract_chinese_segment(desc))
+        self.assertEqual(td.resolve_zh(desc, explode), (desc, True))
+        # Chinese first, or a short English name glued into a Chinese sentence.
+        self.assertIsNone(td.leading_english_prefix(DESC_DENO))
+        self.assertEqual(td.resolve_zh(DESC_DENO, explode), (DESC_DENO, True))
+        self.assertIsNone(td.leading_english_prefix("Humanizer 的汉化版本，旨在消除痕迹。"))
+        self.assertEqual(
+            td.resolve_zh(DESC_HUMANIZER, explode), (DESC_HUMANIZER, True)
+        )
 
     def test_failures(self):
         desc = "A repository of tools"

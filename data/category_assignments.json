@@ -490,6 +490,13 @@
     "source": "seed",
     "desc_hash": "0e1fbd750a85"
   },
+  "KKKKhazix/AIHOT": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "b07c9878679f",
+    "needs_review": true
+  },
   "KunAgent/Kun": {
     "primary": "ai-coding/clients",
     "secondary": [
@@ -646,7 +653,7 @@
       "skills/design"
     ],
     "source": "seed",
-    "desc_hash": "1adda5a9d94c"
+    "desc_hash": "040f9345c90e"
   },
   "nezhahq/nezha": {
     "primary": "ops/servers",
@@ -876,7 +883,7 @@
       "knowledge/search"
     ],
     "source": "seed",
-    "desc_hash": "792bc3842d0e"
+    "desc_hash": "3d37f2c46cfa"
   },
   "tinyhumansai/openhuman": {
     "primary": "agents/frameworks",

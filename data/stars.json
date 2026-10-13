@@ -79,7 +79,7 @@
       "social-media-management"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/203928864?v=4",
-    "description_zh": "An open-source AI agent for social media — discover trends, create content, publish everywhere, and learn what works across Xiaohongshu, Douyin, Zhihu, Bilibili, and more.🎨一个开源的 AI 社交媒体智能体——发现热点趋势、创作内容、一键发布至各大平台，并学习分析哪些内容真正有效，覆盖小红书、抖音、知乎、哔哩哔哩等平台。"
+    "description_zh": "一个开源的 AI 社交媒体智能体——发现热点趋势、创作内容、一键发布至各大平台，并学习分析哪些内容真正有效，覆盖小红书、抖音、知乎、哔哩哔哩等平台。"
   },
   {
     "full_name": "morluto/rea",
@@ -213,7 +213,7 @@
       "ste100"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/41177312?v=4",
-    "description_zh": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
+    "description_zh": "让 AI Agent 用一页 HTML 回答复杂问题。"
   },
   {
     "full_name": "liandu2024/Open-Box",
@@ -379,7 +379,7 @@
       "webgl"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/97503247?v=4",
-    "description_zh": "Claude Code skill for short films with no video model: 43 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98). By Lemomo. · Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南"
+    "description_zh": "Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南"
   },
   {
     "full_name": "public-apis/public-apis",
@@ -2456,7 +2456,7 @@
     "pushed_at": "2026-10-12T17:57:12Z",
     "topics": [],
     "owner_avatar": "https://avatars.githubusercontent.com/u/237402563?v=4",
-    "description_zh": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
+    "description_zh": "一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
   },
   {
     "full_name": "multica-ai/multica",
@@ -2943,7 +2943,7 @@
       "safari-extension"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/334615428?v=4",
-    "description_zh": "Enhancement suite for Gemini, AI Studio, Claude, ChatGPT & DeepSeek — plus a prompt manager for any website, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强套件；其中的提示词管理器可用于任意网站，如 DeepSeek Harness。"
+    "description_zh": "面向 Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强套件；其中的提示词管理器可用于任意网站，如 DeepSeek Harness。"
   },
   {
     "full_name": "teng-lin/notebooklm-py",
@@ -3525,6 +3525,6 @@
       "vue"
     ],
     "owner_avatar": "https://avatars.githubusercontent.com/u/1961952?v=4",
-    "description_zh": "🦋Butterfly，A JavaScript/React/Vue2 Diagramming library which concentrate on flow layout field.    (基于JavaScript/React/Vue2的流程图组件)"
+    "description_zh": "基于JavaScript/React/Vue2的流程图组件"
   }
 ]

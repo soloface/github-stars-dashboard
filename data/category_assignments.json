@@ -529,7 +529,7 @@
     "primary": "ops/netsec",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "1d0f839ec775"
+    "desc_hash": "1e26bbe268b0"
   },
   "liandu2024/OpenClaw-Chat-Gateway": {
     "primary": "agents/ecosystem",
@@ -594,6 +594,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "cde2353f8ab8"
+  },
+  "mujingquan835/Dawang-ppt": {
+    "primary": "skills/content",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "2392f04fa1bc",
+    "needs_review": true
   },
   "multica-ai/andrej-karpathy-skills": {
     "primary": "skills/engineering",

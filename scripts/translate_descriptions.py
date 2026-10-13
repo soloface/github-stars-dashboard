@@ -5,9 +5,12 @@ A description is handled in this order:
 
 * Empty -> ``description_zh`` is ``""``.
 * Mostly Chinese (``chinese_ratio`` >= ``ZH_RATIO``, which is 0.5) -> copied
-  as-is, with no network call. The ratio is the number of CJK ideographs
-  (U+4E00–U+9FFF and U+3400–U+4DBF) divided by the number of non-whitespace
-  characters. ``contains_chinese`` is still available but is not used to decide.
+  as-is, with no network call. Each Han ideograph (U+4E00–U+9FFF and
+  U+3400–U+4DBF) is one unit, and each ASCII letter/digit word
+  (``[A-Za-z0-9]+``, so ``Opus5.5`` is ``Opus5`` and ``5``) is one unit.
+  Punctuation, whitespace, emoji, and other symbols are ignored. The ratio
+  is Han units over Han units plus words, or 0.0 when there are no units.
+  ``contains_chinese`` is still available but is not used to decide.
 * Bilingual text -> ``extract_chinese_segment`` keeps one continuous Chinese
   run when that run is reliable (``looks_chinese`` and at least four
   ideographs). A Chinese clause that names English products
@@ -54,7 +57,8 @@ USER_AGENT = "Stars-Dashboard/2.0"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(ROOT, "data", "stars.json")
 
-# Hanzi / non-whitespace. At or above this, the description is already Chinese.
+# Han units / (Han units + ASCII words). At or above this, the description
+# is already Chinese.
 ZH_RATIO = 0.5
 # A glued-on English sentence has to be at least this long before we treat
 # the boundary as a real language switch (and before a segment is "too English"
@@ -93,13 +97,24 @@ def hanzi_count(text):
 
 
 def chinese_ratio(text):
-    """Ideographs divided by non-whitespace characters. Empty text is 0.0."""
+    """Return the Chinese share of ``text`` as Han units over all units.
+
+    Each Han ideograph in U+4E00–U+9FFF or U+3400–U+4DBF counts as one unit.
+    Each maximal ASCII letter/digit word (``[A-Za-z0-9]+``) counts as one
+    unit, so ``Opus5.5`` is two words (``Opus5`` and ``5``). Punctuation,
+    whitespace, emoji, and other symbols do not count. The ratio is
+    ``hanzi / (hanzi + words)``. Text with no units is ``0.0``.
+
+    ``is_mostly_chinese`` is this ratio ``>= ZH_RATIO`` (0.5).
+    """
     if not text:
         return 0.0
-    non_ws = [ch for ch in text if not ch.isspace()]
-    if not non_ws:
+    hanzi = hanzi_count(text)
+    words = len(_ASCII_WORD_RE.findall(text))
+    total = hanzi + words
+    if total == 0:
         return 0.0
-    return hanzi_count(text) / len(non_ws)
+    return hanzi / total
 
 
 def is_mostly_chinese(text):
@@ -288,7 +303,10 @@ def _label_segment(raw):
     cleaned = _clean_fragment(raw)
     if _is_neutral(cleaned):
         return "neutral"
-    if is_mostly_chinese(cleaned):
+    # A long ASCII run means an English sentence was not split off yet, even
+    # when the unit ratio is already >= ZH_RATIO. The boundary fallback
+    # splits that blob; labeling it "zh" here would hide the Chinese run.
+    if is_mostly_chinese(cleaned) and not _has_long_ascii_clause(cleaned):
         return "zh"
     # Relaxed labeling is for a Chinese clause with English tokens in it, not
     # for a full English sentence that happens to contain one Chinese comma.

@@ -195,9 +195,11 @@ class CarryOverTranslationsTest(unittest.TestCase):
         self.assertEqual(new[0]["description_zh"], desc)
 
     def test_drops_bilingual_english_primary_copy(self):
+        # English-primary bilingual text stays under the unit threshold, so a
+        # stored copy is not a translation and is not carried over.
         desc = (
-            "An enhanced tool for CodexApp, striving to make Codex better to use "
-            "and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
+            "Answer me with HTML — an agent skill that answers hard questions "
+            "with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
         )
         old = [{"full_name": "a/a", "description": desc, "description_zh": desc}]
         new = [{"full_name": "a/a", "description": desc}]

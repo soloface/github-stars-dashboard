@@ -65,9 +65,9 @@ class TranslateTest(unittest.TestCase):
         self.assertEqual(td.translate("已是中文", opener=explode), "已是中文")
 
     def test_mixed_below_ratio_still_calls_network(self):
-        # One or two ideographs no longer short-circuit translation.
-        payload = google_response(["你好世界", "hello", None, None, 1])
-        out = td.translate("hello 世界", opener=lambda req: FakeResp(payload))
+        # Several ASCII words and one ideograph stay under the unit threshold.
+        payload = google_response(["你好世界", "hello world", None, None, 1])
+        out = td.translate("hello world 世", opener=lambda req: FakeResp(payload))
         self.assertEqual(out, "你好世界")
 
     def test_empty_returns_empty(self):
@@ -219,6 +219,66 @@ ZH_VOYAGER = (
 )
 ZH_LEMO = "Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南"
 
+# More descriptions copied verbatim from data/stars.json. Tests must not read
+# that file. full_name is only a comment.
+DESC_AIMAMI = "为OpenAI Codex打造的桌面伴侣。"  # borawong/AiMaMi
+DESC_TRENDRADAR = (  # sansan0/TrendRadar
+    "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, "
+    "RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！"
+    "聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  "
+    "AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。"
+    "支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。"
+)
+DESC_HUMANIZER = (  # op7418/Humanizer-zh
+    "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。"
+)
+DESC_OPENCLAW_LARK = "飞书官方出品的 OpenClaw 飞书/Lark Channel 插件"  # larksuite/openclaw-lark
+DESC_RNSKILL = "雪踏乌云的 AI Agent Skills 集合"  # Pluviobyte/rnskill
+DESC_CODEX2API = (  # james-6-23/codex2api
+    "Codex2API 是一个基于 Go + Gin + React/Vite 的 Codex 反向代理与管理后台项目"
+)
+DESC_CHAT_GATEWAY = "OpenClaw 的聊天网关，摆脱对各种 Channel 的依赖"  # liandu2024/OpenClaw-Chat-Gateway
+DESC_ALLINONE = (  # FanchangWang/allinone_format
+    "本项目是对 https://hub.docker.com/r/youshandefeiyang/allinone /tv.m3u、"
+    "/tptv.m3u、/migu.m3u 进行聚合 & 重新分组。"
+)
+DESC_GPT_IMAGE = (  # freestylefly/awesome-gpt-image-2
+    "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 "
+    "Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。"
+)
+DESC_HUASHU = (  # alchaincyf/huashu-design
+    "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 "
+    "HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + "
+    "MP4 导出 · Agent-agnostic"
+)
+DESC_XIAOZHI = "An MCP-based chatbot | 一个基于MCP的聊天机器人"  # 78/xiaozhi-esp32
+
+# is_mostly_chinese is True under the unit rule. tech-shrimp/deno-api-proxy is DESC_DENO.
+MOSTLY_CHINESE_FIXTURES = (
+    ("borawong/AiMaMi", DESC_AIMAMI),
+    ("sansan0/TrendRadar", DESC_TRENDRADAR),
+    ("op7418/Humanizer-zh", DESC_HUMANIZER),
+    ("larksuite/openclaw-lark", DESC_OPENCLAW_LARK),
+    ("Pluviobyte/rnskill", DESC_RNSKILL),
+    ("james-6-23/codex2api", DESC_CODEX2API),
+    ("liandu2024/OpenClaw-Chat-Gateway", DESC_CHAT_GATEWAY),
+    ("FanchangWang/allinone_format", DESC_ALLINONE),
+    ("freestylefly/awesome-gpt-image-2", DESC_GPT_IMAGE),
+    ("alchaincyf/huashu-design", DESC_HUASHU),
+    ("78/xiaozhi-esp32", DESC_XIAOZHI),
+    ("tech-shrimp/deno-api-proxy", DESC_DENO),
+)
+
+# Still not mostly Chinese under the unit rule.
+NOT_MOSTLY_CHINESE_FIXTURES = (
+    ("QingYunA/answer-me-with-html", DESC_HTML),
+    ("lemomo-ai/lemo-opuscar", DESC_LEMO),
+    ("voyager-crew/voyager", DESC_VOYAGER),
+    ("alibaba/butterfly", DESC_BUTTERFLY),
+    ("larksuite/cli", DESC_LARK),
+    ("zhuyansen/awesome-claude-video-skills", DESC_SKILLS),
+)
+
 
 class ChineseRatioTest(unittest.TestCase):
     def test_constant(self):
@@ -234,15 +294,34 @@ class ChineseRatioTest(unittest.TestCase):
 
     def test_mostly_chinese_with_a_little_english(self):
         text = "基于 React 的组件库"
-        # 基于的组件库 = 6 ideographs, React = 5 letters.
-        self.assertAlmostEqual(td.chinese_ratio(text), 6 / 11)
+        # 基于的组件库 = 6 hanzi, React = 1 word.
+        self.assertEqual(td.chinese_ratio(text), 6 / 7)
         self.assertTrue(td.is_mostly_chinese(text))
 
     def test_half_boundary_is_inclusive(self):
-        self.assertEqual(td.chinese_ratio("中文ab"), 0.5)
-        self.assertTrue(td.is_mostly_chinese("中文ab"))
-        self.assertLess(td.chinese_ratio("中文abc"), 0.5)
-        self.assertFalse(td.is_mostly_chinese("中文abc"))
+        # 1 hanzi + 1 word. "中文ab" is 2 hanzi + 1 word, not the boundary.
+        self.assertEqual(td.chinese_ratio("中a"), 0.5)
+        self.assertTrue(td.is_mostly_chinese("中a"))
+        self.assertEqual(td.chinese_ratio("中文 ab cd"), 0.5)
+        self.assertTrue(td.is_mostly_chinese("中文 ab cd"))
+        # 1 hanzi + 2 words.
+        self.assertEqual(td.chinese_ratio("中ab cd"), 1 / 3)
+        self.assertFalse(td.is_mostly_chinese("中ab cd"))
+
+    def test_desktop_companion_sentence_is_chinese(self):
+        text = "为OpenAI Codex打造的桌面伴侣。"
+        # 为打造的桌面伴侣 = 8 hanzi, OpenAI + Codex = 2 words. "。" is ignored.
+        self.assertEqual(td.chinese_ratio(text), 8 / 10)
+        self.assertTrue(td.is_mostly_chinese(text))
+
+    def test_emoji_and_punctuation_are_ignored(self):
+        self.assertEqual(td.chinese_ratio("中文！🎉"), 1.0)
+        self.assertTrue(td.is_mostly_chinese("中文！🎉"))
+        self.assertEqual(td.chinese_ratio("🎉！！"), 0.0)
+        self.assertFalse(td.is_mostly_chinese("🎉！！"))
+        self.assertEqual(td.chinese_ratio("中！a"), 0.5)
+        # The dot splits the run: Opus5 and 5 are two words.
+        self.assertEqual(td.chinese_ratio("种Opus5.5"), 1 / 3)
 
     def test_empty_string(self):
         self.assertEqual(td.chinese_ratio(""), 0.0)
@@ -260,10 +339,19 @@ class ChineseRatioTest(unittest.TestCase):
 
     def test_looks_chinese_accepts_product_names(self):
         phrase = "面向 Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强套件"
-        self.assertFalse(td.is_mostly_chinese(phrase))
+        # 面向与的增强套件 = 8 hanzi, 6 product words.
+        self.assertEqual(td.chinese_ratio(phrase), 8 / 14)
+        self.assertTrue(td.is_mostly_chinese(phrase))
         self.assertTrue(td.looks_chinese(phrase))
+        # 基于的流程图组件 = 8 hanzi, JavaScript + React + Vue2 = 3 words.
+        self.assertEqual(td.chinese_ratio(ZH_BUTTERFLY), 8 / 11)
         self.assertTrue(td.looks_chinese(ZH_BUTTERFLY))
-        self.assertFalse(td.is_mostly_chinese(ZH_BUTTERFLY))
+        self.assertTrue(td.is_mostly_chinese(ZH_BUTTERFLY))
+        # Dropping two ideographs puts the same clause under the unit threshold.
+        sparse = "面向 Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的套"
+        self.assertLess(td.chinese_ratio(sparse), 0.5)
+        self.assertFalse(td.is_mostly_chinese(sparse))
+        self.assertTrue(td.looks_chinese(sparse))
 
 
 class ExtractChineseSegmentTest(unittest.TestCase):
@@ -344,7 +432,10 @@ class ResolveZhTest(unittest.TestCase):
         def explode(text):
             raise AssertionError("translate must not be called")
         self.assertEqual(td.resolve_zh(DESC_HTML, explode), (ZH_HTML, True))
-        self.assertEqual(td.resolve_zh(DESC_CODEX, explode), (ZH_CODEX, True))
+        # 18 hanzi and 17 ASCII words: the whole description is mostly Chinese,
+        # so the unit rule keeps it instead of extracting the Chinese tail.
+        self.assertTrue(td.is_mostly_chinese(DESC_CODEX))
+        self.assertEqual(td.resolve_zh(DESC_CODEX, explode), (DESC_CODEX, True))
 
     def test_failures(self):
         desc = "A repository of tools"
@@ -561,6 +652,50 @@ class MainDryRunTest(unittest.TestCase):
             self.assertIn("b/b", out)
             self.assertIn("needs-translation", out)
             self.assertNotIn("c/c", out)
+
+
+class FixtureChineseRatioTest(unittest.TestCase):
+    def test_mostly_chinese_fixtures(self):
+        for name, desc in MOSTLY_CHINESE_FIXTURES:
+            self.assertTrue(td.is_mostly_chinese(desc), name)
+            self.assertGreaterEqual(td.chinese_ratio(desc), td.ZH_RATIO, name)
+
+    def test_recheck_mixed_keeps_copies_and_does_not_translate(self):
+        calls = []
+        repos = [
+            {"full_name": name, "description": desc, "description_zh": desc}
+            for name, desc in MOSTLY_CHINESE_FIXTURES
+        ]
+
+        def fn(text):
+            calls.append(text)
+            return "不应翻译:" + text
+
+        td.translate_descriptions(repos, translate_fn=fn, recheck_mixed=True)
+        self.assertEqual(calls, [])
+        for repo, (name, desc) in zip(repos, MOSTLY_CHINESE_FIXTURES):
+            self.assertEqual(repo["description_zh"], desc, name)
+        self.assertEqual(td.stats["updated"], 0)
+        self.assertEqual(td.stats["failed"], 0)
+        self.assertEqual(td.stats["unchanged"], len(MOSTLY_CHINESE_FIXTURES))
+
+    def test_not_mostly_chinese_fixtures(self):
+        for name, desc in NOT_MOSTLY_CHINESE_FIXTURES:
+            self.assertFalse(td.is_mostly_chinese(desc), name)
+            self.assertLess(td.chinese_ratio(desc), td.ZH_RATIO, name)
+
+    def test_two_bilingual_fixtures_are_mostly_chinese_by_units(self):
+        # These were expected to stay non-Chinese. The unit rule does not
+        # agree; the counts are locked here and reported, not forced under 0.5.
+        cases = (
+            ("ZJU-REAL/Easel", DESC_EASEL, 60, 26),
+            ("BigPizzaV3/CodexPlusPlus", DESC_CODEX, 18, 17),
+        )
+        for name, desc, hanzi, words in cases:
+            self.assertEqual(td.hanzi_count(desc), hanzi, name)
+            self.assertEqual(len(td._ASCII_WORD_RE.findall(desc)), words, name)
+            self.assertEqual(td.chinese_ratio(desc), hanzi / (hanzi + words), name)
+            self.assertTrue(td.is_mostly_chinese(desc), name)
 
 
 if __name__ == "__main__":

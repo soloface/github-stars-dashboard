@@ -174,7 +174,7 @@ class CarryOverTranslationsTest(unittest.TestCase):
         self.assertNotIn("description_zh", new[0])
 
     def test_does_not_carry_failed_translation_fallback(self):
-        # translate() falls back to the English text on error; retry next run.
+        # A stored copy of an English description is not a translation.
         old = [{"full_name": "a/a", "description": "Hello", "description_zh": "Hello"}]
         new = [{"full_name": "a/a", "description": "Hello"}]
         fetch_stars.carry_over_translations(new, old)
@@ -185,6 +185,34 @@ class CarryOverTranslationsTest(unittest.TestCase):
         new = [{"full_name": "a/a", "description": "中文简介"}]
         fetch_stars.carry_over_translations(new, old)
         self.assertEqual(new[0]["description_zh"], "中文简介")
+
+    def test_keeps_mostly_chinese_copy(self):
+        # A few English tokens do not stop a >=50% Chinese description from sticking.
+        desc = "基于 React 的组件库"
+        old = [{"full_name": "a/a", "description": desc, "description_zh": desc}]
+        new = [{"full_name": "a/a", "description": desc}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertEqual(new[0]["description_zh"], desc)
+
+    def test_drops_bilingual_english_primary_copy(self):
+        desc = (
+            "An enhanced tool for CodexApp, striving to make Codex better to use "
+            "and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
+        )
+        old = [{"full_name": "a/a", "description": desc, "description_zh": desc}]
+        new = [{"full_name": "a/a", "description": desc}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertNotIn("description_zh", new[0])
+
+    def test_keeps_real_translation_of_bilingual_description(self):
+        desc = (
+            "An enhanced tool for CodexApp, striving to make Codex better to use "
+            "and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
+        )
+        old = [{"full_name": "a/a", "description": desc, "description_zh": "一个 CodexApp 增强工具"}]
+        new = [{"full_name": "a/a", "description": desc}]
+        fetch_stars.carry_over_translations(new, old)
+        self.assertEqual(new[0]["description_zh"], "一个 CodexApp 增强工具")
 
     def test_new_repo_left_untranslated(self):
         new = [{"full_name": "b/b", "description": "Hi"}]

@@ -105,15 +105,22 @@ def fetch_all_starred(token, urlopen=urllib.request.urlopen, _sleep=time.sleep):
     return all_items
 
 
-def _has_cjk(text):
-    return any("\u4e00" <= ch <= "\u9fff" for ch in text)
+# Same 50% rule as scripts/translate_descriptions.is_mostly_chinese.
+# Tried both ways: tests do `from scripts import fetch_stars`, while
+# `python3 scripts/fetch_stars.py` puts scripts/ on sys.path[0] (not the repo root).
+try:
+    from scripts.translate_descriptions import is_mostly_chinese as _is_mostly_chinese
+except ImportError:
+    from translate_descriptions import is_mostly_chinese as _is_mostly_chinese
 
 
 def carry_over_translations(repos, previous):
     """Copy ``description_zh`` from ``previous`` repos whose description is unchanged.
 
-    A stored translation equal to an English description is the translate
-    step's error fallback, so it is not carried over and gets retried.
+    A stored value is kept when it is a real translation (it differs from the
+    description) or when the description itself is mostly Chinese (ideograph
+    ratio >= 50%, same test as the translate step). A copy of an English or
+    bilingual description is dropped so that step can extract or retry it.
     """
     old = {r.get("full_name"): r for r in previous if isinstance(r, dict)}
     for repo in repos:
@@ -121,7 +128,9 @@ def carry_over_translations(repos, previous):
         if not prev or prev.get("description") != repo["description"]:
             continue
         zh = prev.get("description_zh")
-        if zh and (zh != repo["description"] or _has_cjk(zh)):
+        if not zh:
+            continue
+        if zh != repo["description"] or _is_mostly_chinese(repo["description"]):
             repo["description_zh"] = zh
     return repos
 

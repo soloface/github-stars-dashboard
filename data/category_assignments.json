@@ -351,6 +351,13 @@
     "source": "seed",
     "desc_hash": "e7f8ee970446"
   },
+  "Fei2411/DeepSeek-Bot": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "d69707d3f5d2",
+    "needs_review": true
+  },
   "feitangyuan/onetake": {
     "primary": "creative/video",
     "secondary": [

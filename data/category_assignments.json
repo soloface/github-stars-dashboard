@@ -662,7 +662,7 @@
       "skills/design"
     ],
     "source": "seed",
-    "desc_hash": "040f9345c90e"
+    "desc_hash": "9fe75429b201"
   },
   "nezhahq/nezha": {
     "primary": "ops/servers",
@@ -715,6 +715,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "b80905c20847"
+  },
+  "omacom/omarchy": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "964ad699955d",
+    "needs_review": true
   },
   "op7418/CodePilot": {
     "primary": "ai-coding/clients",

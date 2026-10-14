@@ -235,6 +235,15 @@
     "source": "seed",
     "desc_hash": "22fe6b4783d6"
   },
+  "datarhei/restreamer": {
+    "primary": "media/live",
+    "secondary": [
+      "creative/video"
+    ],
+    "source": "rule",
+    "desc_hash": "406d1fcce25d",
+    "needs_review": true
+  },
   "DavidHDev/canvas-ui": {
     "primary": "frontend/components",
     "secondary": [],
@@ -730,6 +739,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "1de27dd25baf"
+  },
+  "ossrs/srs": {
+    "primary": "media/live",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "a47ab60857f7",
+    "needs_review": true
   },
   "otxkq9/foreign-account-purchasing": {
     "primary": "resources",

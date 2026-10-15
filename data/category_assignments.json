@@ -988,6 +988,13 @@
     "source": "seed",
     "desc_hash": "fe83c70d81e3"
   },
+  "wheresryan22/anatomy": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "81f370051932",
+    "needs_review": true
+  },
   "win4r/ClawTeam-OpenClaw": {
     "primary": "agents/ecosystem",
     "secondary": [],

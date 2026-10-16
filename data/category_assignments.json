@@ -279,7 +279,7 @@
       "mcp/servers"
     ],
     "source": "seed",
-    "desc_hash": "4113c872d178"
+    "desc_hash": "d72840b6aafb"
   },
   "diegosouzapw/OmniRoute": {
     "primary": "gateway/relay",
@@ -914,6 +914,13 @@
     ],
     "source": "seed",
     "desc_hash": "3d37f2c46cfa"
+  },
+  "Thysrael/Horizon": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "08909ddfe0e2",
+    "needs_review": true
   },
   "tinyhumansai/openhuman": {
     "primary": "agents/frameworks",

@@ -256,7 +256,7 @@
       "frontend/diagram"
     ],
     "source": "seed",
-    "desc_hash": "5b53bba40987"
+    "desc_hash": "1703231f98ac"
   },
   "debpalash/VoiceStudio": {
     "primary": "creative/audio",
@@ -539,7 +539,7 @@
       "skills/content"
     ],
     "source": "seed",
-    "desc_hash": "6d9f1acc722d"
+    "desc_hash": "b7825ea64921"
   },
   "lexmount/moli": {
     "primary": "other",

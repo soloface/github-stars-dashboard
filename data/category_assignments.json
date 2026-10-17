@@ -891,7 +891,7 @@
     "primary": "ai-coding/clients",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "1e671bd961a8"
+    "desc_hash": "62b6d93c6d05"
   },
   "tech-shrimp/deno-api-proxy": {
     "primary": "gateway/relay",

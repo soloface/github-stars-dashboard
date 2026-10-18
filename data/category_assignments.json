@@ -285,7 +285,7 @@
     "primary": "gateway/relay",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "46eb6b113b4e"
+    "desc_hash": "7ecbb26cf6ee"
   },
   "DietrichGebert/ponytail": {
     "primary": "skills/engineering",

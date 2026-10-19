@@ -299,6 +299,13 @@
     "source": "seed",
     "desc_hash": "8ad46336ba35"
   },
+  "dsh-market/dsh-market": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "ea453afda803",
+    "needs_review": true
+  },
   "duolahypercho/codex-router": {
     "primary": "gateway/routing",
     "secondary": [],

@@ -650,6 +650,13 @@
     "source": "manual",
     "desc_hash": "e3b0c44298fc"
   },
+  "mytv-android/mytv-android": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "5ca5c55e7787",
+    "needs_review": true
+  },
   "nesquena/hermes-webui": {
     "primary": "agents/ecosystem",
     "secondary": [],

@@ -279,7 +279,7 @@
       "mcp/servers"
     ],
     "source": "seed",
-    "desc_hash": "d72840b6aafb"
+    "desc_hash": "c78bfd8d96ad"
   },
   "diegosouzapw/OmniRoute": {
     "primary": "gateway/relay",

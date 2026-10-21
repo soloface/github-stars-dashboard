@@ -195,7 +195,16 @@
       "creative/design"
     ],
     "source": "manual",
-    "desc_hash": "00e520f8ded7"
+    "desc_hash": "c4434798c9b3"
+  },
+  "cheaper-inference/OmniRoute": {
+    "primary": "gateway/relay",
+    "secondary": [
+      "agents/ecosystem"
+    ],
+    "source": "rule",
+    "desc_hash": "7ecbb26cf6ee",
+    "needs_review": true
   },
   "chenyme/grok2api": {
     "primary": "gateway/relay",

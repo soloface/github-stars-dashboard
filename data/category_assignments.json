@@ -555,7 +555,7 @@
       "skills/content"
     ],
     "source": "seed",
-    "desc_hash": "b7825ea64921"
+    "desc_hash": "f2aa21a06788"
   },
   "lexmount/moli": {
     "primary": "other",
@@ -1096,6 +1096,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "a32f8d921f56"
+  },
+  "yuliskov/SmartTube": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "c6bd6f5ee8ff",
+    "needs_review": true
   },
   "zhuyansen/awesome-claude-video-skills": {
     "primary": "resources",

@@ -337,6 +337,13 @@
     "source": "seed",
     "desc_hash": "0c708b483397"
   },
+  "Eirias/omnivoice-studio": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "553fc051b553",
+    "needs_review": true
+  },
   "EKKOLearnAI/ekko-studio": {
     "primary": "ai-coding/clients",
     "secondary": [

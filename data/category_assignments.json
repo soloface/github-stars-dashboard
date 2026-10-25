@@ -137,7 +137,7 @@
     "primary": "ai-coding/addons",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "f898a795b4ae"
+    "desc_hash": "b71ee0105129"
   },
   "binaricat/Netcatty": {
     "primary": "ops/terminal",
@@ -374,7 +374,7 @@
     "source": "seed",
     "desc_hash": "e7f8ee970446"
   },
-  "Fei2411/DeepSeek-Bot": {
+  "Fei2411/DS-Bot": {
     "primary": "other",
     "secondary": [],
     "source": "rule",

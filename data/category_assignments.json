@@ -544,6 +544,13 @@
     "source": "seed",
     "desc_hash": "a02f3bacb736"
   },
+  "LaihoE/demoparser": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "9a2bf79fd1b0",
+    "needs_review": true
+  },
   "larksuite/cli": {
     "primary": "mcp/agent-cli",
     "secondary": [],

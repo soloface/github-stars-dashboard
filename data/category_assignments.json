@@ -785,6 +785,13 @@
     "source": "seed",
     "desc_hash": "b4f7c63a7f6f"
   },
+  "openimsdk/open-im-server": {
+    "primary": "agents/ecosystem",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "c530b66d9dd7",
+    "needs_review": true
+  },
   "OpenMinis/OpenMinis": {
     "primary": "agents/apps",
     "secondary": [],

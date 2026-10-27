@@ -244,6 +244,13 @@
     "source": "seed",
     "desc_hash": "22fe6b4783d6"
   },
+  "cpvalente/ontime": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "d0e41d8167bd",
+    "needs_review": true
+  },
   "datarhei/restreamer": {
     "primary": "media/live",
     "secondary": [

@@ -862,7 +862,7 @@
     "primary": "gateway/relay",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "798a605fde3b"
+    "desc_hash": "a61d342a2a56"
   },
   "QwenLM/qwen-code": {
     "primary": "ai-coding/agents",
@@ -937,6 +937,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "e4c7a2f6cd16"
+  },
+  "sourcepro5/WeChatAgent": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "e3b0c44298fc",
+    "needs_review": true
   },
   "stablyai/orca": {
     "primary": "ai-coding/clients",

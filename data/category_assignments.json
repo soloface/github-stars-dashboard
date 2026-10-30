@@ -379,7 +379,7 @@
       "ai-coding/clients"
     ],
     "source": "seed",
-    "desc_hash": "e7f8ee970446"
+    "desc_hash": "c1b39afb525e"
   },
   "Fei2411/DS-Bot": {
     "primary": "other",
@@ -685,6 +685,13 @@
     "secondary": [],
     "source": "rule",
     "desc_hash": "5ca5c55e7787",
+    "needs_review": true
+  },
+  "nano-muse/nanoMuse": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "e1e467357900",
     "needs_review": true
   },
   "nesquena/hermes-webui": {

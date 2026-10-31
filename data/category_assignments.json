@@ -972,6 +972,13 @@
     "source": "seed",
     "desc_hash": "ee4bd46d19e1"
   },
+  "TencentCloudBase/CloudBase-AI-Toolkit": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "ba0e0146ce85",
+    "needs_review": true
+  },
   "teng-lin/notebooklm-py": {
     "primary": "mcp/agent-cli",
     "secondary": [

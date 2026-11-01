@@ -1120,6 +1120,13 @@
     "source": "seed",
     "desc_hash": "f40d38638a60"
   },
+  "yanhua1010/self-media-content-workflow": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "1a10f2ac56a8",
+    "needs_review": true
+  },
   "Yeachan-Heo/oh-my-claudecode": {
     "primary": "ai-coding/addons",
     "secondary": [],

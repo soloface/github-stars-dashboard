@@ -1121,10 +1121,12 @@
     "desc_hash": "f40d38638a60"
   },
   "yanhua1010/self-media-content-workflow": {
-    "primary": "other",
-    "secondary": [],
+    "primary": "creative/publishing",
+    "secondary": [
+      "skills/content"
+    ],
     "source": "rule",
-    "desc_hash": "1a10f2ac56a8",
+    "desc_hash": "0e582d958444",
     "needs_review": true
   },
   "Yeachan-Heo/oh-my-claudecode": {

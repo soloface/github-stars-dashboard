@@ -224,6 +224,13 @@
     "source": "seed",
     "desc_hash": "0be80af89af9"
   },
+  "citrolabs/ego-lite": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "30ad0ee0ba65",
+    "needs_review": true
+  },
   "colbymchenry/codegraph": {
     "primary": "mcp/code-intel",
     "secondary": [],

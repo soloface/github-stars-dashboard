@@ -903,6 +903,13 @@
     "source": "seed",
     "desc_hash": "5f9e85caf217"
   },
+  "rerun-build/rerun": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "6f964e81d2c1",
+    "needs_review": true
+  },
   "router-for-me/CLIProxyAPI": {
     "primary": "gateway/relay",
     "secondary": [],

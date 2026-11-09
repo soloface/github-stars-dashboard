@@ -1052,6 +1052,13 @@
     "source": "seed",
     "desc_hash": "428fe8ec8c41"
   },
+  "vercel-labs/agent-desktop": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "03ce3308114d",
+    "needs_review": true
+  },
   "Vincentwei1021/anything2explainer": {
     "primary": "creative/video",
     "secondary": [

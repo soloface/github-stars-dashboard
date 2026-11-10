@@ -617,6 +617,13 @@
     "source": "manual",
     "desc_hash": "51deee7044b3"
   },
+  "makecindy/cindy": {
+    "primary": "ai-coding/clients",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "f3061879e5db",
+    "needs_review": true
+  },
   "mattpocock/skills": {
     "primary": "skills/engineering",
     "secondary": [],

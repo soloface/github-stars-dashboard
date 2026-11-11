@@ -787,7 +787,7 @@
     "primary": "agents/frameworks",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "746db1fdbece"
+    "desc_hash": "4042e13d69f3"
   },
   "ohmyzsh/ohmyzsh": {
     "primary": "ops/terminal",

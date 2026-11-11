@@ -776,6 +776,13 @@
     "source": "seed",
     "desc_hash": "92f209e73441"
   },
+  "obsidianmd/obsidian-skills": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "0e1fbd750a85",
+    "needs_review": true
+  },
   "octos-org/octos": {
     "primary": "agents/frameworks",
     "secondary": [],

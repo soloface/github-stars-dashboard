@@ -531,6 +531,13 @@
     "source": "seed",
     "desc_hash": "eb9f948619bd"
   },
+  "JosssphZhou/poki": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "541ddcbbafca",
+    "needs_review": true
+  },
   "kejilion/KPanel": {
     "primary": "ops/servers",
     "secondary": [],
@@ -583,7 +590,7 @@
       "skills/content"
     ],
     "source": "seed",
-    "desc_hash": "a536a43ba6af"
+    "desc_hash": "120701956c88"
   },
   "lexmount/moli": {
     "primary": "other",

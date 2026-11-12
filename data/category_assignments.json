@@ -1073,6 +1073,13 @@
     "desc_hash": "03ce3308114d",
     "needs_review": true
   },
+  "vibe-motion/sound": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "7fb15bbf3daf",
+    "needs_review": true
+  },
   "Vincentwei1021/anything2explainer": {
     "primary": "creative/video",
     "secondary": [

@@ -441,6 +441,13 @@
     "source": "seed",
     "desc_hash": "a681f77dd39e"
   },
+  "GoogleChrome/modern-web-guidance": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "a91cb804076e",
+    "needs_review": true
+  },
   "heroui-inc/heroui": {
     "primary": "frontend/components",
     "secondary": [],
@@ -1000,6 +1007,13 @@
     "source": "seed",
     "desc_hash": "405d281bcebe"
   },
+  "storytold/craft-anything": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "8866906bd2ec",
+    "needs_review": true
+  },
   "tech-shrimp/deno-api-proxy": {
     "primary": "gateway/relay",
     "secondary": [
@@ -1072,6 +1086,13 @@
     "secondary": [],
     "source": "seed",
     "desc_hash": "428fe8ec8c41"
+  },
+  "VaneAi888/vane-gpt-image-skills": {
+    "primary": "creative/design",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "0891df58517a",
+    "needs_review": true
   },
   "vercel-labs/agent-desktop": {
     "primary": "other",

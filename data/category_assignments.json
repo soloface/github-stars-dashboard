@@ -599,6 +599,13 @@
     "source": "seed",
     "desc_hash": "120701956c88"
   },
+  "Leonxlnx/taste-skill": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "4df70089be2c",
+    "needs_review": true
+  },
   "lexmount/moli": {
     "primary": "other",
     "secondary": [],
@@ -880,6 +887,13 @@
     ],
     "source": "seed",
     "desc_hash": "4ab8da157b2c"
+  },
+  "pbakaus/impeccable": {
+    "primary": "skills/design",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "1807e46f985f",
+    "needs_review": true
   },
   "Pluviobyte/rnskill": {
     "primary": "skills/content",

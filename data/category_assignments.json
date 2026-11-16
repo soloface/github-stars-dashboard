@@ -549,7 +549,7 @@
     "primary": "other",
     "secondary": [],
     "source": "rule",
-    "desc_hash": "541ddcbbafca",
+    "desc_hash": "af63622f7e22",
     "needs_review": true
   },
   "kejilion/KPanel": {
@@ -1136,6 +1136,13 @@
     ],
     "source": "seed",
     "desc_hash": "6ed36c9b0154"
+  },
+  "Vincentwei1021/video-shotcraft": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "2e9758321ce5",
+    "needs_review": true
   },
   "VoltAgent/awesome-design-md": {
     "primary": "skills/design",

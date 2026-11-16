@@ -37,6 +37,13 @@
     "source": "seed",
     "desc_hash": "8f2037b92818"
   },
+  "ai-timon/timon": {
+    "primary": "other",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "e3b0c44298fc",
+    "needs_review": true
+  },
   "AITabby/codexsplit": {
     "primary": "ai-coding/clients",
     "secondary": [

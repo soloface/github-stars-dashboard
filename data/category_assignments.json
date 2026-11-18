@@ -225,6 +225,13 @@
     "source": "seed",
     "desc_hash": "a7db84408a37"
   },
+  "ChrisHKAI/ChrisHKAI-Video": {
+    "primary": "creative/video",
+    "secondary": [],
+    "source": "rule",
+    "desc_hash": "a2bff11e2c93",
+    "needs_review": true
+  },
   "chuspeeism/dashi-ppt-skill": {
     "primary": "skills/content",
     "secondary": [],
@@ -473,7 +480,7 @@
     "primary": "creative/video",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "c2acab8414e0"
+    "desc_hash": "323081f4014d"
   },
   "HKUDS/CLI-Anything": {
     "primary": "mcp/agent-cli",

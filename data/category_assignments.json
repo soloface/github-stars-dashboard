@@ -38,10 +38,12 @@
     "desc_hash": "8f2037b92818"
   },
   "ai-timon/timon": {
-    "primary": "other",
-    "secondary": [],
+    "primary": "agents/ecosystem",
+    "secondary": [
+      "agents/frameworks"
+    ],
     "source": "rule",
-    "desc_hash": "e3b0c44298fc",
+    "desc_hash": "6a7bd52aa4ec",
     "needs_review": true
   },
   "AITabby/codexsplit": {

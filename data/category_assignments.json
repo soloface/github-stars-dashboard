@@ -68,7 +68,7 @@
       "creative/design"
     ],
     "source": "seed",
-    "desc_hash": "f8dab7d1c29f"
+    "desc_hash": "76f9033052cc"
   },
   "alexta69/metube": {
     "primary": "media/music",
@@ -983,7 +983,7 @@
       "knowledge/search"
     ],
     "source": "seed",
-    "desc_hash": "399e5ecca386"
+    "desc_hash": "7ae879f2fa3b"
   },
   "satnaing/shadcn-admin": {
     "primary": "frontend/components",

@@ -814,10 +814,13 @@
     "desc_hash": "92f209e73441"
   },
   "obsidianmd/obsidian-skills": {
-    "primary": "other",
-    "secondary": [],
+    "primary": "skills/content",
+    "secondary": [
+      "agents/ecosystem",
+      "skills/engineering"
+    ],
     "source": "rule",
-    "desc_hash": "0e1fbd750a85",
+    "desc_hash": "933af2d7d15b",
     "needs_review": true
   },
   "octos-org/octos": {
@@ -1035,7 +1038,7 @@
     "primary": "ai-coding/clients",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "405d281bcebe"
+    "desc_hash": "ccd9622403c8"
   },
   "storytold/craft-anything": {
     "primary": "other",

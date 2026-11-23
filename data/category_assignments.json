@@ -482,7 +482,7 @@
     "primary": "creative/video",
     "secondary": [],
     "source": "seed",
-    "desc_hash": "323081f4014d"
+    "desc_hash": "1a698a9f146c"
   },
   "HKUDS/CLI-Anything": {
     "primary": "mcp/agent-cli",
@@ -710,7 +710,7 @@
     "primary": "skills/content",
     "secondary": [],
     "source": "rule",
-    "desc_hash": "f9c200b08091",
+    "desc_hash": "d0835bbf4542",
     "needs_review": true
   },
   "multica-ai/andrej-karpathy-skills": {

@@ -204,7 +204,7 @@
       "creative/design"
     ],
     "source": "manual",
-    "desc_hash": "c4434798c9b3"
+    "desc_hash": "f88dcb699379"
   },
   "cheaper-inference/OmniRoute": {
     "primary": "gateway/relay",
@@ -404,7 +404,7 @@
     "source": "seed",
     "desc_hash": "c1b39afb525e"
   },
-  "Fei2411/DS-Bot": {
+  "Fei-Craft/DS-Bot": {
     "primary": "other",
     "secondary": [],
     "source": "rule",
